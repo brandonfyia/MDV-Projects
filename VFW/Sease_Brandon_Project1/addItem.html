@@ -17,13 +17,38 @@
 </head>
 
 <body>
-    <header>
-        <h1>Daily Paper Work</h1>
-        <div>This application records the piercings preformed and gives you your daily totals.</div>
-    </header>
-    <nav>
-        <h2>Click below to begin.</h2>
-        <a href="addItem.html">Add Piercing</a>
-    </nav>
+   <header>
+        <h1>Daily Paperwork</h1>
+   </header>
+   <form action="" method="post">
+        <fieldset>
+            <legend>Add Piercing</legend>
+            <ul>
+                
+                <li><label for="date">Date </label><input type="date" id="date" min="2011-01-01" value="2011-10-01"/></li>
+                <li>
+                    <label for="piercingType">Piercing Category</label>
+                    <select id="piercingType">
+                        <optgroup label="Select Piercing Category">
+                            <option value="Ear">Ear</option>
+                            <option value="Face">Face</option>
+                            <option value="Body">Body</option>
+                            <option value="Genital">Genital</option>
+                    </select>
+                </li>   
+                <li><label for="pname">Piercing Name </label><input type="text" id="pname"  placeholder="ex: Navel" required/></li>
+                <li>
+                    <p>How was this piercing paid for?</p>
+                    <label for="cash">Cash </label><input type="number" id="cash" min="0" step="0.01" value="0" />
+                    <label for="credit">Credit </label><input type="number" id="credit" min="0" step="0.01" value="0" />
+                    <p>If there was a tip on the card add it here:</p>
+                    <label for="cTip">Credit Tip </label><input type="number" id="cTip" min="0" step="0.01" value="0" />
+                </li>
+                <li><label for="percent">What's your percent?</label><input type="range" id="percent" min="0" max="100" value="50" /></li>
+                <li><label for="notes"><textarea rows="3" cols="60" name="Notes" id="notes" placeholder="Any addional notes can go here."></textarea></li>
+            </ul>
+            <label for="submit"><input type="submit" id="submit" value="Add Piercing"/>
+        </fieldset>
+   </form>
 </body>
 </html>
