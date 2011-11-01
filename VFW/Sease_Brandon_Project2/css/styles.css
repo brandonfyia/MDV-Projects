@@ -4,3 +4,46 @@ VFW 11/11
 Project 2
 */
 
+body {
+    background-color:#FFFBD0;
+    width: 320px;
+    height: 460px;
+    font:16px/1.7em "droid Sans";
+}
+h1 {
+    color:#C13100;
+}
+fieldset {
+    color:#C13100;
+    border:1px solid #C13100;
+}
+input {
+    background-color:#FF9900;
+    font:12px/1.2em "droid sans";
+}
+input::-webkit-input-placeholder {
+    color:#666362;
+}
+a {
+    color:#C13100;
+}
+li {
+    list-style-type:circle;
+    color:#C13100;
+}
+span {
+    margin-left:10px;
+}
+select {
+    font-size:12px;
+    background-color:#FF9900;
+}
+textarea {
+    background-color:#FF9900;
+}
+textarea::-webkit-input-placeholder {
+    color:#666362;
+}
+#submit {
+    background-color:#FF9900;
+}
