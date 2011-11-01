@@ -4,6 +4,9 @@ VFW 11/11
 Project 2
 */
 
+header {
+    text-align:center;
+}
 body {
     background-color:#FFFBD0;
     width: 320px;
@@ -31,8 +34,10 @@ li {
     list-style-type:circle;
     color:#C13100;
 }
-span {
+li span {
     margin-left:10px;
+    list-style-type:square;
+    display:block;
 }
 select {
     font-size:12px;
@@ -46,4 +51,8 @@ textarea::-webkit-input-placeholder {
 }
 #submit {
     background-color:#FF9900;
+}
+li nav {
+    text-align:center;
+    list-style-type:none;
 }
