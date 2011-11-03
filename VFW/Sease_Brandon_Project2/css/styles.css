@@ -30,7 +30,7 @@ input::-webkit-input-placeholder {
 a {
     color:#C13100;
 }
-li {
+fieldset li {
     list-style-type:circle;
     color:#C13100;
 }
@@ -52,7 +52,8 @@ textarea::-webkit-input-placeholder {
 #submit {
     background-color:#FF9900;
 }
-li nav {
+nav {
+    color:#C13100;
     text-align:center;
     list-style-type:none;
 }
