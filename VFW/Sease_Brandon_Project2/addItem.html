@@ -24,19 +24,19 @@
    <form action="#" method="post">
         <fieldset>
             <legend>Add Piercing</legend>
-            <ul>
-                <li><label for="date">Date </label><input type="date" id="date" min="2011-01-01" value="2011-10-01"/></li>
-                <li id="select" ><label for="pCat">Piercing Category</label><br /></li> 
-                <li><label for="pName">Piercing Name </label><input type="text" id="pName"  placeholder="ex: Navel" required/></li>
+            <ul id="main" >
+                <li><label for="date">Date: </label><input type="date" id="date" min="2011-01-01" value="2011-10-01"/></li>
+                <li id="select" ><label for="pCat">Piercing Category: </label><br /></li> 
+                <li><label for="pName">Piercing Name: </label><input type="text" id="pName"  placeholder="ex: Navel" required/></li>
                 <li>
                     <div>How was this piercing paid for?</div>
-                    <ul>
-                        <span><li><label for="cash">Cash </label><input type="number" id="cash" min="0" step="0.01" value="0" /></li>
-                        <li><label for="credit">Credit </label><input type="number" id="credit" min="0" step="0.01" value="0" /></span></li>
+                    <ul id="money" >
+                        <span><li><label for="cash">Cash: </label><input type="number" id="cash" min="0" step="0.01" value="0" /></li>
+                        <li><label for="credit">Credit: </label><input type="number" id="credit" min="0" step="0.01" value="0" /></span></li>
                     </ul>
                     <div>If there was a tip on the card add it here:</div>
                     <ul>
-                        <li><span><label for="cTip">Credit Tip </label><input type="number" id="cTip" min="0" step="0.01" value="0" /></span></li>
+                        <li><span><label for="cTip">Credit Tip: </label><input type="number" id="cTip" min="0" step="0.01" value="0" /></span></li>
                     </ul>
                 </li>
                 <li><label for="percent">What's your percent?</label><input type="range" id="percent" min="0" max="100" value="50" /></li>
