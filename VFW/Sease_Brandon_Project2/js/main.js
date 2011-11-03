@@ -6,7 +6,7 @@
 //Functions
 
 window.addEventListener("DOMContentLoaded", function() {
-
+    
     //Get element by ID function
     
     function $(x) {
@@ -35,23 +35,23 @@ window.addEventListener("DOMContentLoaded", function() {
     //Store Items    
     
     function storeData() {
-        var id           = math.floor(Math.random()*1000000001);
-        var piercing     = {};
-            item.date    = ["Date", $("date").value];
-            item.pCat    = ["Piercing Category", $("pCat").value];
-            item.pName   = ["Piercing Name", $("pName").value];
-            item.cash    = ["Cash", $("cash").value];
-            item.credit  = ["Credit", $("credit").value];
-            item.cTip    = ["Credit Tip", $("Ctip").value];
-            item.percent = ["Percent", $("percent").value];
-            item.notes   = ["Notes", $("notes").value];
+        var id           = Math.floor(Math.random()*1000000001);
+        var item         = {};
+            item.date    = ["Date", $('date').value];
+            item.pCat    = ["Piercing Category", $('pCat').value];
+            item.pName   = ["Piercing Name", $('pName').value];
+            item.cash    = ["Cash", $('cash').value];
+            item.credit  = ["Credit", $('credit').value];
+            item.cTip    = ["Credit Tip", $('cTip').value];
+            item.percent = ["Percent", $('percent').value];
+            item.notes   = ["Notes", $('notes').value];
         localStorage.setItem(id, JSON.stringify(item));
-        alert("entry saved")
+        alert(item.pName[1] + " saved");
     };
     
     //Get Items
     
-    function getItems() {
+    function getData() {
         if (localStorage.getItem("appPName")) {
             var date         = localStorage.getItem("appDate");
             var piercingType = localStorage.getItem("appPCat");
@@ -86,10 +86,10 @@ window.addEventListener("DOMContentLoaded", function() {
     
         //Set Link & Submit Click Events
     
-    var displayLink = $("displayLink");
-    displayLink.addEventListener("click", getData);
-    var clearLink = $("clear");
-    clearLink.addEventListener("click", clearLocal);
+    //var displayLink = $("displayLink");
+    //displayLink.addEventListener("click", getData);
+    //var clearLink = $("clear");
+    //clearLink.addEventListener("click", clearLocal);
     var save = $("submit");
     save.addEventListener("click", storeData);
     
