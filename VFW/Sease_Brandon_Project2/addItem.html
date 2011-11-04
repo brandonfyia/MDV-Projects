@@ -22,7 +22,7 @@
         <h1>Daily Paperwork</h1>
    </header>
    <form action="#" method="post">
-        <fieldset>
+        <fieldset id="add">
             <legend>Add Piercing</legend>
             <ul id="main" >
                 <li><label for="date">Date: </label><input type="date" id="date" min="2011-01-01" value="2011-10-01"/></li>
@@ -46,10 +46,9 @@
         </fieldset>
    </form>
    <nav>
-        <ul>
-            <li><a href="#">Clear stored piercings</a></li>
-            <li><a href="#">Display all piercings</a></li>
-        </ul>
+        <a href="#" id="clear" >Clear Stored Piercings</a>
+        <a href="#" id="displayLink" >Display All Piercings</a>
+        <a href="addItem.html" id="addNew" >Add Another Piercing</a>
    </nav>
     <script src="js/main.js" type="text/javascript"></script>
 </body>

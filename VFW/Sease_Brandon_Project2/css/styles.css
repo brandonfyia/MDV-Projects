@@ -21,11 +21,13 @@ fieldset {
     border:1px solid #C13100;
 }
 #main {
-    margin-left:-20px;
+    margin-left:-40px;
+    
 }
 input {
     background-color:#FF9900;
     font:12px/1.2em "droid sans";
+    display:block;
 }
 input::-webkit-input-placeholder {
     color:#666362;
@@ -34,7 +36,7 @@ a {
     color:#C13100;
 }
 fieldset li {
-    list-style-type:circle;
+    list-style-type:none;
     color:#C13100;
 }
 select {
@@ -55,5 +57,8 @@ textarea::-webkit-input-placeholder {
 nav {
     color:#C13100;
     text-align:center;
-    list-style-type:none;
+    margin-top:10px;
+}
+#addNew {
+    display:none;
 }

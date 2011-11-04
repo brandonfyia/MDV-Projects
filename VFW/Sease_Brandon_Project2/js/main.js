@@ -31,20 +31,41 @@ window.addEventListener("DOMContentLoaded", function() {
         };
         selectLi.appendChild(makeSelect);
     };
+    // Toggel Controles
+    
+    function toggleControls(n){
+        switch(n) {
+            case "on":
+                $("add").style.display = "none";
+                $("clear").style.display = "inline";
+                $("displayLink").style.display = "none";
+                $("addNew").style.display = "inline";
+                break;
+            case "off":
+                $("add").style.display = "block";
+                $("clear").style.display = "inline";
+                $("displayLink").style.display = "inline";
+                $("addNew").style.display = "none";
+                $("items").style.display = "none";
+                break;
+            default:
+            return false;
+            };    
+    };
     
     //Store Items    
     
     function storeData() {
         var id           = Math.floor(Math.random()*1000000001);
         var item         = {};
-            item.date    = ["Date", $('date').value];
-            item.pCat    = ["Piercing Category", $('pCat').value];
-            item.pName   = ["Piercing Name", $('pName').value];
-            item.cash    = ["Cash", $('cash').value];
-            item.credit  = ["Credit", $('credit').value];
-            item.cTip    = ["Credit Tip", $('cTip').value];
-            item.percent = ["Percent", $('percent').value];
-            item.notes   = ["Notes", $('notes').value];
+            item.date    = ["Date:", $('date').value];
+            item.pCat    = ["Piercing Category:", $('pCat').value];
+            item.pName   = ["Piercing Name:", $('pName').value];
+            item.cash    = ["Cash:", $('cash').value];
+            item.credit  = ["Credit:", $('credit').value];
+            item.cTip    = ["Credit Tip:", $('cTip').value];
+            item.percent = ["Percent:", $('percent').value];
+            item.notes   = ["Notes:", $('notes').value];
         localStorage.setItem(id, JSON.stringify(item));
         alert(item.pName[1] + " saved");
     };
@@ -52,44 +73,53 @@ window.addEventListener("DOMContentLoaded", function() {
     //Get Items
     
     function getData() {
-        if (localStorage.getItem("appPName")) {
-            var date         = localStorage.getItem("appDate");
-            var piercingType = localStorage.getItem("appPCat");
-            var pName        = localStorage.getItem("appPName");
-            var cash         = localStorage.getItem("appCash");
-            var credit       = localStorage.getItem("appCredit");
-            var cTip         = localStorage.getItem("appCTip");
-            var percent      = localStorage.getItem("appPercent");
-            var notes        = localStorage.getItem("appNotes");
-                var piercings = document.getElementById("piercings");
-                while (piercings.firstChild)
-                    piercings.removeChild(piercings.firstChild);
-                var newUL  = document.createElement("ul");
-                var newLis = document.createElement("li");
-                newUL.appendChild(newLis);
-                var liTxt  = document.createTextNode(pName + "was added to local storage.")
-                newLis.appendChild(liTxt);
-                piercings.appendChild(newUL);
-        } else {
-            var pname = "Enter Piercings Name";  
+        toggleControls("on");
+        if (localStorage.length === 0) {
+            alert("No Piercings Saved Yet!")
+            window.location.reload();
+            };
+        var makeDiv = document.createElement("div");
+        makeDiv.setAttribute("id", "items");
+        var makeList = document.createElement("ul");
+        makeDiv.appendChild(makeList);
+        document.body.appendChild(makeDiv);
+        $("items").style.display = "block";
+        for (var i=0, len=localStorage.length; i<len; i++) {
+            var makeli = document.createElement("li");
+            makeList.appendChild(makeli);
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            var obj = JSON.parse(value);
+            var makeSubList = document.createElement("ul");
+            makeli.appendChild(makeSubList);
+            for (var n in obj) {
+                var makeSubli = document.createElement("li");
+                makeSubList.appendChild(makeSubli);
+                var optSubText = obj[n][0]+" "+obj[n][1];
+                makeSubli.innerHTML = optSubText;
+            };
         };
-        document.getElementById("pName").value = pName;
-        document.getElementById()
     };
     
     //Clear Items
     
     function clearLocal() {
-      clear: localStorage.clear();
-      return false;
+        if(localStorage.length === 0) {
+            alert("No Piercings Saved.")
+        } else {
+            localStorage.clear();
+            alert("All Piercings Cleared")
+            window.location.reload();
+            return false;
+        };
     };
     
         //Set Link & Submit Click Events
     
-    //var displayLink = $("displayLink");
-    //displayLink.addEventListener("click", getData);
-    //var clearLink = $("clear");
-    //clearLink.addEventListener("click", clearLocal);
+    var displayLink = $("displayLink");
+    displayLink.addEventListener("click", getData);
+    var clearLink = $("clear");
+    clearLink.addEventListener("click", clearLocal);
     var save = $("submit");
     save.addEventListener("click", storeData);
     
