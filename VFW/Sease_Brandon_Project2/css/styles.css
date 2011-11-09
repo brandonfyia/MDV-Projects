@@ -39,6 +39,13 @@ fieldset li {
     list-style-type:none;
     color:#C13100;
 }
+<<<<<<< Updated upstream
+=======
+span {
+    margin-left:10px;
+    font-size:14px;
+}
+>>>>>>> Stashed changes
 select {
     font-size:12px;
     background-color:#FF9900;
@@ -61,4 +68,8 @@ nav {
 }
 #addNew {
     display:none;
+}
+nav {
+    text-align:center;
+    list-style-type:none;
 }
