@@ -21,10 +21,11 @@
    <header>
         <h1>Daily Paperwork</h1>
    </header>
-   <form action="#" method="post">
+<form action="#" method="post">
         <fieldset id="add">
             <legend>Add Piercing</legend>
-            <ul id="main" >
+            	<ul id="errors"></ul>
+            	<ul id="main">
                 <li><label for="date">Date: </label><input type="date" id="date" min="2011-01-01" value="2011-10-01"/></li>
                 <li id="select" ><label for="pCat">Piercing Category: </label><br /></li> 
                 <li><label for="pName">Piercing Name: </label><input type="text" id="pName"  placeholder="ex: Navel" required/></li>
@@ -32,7 +33,7 @@
                     <div>How was this piercing paid for?</div>
                     <ul id="money" >
                         <span><li><label for="cash">Cash: </label><input type="number" id="cash" min="0" step="0.01" value="0" /></li>
-                        <li><label for="credit">Credit: </label><input type="number" id="credit" min="0" step="0.01" value="0" /></span></li>
+                        <li><label for="credit">Credit: </label><input type="number" id="credit" min="0" step="0.01" value="0" /></li></span>
                     </ul>
                     <div>If there was a tip on the card add it here:</div>
                     <ul>
@@ -40,12 +41,11 @@
                     </ul>
                 </li>
                 <li><label for="percent">What's your percent?</label><input type="range" id="percent" min="0" max="100" value="50" /></li>
-                <li><label for="notes"><textarea rows="3" cols="30" name="Notes" id="notes" placeholder="Any addional notes can go here."></textarea></li>
+                <li><label for="notes" /><textarea rows="3" cols="30" name="Notes" id="notes" placeholder="Any addional notes can go here."></textarea></li>
             </ul>
             <input type="submit" value="Add Piercing" id="submit" />
         </fieldset>
    </form>
-   <nav>
         <a href="#" id="clear" >Clear Stored Piercings</a>
         <a href="#" id="displayLink" >Display All Piercings</a>
         <a href="addItem.html" id="addNew" >Add Another Piercing</a>

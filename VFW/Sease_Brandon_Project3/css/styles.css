@@ -20,6 +20,10 @@ fieldset {
     color:#C13100;
     border:1px solid #C13100;
 }
+#errors {
+    margin-left:-40px;
+    
+}
 #main {
     margin-left:-40px;
     
