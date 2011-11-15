@@ -102,7 +102,8 @@ window.addEventListener("DOMContentLoaded", function() {
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
             makeli.appendChild(makeSubList);
-            for (var n in obj) {
+            getImg(obj.pCat[1], makeSubList);
+			for (var n in obj) {
                 var makeSubli = document.createElement("li");
                 makeSubList.appendChild(makeSubli);
 				makeSubli.style.listStyleType = "none";
@@ -113,6 +114,17 @@ window.addEventListener("DOMContentLoaded", function() {
 			makeItemLinks(localStorage.key(i), linksLi);
         };
     };
+	
+	//Get Image for correct cat.
+	
+	function getImg(catName, makeSubList) {
+		var imageLi = document.createElement("li");
+		makeSubList.appendChild(imageLi);
+		var newImg = document.createElement("img");
+		var setSrc = newImg.setAttribute("src", "img/"+ catName + ".gif");
+		imageLi.appendChild(newImg);
+	};
+	
 	//AUTO FILL DATA
 	function autoFillData() {
 		var json = {
