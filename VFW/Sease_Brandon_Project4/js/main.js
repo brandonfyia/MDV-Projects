@@ -1,6 +1,6 @@
 //Brandon Sease
 //VFW 11/11
-//Project 3
+//Project 4
 
 
 //Functions
@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
     function $(x) {
         var element = document.getElementById(x);
         return element;
-        };
+    };
     
 
     //Create Select field Element
@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 break;
             default:
             return false;
-            };    
+		};    
     };
     
     //Store Items    
@@ -79,7 +79,8 @@ window.addEventListener("DOMContentLoaded", function() {
     function getData() {
         toggleControls("on");
         if (localStorage.length === 0) {
-            alert("No Piercings Saved Yet!")
+            autoFillData();
+			alert("No Piercings Saved Yet! So default data was added.")
             window.location.reload();
             };
         var makeDiv = document.createElement("div");
@@ -112,6 +113,52 @@ window.addEventListener("DOMContentLoaded", function() {
 			makeItemLinks(localStorage.key(i), linksLi);
         };
     };
+	//AUTO FILL DATA
+	function autoFillData() {
+		var json = {
+			"piercing1": {
+				"date"    : ["date", "2011-30-11"],
+				"pCat"    : ["pCat", "Ear"],
+				"pName"   : ["pName","Rook"],
+				"cash"    : ["cash", "40"],
+				"credit"  : ["credit", "0"],
+				"cTip"    : ["cTip", "0"],
+				"percent" : ["percent", "50"],
+				"notes"   : ["notes", "Ring."]
+			},
+			"piercing2": {
+				"date"    : ["date", "2011-30-11"],
+				"pCat"    : ["pCat", "Face"],
+				"pName"   : ["pName","Lip"],
+				"cash"    : ["cash", "0"],
+				"credit"  : ["credit", "50"],
+				"cTip"    : ["cTip", "10"],
+				"percent" : ["percent", "50"],
+				"notes"   : ["notes", "Stud with gem."]
+			},
+			"piercing3": {
+				"date"    : ["date", "2011-30-11"],
+				"pCat"    : ["pCat", "Body"],
+				"pName"   : ["pName","Navel"],
+				"cash"    : ["cash", "20"],
+				"credit"  : ["credit", "20"],
+				"cTip"    : ["cTip", "5"],
+				"percent" : ["percent", "50"],
+				"notes"   : ["notes", ""]
+			},
+			"piercing4": {
+				"date"    : ["date", "2011-30-11"],
+				"pCat"    : ["pCat", "Genital"],
+				"pName"   : ["pName","VCH"],
+				"cash"    : ["cash", "0"],
+				"credit"  : ["credit", "60"],
+				"cTip"    : ["cTip", "7"],
+				"percent" : ["percent", "50"],
+				"notes"   : ["notes", "Bent barbell"]
+			}
+		};
+	};
+		 
     
 	//Edit and Delete Functions 
 	
