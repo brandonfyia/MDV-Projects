@@ -117,45 +117,49 @@ window.addEventListener("DOMContentLoaded", function() {
 	function autoFillData() {
 		var json = {
 			"piercing1": {
-				"date"    : ["date", "2011-30-11"],
-				"pCat"    : ["pCat", "Ear"],
-				"pName"   : ["pName","Rook"],
-				"cash"    : ["cash", "40"],
-				"credit"  : ["credit", "0"],
-				"cTip"    : ["cTip", "0"],
-				"percent" : ["percent", "50"],
-				"notes"   : ["notes", "Ring."]
+				"date"    : ["Date: ", "2011-30-11"],
+				"pCat"    : ["Piercing Category: ", "Ear"],
+				"pName"   : ["Piercing Name: ","Rook"],
+				"cash"    : ["Cash: ", "40"],
+				"credit"  : ["Credit: ", "0"],
+				"cTip"    : ["Credit Tip: ", "0"],
+				"percent" : ["Percent: ", "50"],
+				"notes"   : ["Notes: ", "Ring."]
 			},
 			"piercing2": {
-				"date"    : ["date", "2011-30-11"],
-				"pCat"    : ["pCat", "Face"],
-				"pName"   : ["pName","Lip"],
-				"cash"    : ["cash", "0"],
-				"credit"  : ["credit", "50"],
-				"cTip"    : ["cTip", "10"],
-				"percent" : ["percent", "50"],
-				"notes"   : ["notes", "Stud with gem."]
+				"date"    : ["Date: ", "2011-30-11"],
+				"pCat"    : ["Piercing Category: ", "Face"],
+				"pName"   : ["Piercing Name: ","Lip"],
+				"cash"    : ["Cash: ", "0"],
+				"credit"  : ["Credit: ", "50"],
+				"cTip"    : ["Credit Tip: ", "10"],
+				"percent" : ["Percent: ", "50"],
+				"notes"   : ["Notes: ", "Stud with gem."]
 			},
 			"piercing3": {
-				"date"    : ["date", "2011-30-11"],
-				"pCat"    : ["pCat", "Body"],
-				"pName"   : ["pName","Navel"],
-				"cash"    : ["cash", "20"],
-				"credit"  : ["credit", "20"],
-				"cTip"    : ["cTip", "5"],
-				"percent" : ["percent", "50"],
-				"notes"   : ["notes", ""]
+				"date"    : ["Date: ", "2011-30-11"],
+				"pCat"    : ["Piercing Category: ", "Body"],
+				"pName"   : ["Piercing Name: ","Navel"],
+				"cash"    : ["Cash: ", "20"],
+				"credit"  : ["Credit: ", "20"],
+				"cTip"    : ["Credit Tip: ", "5"],
+				"percent" : ["Percent: ", "50"],
+				"notes"   : ["Notes: ", ""]
 			},
 			"piercing4": {
-				"date"    : ["date", "2011-30-11"],
-				"pCat"    : ["pCat", "Genital"],
-				"pName"   : ["pName","VCH"],
-				"cash"    : ["cash", "0"],
-				"credit"  : ["credit", "60"],
-				"cTip"    : ["cTip", "7"],
-				"percent" : ["percent", "50"],
-				"notes"   : ["notes", "Bent barbell"]
+				"date"    : ["Date: ", "2011-30-11"],
+				"pCat"    : ["Piercing Category: ", "Genital"],
+				"pName"   : ["Piercing Name: ","VCH"],
+				"cash"    : ["Cash: ", "0"],
+				"credit"  : ["Credit: ", "60"],
+				"cTip"    : ["Credit Tip: ", "7"],
+				"percent" : ["Percent: ", "50"],
+				"notes"   : ["Notes: ", "Bent barbell"]
 			}
+		};
+		for (var n in json) {
+			var id = Math.floor(Math.random()*100000000000000);
+			localStorage.setItem(id, JSON.stringify(json[n]));
 		};
 	};
 		 
