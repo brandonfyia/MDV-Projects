@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function() {
             var obj = JSON.parse(value);
             var makeSubList = document.createElement("ul");
             makeli.appendChild(makeSubList);
-            getImg(obj.pCat[1], makeSubList);
+            //getImg(obj.pCat[1], makeSubList);
 			for (var n in obj) {
                 var makeSubli = document.createElement("li");
                 makeSubList.appendChild(makeSubli);
@@ -118,11 +118,20 @@ window.addEventListener("DOMContentLoaded", function() {
 	//Get Image for correct cat.
 	
 	function getImg(catName, makeSubList) {
+		var Ear = 0,
+			Face = 80,
+			Body = 160,
+			Genital = 240;
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement("img");
-		var setSrc = newImg.setAttribute("src", "img/"+ catName + ".gif");
-		imageLi.appendChild(newImg);
+		imageLi.appendChild(newImg);	
+		newImg.style.backgroundImage= "url(img/master.gif)";
+		newImg.style.backgroundPosition= "0 0";
+		newImg.style.backgroundRepeat= no-repeat;
+		newImg.style.width= "80px";
+		newImg.style.height = "80px";
+		newImg.style.backgroundPosition = "-"+catName+"px 0";
 	};
 	
 	//AUTO FILL DATA
