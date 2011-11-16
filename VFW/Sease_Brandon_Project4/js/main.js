@@ -115,14 +115,28 @@ window.addEventListener("DOMContentLoaded", function() {
         };
     };
 	
-	//Get Image for correct cat.
+	//Get Image for correct cat.  !!! Using CSS Sprites !!!
 	
 	function getImg(catName, makeSubList) {
+		var pixels = 0;
+		if (catName === "Ear") {
+			var pixels = 0
+		} else if (catName === "Face") {
+			var pixels = 80;
+		} else if (catName === "Body") {
+			var pixels = 160;
+		} else if (catName === "Genital") {
+			var pixels = 240
+		};
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
-		var newImg = document.createElement("img");
-		var setSrc = newImg.setAttribute("src", "img/"+ catName + ".gif");
-		imageLi.appendChild(newImg);
+		imageLi.style.listStyleType = "none";
+		var newImg = document.createElement("div");
+		imageLi.appendChild(newImg);	
+		newImg.style.backgroundImage = "url(img/master.gif)";
+		newImg.style.backgroundPosition = "-"+pixels+"px 0px";
+		newImg.style.height = "80px";
+		newImg.style.width = "80px";
 	};
 	
 	//AUTO FILL DATA
