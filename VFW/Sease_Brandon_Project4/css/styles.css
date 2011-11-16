@@ -1,0 +1,68 @@
+/*
+ Brandon Sease
+VFW 11/11
+Project 4
+*/
+
+header {
+    text-align:center;
+}
+body {
+    background-color:#FFFBD0;
+    width: 320px;
+    height: 460px;
+    font:16px/1.7em "droid Sans";
+}
+h1 {
+    color:#C13100;
+}
+fieldset {
+    color:#C13100;
+    border:1px solid #C13100;
+}
+#errors {
+    margin-left:-40px;
+    
+}
+#main {
+    margin-left:-40px;
+    
+}
+input {
+    background-color:#FF9900;
+    font:12px/1.2em "droid sans";
+    display:block;
+}
+input::-webkit-input-placeholder {
+    color:#666362;
+}
+a {
+    color:#C13100;
+}
+fieldset li {
+    list-style-type:none;
+    color:#C13100;
+}
+select {
+    font-size:12px;
+    background-color:#FF9900;
+}
+textarea {
+    background-color:#FF9900;
+}
+textarea::-webkit-input-placeholder {
+    color:#666362;
+}
+#submit {
+    background-color:#FF9900;
+    margin-left:160px;
+    width:auto;
+}
+nav {
+    color:#C13100;
+    text-align:center;
+    margin-top:10px;
+}
+#addNew {
+    display:none;
+}
