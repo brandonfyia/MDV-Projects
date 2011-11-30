@@ -3,7 +3,6 @@
     MIU 11/12
     Project 1&2
 */
-    var gCats = ["--Select Firearm Category--", "Revolver Pistol", "Semi-Auto Pistol", "Bolt Rifle", "Semi-Auto Rifle", "Pump Shotgun", "Auto-Loader Shotgun"];
 var json = {
 			"gun1": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],

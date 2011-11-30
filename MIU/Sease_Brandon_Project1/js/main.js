@@ -82,20 +82,11 @@ window.addEventListener("DOMContentLoaded", function() {
 			alert("No Firearms Saved Yet! So default data was added.")
             window.location.reload();
             };
-        var makeDiv = document.createElement("div");
-        makeDiv.setAttribute("id", "items");
-        var makeList = document.createElement("ul");
-        makeDiv.appendChild(makeList);
-        document.body.appendChild(makeDiv);
-        $("items").style.display = "block";
+        var getThing = document.getElementById("myContent");
         for (var i=0, len=localStorage.length; i<len; i++) {
-            var line = document.createElement("hr");
 			var makeli = document.createElement("li");
 			var linksLi = document.createElement("li");
-			makeli.style.listStyleType = "none";
-			makeList.appendChild(line);
-            makeList.appendChild(makeli);
-			makeli.style.marginBottom = "10px";
+			getThing.appendChild(makeli);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
@@ -105,7 +96,6 @@ window.addEventListener("DOMContentLoaded", function() {
 			for (var n in obj) {
                 var makeSubli = document.createElement("li");
                 makeSubList.appendChild(makeSubli);
-				makeSubli.style.listStyleType = "none";
                 var optSubText = obj[n][0]+" "+obj[n][1];
                 makeSubli.innerHTML = optSubText;
 				makeSubList.appendChild(linksLi);
@@ -140,36 +130,6 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	//AUTO FILL DATA
 	function autoFillData() {
-		var json = {
-			"gun1": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
-				"gMake"   : ["Gun Make: ","SIG Sauer"],
-				"gModel"  : ["Gun Model: ", "P220"],
-				"gCal"    : ["Caliber: ", ".45 ACP"],
-				"notes"   : ["Notes: ", "Elite"]
-			},
-			"gun2": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Rifle"],
-				"gMake"   : ["Gun Make: ","Daniel Defence"],
-				"gModel"  : ["Gun Model: ", "EZ Car AR 15"],
-				"gCal"    : ["Caliber: ", "5.56"],
-				"notes"   : ["Notes: ", "Several Upgrades"]
-			},
-			"gun3": {
-				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
-				"gMake"   : ["Gun Make: ","Benneli"],
-				"gModel"  : ["Gun Model: ", "M4"],
-				"gCal"    : ["Caliber: ", "12g"],
-				"notes"   : ["Notes: ", "Added Rail"]
-			},
-			"gun4": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Rifle"],
-				"gMake"   : ["Gun Make: ","Springfield"],
-				"gModel"  : ["Gun Model: ", "M1A Socom 16"],
-				"gCal"    : ["Caliber: ", ".308"],
-				"notes"   : ["Notes: ", "First Gen."]
-			}
-		};
 		for (var n in json) {
 			var id = Math.floor(Math.random()*100000000000000);
 			localStorage.setItem(id, JSON.stringify(json[n]));
@@ -231,23 +191,23 @@ window.addEventListener("DOMContentLoaded", function() {
 		getgCat.style.border = "1px solid black";
 		getgMake.style.border = "1px solid black";
 		
-		if (getgCat.value === "--Select Piercing Category--") {
+		if (getgCat.value === "--Select Firearm Category--") {
 			var catError = "!!!You Must Choose a Category!!!";
 			getgCat.style.border = "1px solid red";
 			messageAry.push(catError);
 		};
 		if (getgMake.value === "") {
-			var gMakeError = "!!!You Must Enter the Guns/'s Make!!!";
+			var gMakeError = "!!!You Must Enter the Guns\'s Make!!!";
 			getgMake.style.border = "1px solid red";
 			messageAry.push(gMakeError);
 		};
 		if (getgModel.value === "") {
-			var gModelError = "!!!You Must Enter the Guns/'s Model!!!";
+			var gModelError = "!!!You Must Enter the Guns\'s Model!!!";
 			getgModel.style.border = "1px solid red";
 			messageAry.push(gMakeError);
 			};
 		if (getgCal.value === "") {
-			var gCalError = "!!!You Must Enter the Guns/'s Caliber!!!";
+			var gCalError = "!!!You Must Enter the Guns\'s Caliber!!!";
 			getgCal.style.border = "1px solid red";
 			messageAry.push(gMakeError);
 			};
