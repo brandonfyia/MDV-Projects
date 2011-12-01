@@ -76,31 +76,33 @@ window.addEventListener("DOMContentLoaded", function() {
     //Get Items
     
     function getData() {
-        toggleControls("on");
+        //toggleControls("on");
         if (localStorage.length === 0) {
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
             window.location.reload();
             };
-        var getThing = document.getElementById("myContent");
+		var getDiv = document.getElementById("myList");
+		var makeUl = document.createElement("ul");
+		makeUl.setAttribute("data-role", "listview");
+		makeUl.setAttribute("data-filter", "true");
+		getDiv.appendChild(makeUl);
         for (var i=0, len=localStorage.length; i<len; i++) {
-			var makeli = document.createElement("li");
-			var linksLi = document.createElement("li");
-			getThing.appendChild(makeli);
+			var makeLi = document.createElement("li");
+			makeUl.appendChild(makeLi);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
-            var makeSubList = document.createElement("ul");
-            makeli.appendChild(makeSubList);
-            getImg(obj.gCat[1], makeSubList);
-			for (var n in obj) {
-                var makeSubli = document.createElement("li");
-                makeSubList.appendChild(makeSubli);
+			var makeH3 = document.createElement("h3");
+			getImg(obj.gCat[1], makeLi)
+			makeLi.appendChild(makeH3);
+			makeH3.innerHTML = obj.gModel[1];
+			for (var n in obj) {	
+				var makeP = document.createElement("p");
+				makeLi.appendChild(makeP);
                 var optSubText = obj[n][0]+" "+obj[n][1];
-                makeSubli.innerHTML = optSubText;
-				makeSubList.appendChild(linksLi);
+                makeP.innerHTML = optSubText;
             };
-			makeItemLinks(localStorage.key(i), linksLi);
         };
     };
 	
@@ -108,24 +110,25 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	function getImg(catName, makeSubList) {
 		var pixels = 0;
-		if (catName === "Ear") {
+		if (catName === "Revolver Pistol") {
 			var pixels = 0
-		} else if (catName === "Face") {
+		} else if (catName === "Simi-Auto Pistol") {
 			var pixels = 80;
-		} else if (catName === "Body") {
+		} else if (catName === "Bolt Rifle") {
 			var pixels = 160;
-		} else if (catName === "Genital") {
+		} else if (catName === "Simi-Auto Rifle") {
 			var pixels = 240
+		} else if (catName === "Pump Shotgun") {
+			var pixels = 320
+		} else if (catName === "Auto-Loader Shotgun") {
+			var pixels = 400
 		};
-		var imageLi = document.createElement("li");
+		var imageLi = document.createElement("div");
 		makeSubList.appendChild(imageLi);
-		imageLi.style.listStyleType = "none";
-		var newImg = document.createElement("div");
-		imageLi.appendChild(newImg);	
-		newImg.style.backgroundImage = "url(img/master.gif)";
-		newImg.style.backgroundPosition = "-"+pixels+"px 0px";
-		newImg.style.height = "80px";
-		newImg.style.width = "80px";
+    	imageLi.style.backgroundImage = "url(img/master.gif)";
+		imageLi.style.backgroundPosition = "-"+pixels+"px 0px";
+		imageLi.style.height = "80px";
+		imageLi.style.width = "80px";
 	};
 	
 	//AUTO FILL DATA
@@ -141,7 +144,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	function makeItemLinks(key, linksLi) {
 		var editLink = document.createElement("a");
-		editLink.href = "#";
+		editLink.href = "#addItem";
 		editLink.key = key;
 		var editText = "Edit Firearm";
 		editLink.addEventListener("click", editItem);
