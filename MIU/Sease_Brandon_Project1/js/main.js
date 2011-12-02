@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function() {
         };
         selectLi.appendChild(makeSelect);
     };
-    // Toggel Controles
+/*    // Toggel Controles
     
     function toggleControls(n){
         switch(n) {
@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function() {
             return false;
 		};    
     };
-    
+*/    
     //Store Items    
     
     function storeData(key) {
@@ -70,13 +70,12 @@ window.addEventListener("DOMContentLoaded", function() {
             item.gCal    = ["Caliber:", $('percent').value];
             item.notes   = ["Notes:", $('notes').value];
         localStorage.setItem(id, JSON.stringify(item));
-        alert(item.gMake[1] + " saved");
+        alert(item.gCat[1] + " saved");
     };
     
     //Get Items
     
     function getData() {
-        //toggleControls("on");
         if (localStorage.length === 0) {
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
@@ -112,11 +111,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		var pixels = 0;
 		if (catName === "Revolver Pistol") {
 			var pixels = 0
-		} else if (catName === "Simi-Auto Pistol") {
+		} else if (catName === "Semi-Auto Pistol") {
 			var pixels = 80;
 		} else if (catName === "Bolt Rifle") {
 			var pixels = 160;
-		} else if (catName === "Simi-Auto Rifle") {
+		} else if (catName === "Semi-Auto Rifle") {
 			var pixels = 240
 		} else if (catName === "Pump Shotgun") {
 			var pixels = 320
@@ -255,7 +254,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			alert("Firearm Saved.");
 		};
 	};
-        //Set Link & Submit Click Events
+//Set Link & Submit Click Events
     
     var displayLink = $("displayLink");
     displayLink.addEventListener("click", getData);
@@ -263,10 +262,11 @@ window.addEventListener("DOMContentLoaded", function() {
     clearLink.addEventListener("click", clearLocal);
     var save = $("submit");
     save.addEventListener("click", validate);
+
     
     // Variable Defaults
     
-    var gCats = ["--Select Firearm Category--", "Revolver Pistol", "Simi-Auto Pistol", "Bolt Rifle", "Simi-Auto Rifle", "Pump Shotgun", "Auto-Loader Shotgun"];
+    var gCats = ["--Select Firearm Category--", "Revolver Pistol", "Semi-Auto Pistol", "Bolt Rifle", "Semi-Auto Rifle", "Pump Shotgun", "Auto-Loader Shotgun"];
     makeCats();
 	var errMsg = $("errors");
 

@@ -6,7 +6,7 @@
 
 var json = {
 			"gun1": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P220"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
@@ -48,7 +48,7 @@ var json = {
 				"notes"   : ["Notes: ", "Chainsaw"]
 			},
 			"gun7": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Springfield"],
 				"gModel"  : ["Gun Model: ", "XD"],
 				"gCal"    : ["Caliber: ", ".40 S&amp;W"],
@@ -83,14 +83,14 @@ var json = {
 				"notes"   : ["Notes: ", "10x Optic"]
 			},
 			"gun12": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P226"],
 				"gCal"    : ["Caliber: ", "9mm"],
 				"notes"   : ["Notes: ", "Tactical Opperations"]
 			},
 			"gun13": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P238"],
 				"gCal"    : ["Caliber: ", ".380"],
@@ -111,7 +111,7 @@ var json = {
 				"notes"   : ["Notes: ", "Rails"]
 			},
 			"gun16": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","FNP"],
 				"gModel"  : ["Gun Model: ", "45 Tactical"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
@@ -139,7 +139,7 @@ var json = {
 				"notes"   : ["Notes: ", "SBR"]
 			},
 			"gun20": {
-				"gCat"    : ["Gun Type: ", "Simi-Auto Pistol"],
+				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Kimber"],
 				"gModel"  : ["Gun Model: ", "1911"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
