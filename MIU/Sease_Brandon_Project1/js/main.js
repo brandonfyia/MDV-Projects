@@ -17,44 +17,6 @@ $(document).ready (function() {
     };
     
 
-    //Create Select field Element
-    
-    function makeCats() {
-        var formTag = document.getElementsByTagName("form"),
-            selectLi = $("select"),
-            makeSelect = document.createElement("select");
-        makeSelect.setAttribute("id", "gCat");
-        for(var i=0, j=gCats.length; i<j; i++) {
-          var makeOption = document.createElement("option");
-          var optText = gCats[i];
-          makeOption.setAttribute("value", optText);
-          makeOption.innerHTML = optText;
-          makeSelect.appendChild(makeOption);
-        };
-        selectLi.appendChild(makeSelect);
-    };
-/*    // Toggel Controles
-    
-    function toggleControls(n){
-        switch(n) {
-            case "on":
-                $("add").style.display = "none";
-                $("clear").style.display = "inline";
-                $("displayLink").style.display = "none";
-                $("addNew").style.display = "inline";
-                break;
-            case "off":
-                $("add").style.display = "block";
-                $("clear").style.display = "inline";
-                $("displayLink").style.display = "inline";
-                $("addNew").style.display = "none";
-                $("items").style.display = "none";
-                break;
-            default:
-            return false;
-		};    
-    };
-*/    
     //Store Items    
     
     function storeData(key) {
