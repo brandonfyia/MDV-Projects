@@ -29,24 +29,18 @@
         <div data-role="content">
         	  <a href="../index.html">RIGHT APP</a>	
         	  <p>This application is to help firearm collectors keep track of the guns they own.</p>
-        	  <a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e"><h2>Add A New Gun!</h2></a></blockquote>
-            <div data-role="collapsible-set" data-collapsed="true">          
-                <div data-role="collapsible">
-                      <h3>Browse Or Search Your Guns</h3>
-                      <ul data-role="listview" data-filter="true" data-inset="true">
-                        <li><a href="#display" id="displayLink1">All Guns</a></li>                        
-                        <li data-role="list-divider">Pistols</li>
-                        <li><a href="#rPistols">Revolver Pistols</a></li>
-                        <li><a href="#aPistols">Semi-Auto Pistols</a></li>
-                        <li data-role="list-divider">Rifles</li>
-                        <li><a href="#bRifles">Bolt Rifles</a></li>
-                        <li><a href="#aRifles">Semi-Auto Rifles</a></li>
-                        <li data-role="list-divider">Shotguns</li>
-                        <li><a href="#pShot">Pump Shotguns</a></li>
-                        <li><a href="#aShot">Auto-Loader Shotguns</a></li>
-                      </ul>
-                </div>
-            </div>
+        	  <a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e"><h2>Add A New Gun!</h2></a>
+              <ul data-role="listview" style="margin-bottom:10px; margin-top:10px"><li data-role="list-divider"><h3>Browse Gun Categories</h3></li></ul>
+              <div class="ui-grid-b">
+                  <div class="ui-block-a"><a href="#rPistols"><img src="img/clear.gif" style="background:url(img/master.gif)0px 0px; height:80px; width:80px"></a></div>
+                  <div class="ui-block-b"><a href="#aRifles"><img src="img/clear.gif" style="background:url(img/master.gif)-240px 0px; height:80px; width:80px"></a></div>
+                  <div class="ui-block-c"><a href="#aShot"><img src="img/clear.gif" style="background:url(img/master.gif)-400px 0px; height:80px; width:80px"></a></div>
+              </div>
+              <div class="ui-grid-b">
+                  <div class="ui-block-a"><a href="#aPistols"><img src="img/clear.gif" style="background:url(img/master.gif)-80px 0px; height:80px; width:80px"></a></div>
+                  <div class="ui-block-c"><a href="#bRifles"><img src="img/clear.gif" style="background:url(img/master.gif)-160px 0px; height:80px; width:80px"></a></div>
+                  <div class="ui-block-b"><a href="#pShot"><img src="img/clear.gif" style="background:url(img/master.gif)-320px 0px; height:80px; width:80px"></a></div>
+              </div>                      	
         </div>
         <div data-role="footer" data-position="fixed" data-id="main">
           <div data-role="navbar">
@@ -111,6 +105,7 @@
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
             <h1>Wrong Gun Collector</h1>
         </div>
+        <a href="#" id="sorter" data-role="button">Sort Alphebetically</a>
 		<div data-role="content" id="myList">
         <!--Dynamic Content-->
         </div>        
@@ -196,7 +191,7 @@
     </div>
 
 <!--Pump Shotguns-->
-	<div data-role="page" id="pSHot" >    	<div data-role="header" data-position="fixed">
+	<div data-role="page" id="pShot" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
             <h1>Wrong Gun Collector</h1>
         </div>
@@ -235,6 +230,7 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery.tinysort.1.1.1/scripts/jquery.tinysort.min.js"></script>
     <script src="js/JSON.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </body>

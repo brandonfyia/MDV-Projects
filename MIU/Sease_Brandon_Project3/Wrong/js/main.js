@@ -94,6 +94,16 @@ $(document).ready (function() {
 		imageLi.style.height = "80px";
 		imageLi.style.width = "80px";
 	};
+	function sortAlpha(){
+		var mylist = $('#myList');
+		var listitems = mylist.children('li').get();
+		listitems.sort(function(a, b) {
+   			var compA = $(a).text().toUpperCase();
+   			var compB = $(b).text().toUpperCase();
+   			return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+		})
+		$.each(listitems, function(idx, itm) { mylist.append(itm); });
+	};
 	
 	//AUTO FILL DATA
 	function autoFillData() {
@@ -171,7 +181,8 @@ $(document).ready (function() {
 		};
 	};
 //Set Link & Submit Click Events
-    
+    var sortA = $("#sorter");
+	sortA.click(sortAlpha);
 	var disp1 = $("#displayLink1");
 	disp1.click(getData);
 	var disp2 = $("#displayLink2");
