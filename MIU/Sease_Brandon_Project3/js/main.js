@@ -14,26 +14,28 @@ $(document).ready (function() {
 		invalidHandler: function(form, validator){},
 		submitHandler : function(){
 			var data = mForm.serializeArray();
+			console.log(data);
 			storeData(data);
 			}
 		});
 	
 
     
-    function storeData(key) {
-		if (!key) {
+    function storeData(data) {
+		if (!data.key) {
 	        var id       = Math.floor(Math.random()*1000000001);
 		} else {
-			var id       = key;
+			var id       = data.key;
 		};
         var item         = {};
-            item.gCat    = ["Gun Type:", $("#gCat").value];
-            item.gMake   = ["Gun Make:", $("#gMake").value];
-            item.gModel  = ["Gun Model:", $("#gModel").value];
-            item.gCal    = ["Caliber:", $("#Cal").value];
-            item.notes   = ["Notes:", $("#notes").value];
+            item.gCat    = ["Gun Type:", data[0].value];
+            item.gMake   = ["Gun Make:", data[1].value];
+            item.gModel  = ["Gun Model:", data[2].value];
+            item.gCal    = ["Caliber:", data[3].value];
+            item.notes   = ["Notes:", data[4].value];
+			console.log(item);
         localStorage.setItem(id, JSON.stringify(item));
-        alert(item.gCat[1] + " saved");
+        alert(item.gMake[1]+" "+item.gModel[1]+" saved.");
     };
     
     //Get Items
@@ -192,8 +194,8 @@ $(document).ready (function() {
     clearLink1.click(clearLocal);
     var clearLink2 = $("#clear2");
     clearLink2.click(clearLocal);
-    var save = $("#submit");
-    save.click(storeData);
+//    var save = $("#submit");
+//    save.click(storeData);
 
     // Variable Defaults
     
