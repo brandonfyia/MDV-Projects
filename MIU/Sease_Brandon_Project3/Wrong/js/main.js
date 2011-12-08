@@ -87,10 +87,10 @@ $(document).ready (function() {
 		} else if (catName === "Auto-Loader Shotgun") {
 			var pixels = 400
 		};
-		var imageLi = document.createElement("img");
+		var imageLi = document.createElement("div");
 		makeSubList.appendChild(imageLi);
-		imageLi.setAttribute("src", "img/clear.gif");
-		imageLi.style.background = "url(img/master.gif) -"+pixels+"px 0px";
+    	imageLi.style.backgroundImage = "url(img/master.gif)";
+		imageLi.style.backgroundPosition = "-"+pixels+"px 0px";
 		imageLi.style.height = "80px";
 		imageLi.style.width = "80px";
 	};
@@ -153,7 +153,7 @@ $(document).ready (function() {
 			if(ask) {
 				localStorage.clear();
 				alert("All Firearms Cleared");
-				$.mobile.changepage("#home");
+				window.location.reload();
 				return false;
 			}else {
 				alert("Firearms Still Saved.");
