@@ -10,7 +10,13 @@
 $(document).ready (function() {
 	
 	var mForm = $("#mainForm");
-	mForm.validate();
+	mForm.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler : function(){
+			var data = mForm.serializeArray();
+			storeData(data);
+			}
+		});
 	
 
     
@@ -21,11 +27,11 @@ $(document).ready (function() {
 			var id       = key;
 		};
         var item         = {};
-            item.gCat    = ["Gun Type:", ele('gCat').value];
-            item.gMake   = ["Gun Make:", ele('gMake').value];
-            item.gModel  = ["Gun Model:", ele('gModel').value];
-            item.gCal    = ["Caliber:", ele('gCal').value];
-            item.notes   = ["Notes:", ele('notes').value];
+            item.gCat    = ["Gun Type:", $("#gCat").value];
+            item.gMake   = ["Gun Make:", $("#gMake").value];
+            item.gModel  = ["Gun Model:", $("#gModel").value];
+            item.gCal    = ["Caliber:", $("#Cal").value];
+            item.notes   = ["Notes:", $("#notes").value];
         localStorage.setItem(id, JSON.stringify(item));
         alert(item.gCat[1] + " saved");
     };
@@ -192,8 +198,5 @@ $(document).ready (function() {
     // Variable Defaults
     
 
-});
-$('#display').live( 'pageinit',function(event){
-  $("#display").listview("create");
 });
 
