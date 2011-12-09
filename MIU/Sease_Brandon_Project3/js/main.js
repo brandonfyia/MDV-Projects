@@ -27,6 +27,7 @@ $(document).ready (function() {
 		} else {
 			var id       = data.key;
 		};
+		console.log(item)
         var item         = {};
             item.gCat    = ["Gun Type:", data[0].value];
             item.gMake   = ["Gun Make:", data[1].value];
@@ -68,6 +69,7 @@ $(document).ready (function() {
                 makeP.innerHTML = optSubText;
             };
         };
+		$("#theList").listview("refresh");
 	};
 	
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
@@ -152,8 +154,8 @@ $(document).ready (function() {
            var ask = confirm("Are you sure you want to remove ALL firearms?");
 			if(ask) {
 				localStorage.clear();
+				$.mobile.changePage($("#home"), { transition: "pop"});
 				alert("All Firearms Cleared");
-				$.mobile.changepage("#home");
 				return false;
 			}else {
 				alert("Firearms Still Saved.");
