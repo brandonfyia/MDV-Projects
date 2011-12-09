@@ -8,31 +8,34 @@
 //Functions
 
 $(document).ready (function() {
-    
-    //Get element by ID function
-    
-    function $(x) {
-        var element = document.getElementById(x);
-        return element;
-    };
-    
+	
+	var mForm = $("#mainForm");
+	mForm.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler : function(){
+			var data = mForm.serializeArray();
+			console.log(data);
+			storeData(data);
+			}
+		});
+	
 
-    //Store Items    
     
-    function storeData(key) {
-		if (!key) {
-	        var id           = Math.floor(Math.random()*1000000001);
+    function storeData(data) {
+		if (!data.key) {
+	        var id       = Math.floor(Math.random()*1000000001);
 		} else {
-			id = key;
+			var id       = data.key;
 		};
         var item         = {};
-            item.gCat    = ["Gun Type:", $('gCat').value];
-            item.gMake   = ["Gun Make:", $('gMake').value];
-            item.gModel  = ["Gun Model:", $('gModel').value];
-            item.gCal    = ["Caliber:", $('gCal').value];
-            item.notes   = ["Notes:", $('notes').value];
+            item.gCat    = ["Gun Type:", data[0].value];
+            item.gMake   = ["Gun Make:", data[1].value];
+            item.gModel  = ["Gun Model:", data[2].value];
+            item.gCal    = ["Caliber:", data[3].value];
+            item.notes   = ["Notes:", data[4].value];
+			console.log(item);
         localStorage.setItem(id, JSON.stringify(item));
-        alert(item.gCat[1] + " saved");
+        alert(item.gMake[1]+" "+item.gModel[1]+" saved.");
     };
     
     //Get Items
@@ -41,7 +44,6 @@ $(document).ready (function() {
         if (localStorage.length === 0) {
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
-            window.location.reload();
             };
 		var getDiv = document.getElementById("myList");
 		var makeUl = document.createElement("ul");
@@ -129,74 +131,25 @@ $(document).ready (function() {
 	function editItem() {
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
-		toggleControls("off");
-		$("gCat").value = item.gCat[1];
-		$("gMake").value = item.gMake[1];
-		$("gModel").value = item.gModel[1];
-		$("gCal").value = item.gCal[1];
-		$("notes").value = item.notes[1];
-	
+		$("#gCat").value = item.gCat[1];
+		$("#gMake").value = item.gMake[1];
+		$("#gModel").value = item.gModel[1];
+		$("#gCal").value = item.gCal[1];
+		$("#notes").value = item.notes[1];
 		save.removeEventListener("click", storeData);
-		$("submit").value = "Edit Firearm";
-		var editSubmit = $("submit");
+		$("#submit").value = "Edit Firearm";
+		var editSubmit = $("#submit");
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;
 	};
-	
-// Validate 
-	
-	function validate(e) {
-		var getgCat = $("gCat"),
-			getgMake = $("gMake");
-			getgModel = $("gModel");
-			getgCal = $("gCal");
-		var messageAry = [];
 		
-		errMsg.innerHTML = "";
-		getgCat.style.border = "1px solid black";
-		getgMake.style.border = "1px solid black";
-		
-		if (getgCat.value === "--Select Firearm Category--") {
-			var catError = "!!!You Must Choose a Category!!!";
-			getgCat.style.border = "1px solid red";
-			messageAry.push(catError);
-		};
-		if (getgMake.value === "") {
-			var gMakeError = "!!!You Must Enter the Guns\'s Make!!!";
-			getgMake.style.border = "1px solid red";
-			messageAry.push(gMakeError);
-		};
-		if (getgModel.value === "") {
-			var gModelError = "!!!You Must Enter the Guns\'s Model!!!";
-			getgModel.style.border = "1px solid red";
-			messageAry.push(gMakeError);
-			};
-		if (getgCal.value === "") {
-			var gCalError = "!!!You Must Enter the Guns\'s Caliber!!!";
-			getgCal.style.border = "1px solid red";
-			messageAry.push(gMakeError);
-			};
-		if (messageAry.length >= 1) {
-			for (var i=0, j=messageAry.length; i<j; i++) {
-			var txt = document.createElement("li");
-			txt.innerHTML = messageAry[i];
-			errMsg.appendChild(txt);
-			};
-		e.preventDefault();
-		return false;
-		} else {
-			storeData(this.key);
-		};
-		
-	};
-	
     //Clear Items
     
     function clearLocal() {
 		if(localStorage.length === 0) {
             alert("No Firearms Saved.");
         } else {
-           var ask = confirm("Are you sure you want to remove this firearm?");
+           var ask = confirm("Are you sure you want to remove ALL firearms?");
 			if(ask) {
 				localStorage.clear();
 				alert("All Firearms Cleared");
@@ -218,18 +171,35 @@ $(document).ready (function() {
 		};
 	};
 //Set Link & Submit Click Events
-    
-	$("#displaylink").click(getData);
-    var clearLink = $("clear");
-    clearLink.addEventListener("click", clearLocal);
-    var save = $("submit");
-    save.addEventListener("click", validate);
+    var sortA = $("#sorter");
+	sortA.click(sortAlpha);
+	var disp1 = $("#displayLink1");
+	disp1.click(getData);
+	var disp2 = $("#displayLink2");
+	disp2.click(getData);
+	var disp3 = $("#displayLink3");
+	disp3.click(getData);
+	var disp4 = $("#displayLink4");
+	disp4.click(getData);
+	var disp5 = $("#displayLink5");
+	disp5.click(getData);
+	var disp6 = $("#displayLink6");
+	disp6.click(getData);
+	var disp7 = $("#displayLink7");
+	disp7.click(getData);
+	var disp8 = $("#displayLink8");
+	disp8.click(getData);
+	var disp9 = $("#displayLink9");
+	disp9.click(getData);
+    var clearLink1 = $("#clear1");
+    clearLink1.click(clearLocal);
+    var clearLink2 = $("#clear2");
+    clearLink2.click(clearLocal);
+//    var save = $("#submit");
+//    save.click(storeData);
 
-    
     // Variable Defaults
     
-    var gCats = ["--Select Firearm Category--", "Revolver Pistol", "Semi-Auto Pistol", "Bolt Rifle", "Semi-Auto Rifle", "Pump Shotgun", "Auto-Loader Shotgun"];
-    makeCats();
-	var errMsg = $("errors");
 
 });
+
