@@ -1,7 +1,7 @@
 /*
  	Brandon Sease
     MIU 11/12
-    Project 4
+    Project 1&2
 */
 
 
@@ -27,7 +27,6 @@ $(document).ready (function() {
 		} else {
 			var id       = data.key;
 		};
-		console.log(item)
         var item         = {};
             item.gCat    = ["Gun Type:", data[0].value];
             item.gMake   = ["Gun Make:", data[1].value];
@@ -69,7 +68,6 @@ $(document).ready (function() {
                 makeP.innerHTML = optSubText;
             };
         };
-		$("#theList").listview("refresh");
 	};
 	
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
@@ -89,10 +87,10 @@ $(document).ready (function() {
 		} else if (catName === "Auto-Loader Shotgun") {
 			var pixels = 400
 		};
-		var imageLi = document.createElement("img");
+		var imageLi = document.createElement("div");
 		makeSubList.appendChild(imageLi);
-		imageLi.setAttribute("src", "img/clear.gif");
-		imageLi.style.background = "url(img/master.gif) -"+pixels+"px 0px";
+    	imageLi.style.backgroundImage = "url(img/master.gif)";
+		imageLi.style.backgroundPosition = "-"+pixels+"px 0px";
 		imageLi.style.height = "80px";
 		imageLi.style.width = "80px";
 	};
@@ -154,8 +152,8 @@ $(document).ready (function() {
            var ask = confirm("Are you sure you want to remove ALL firearms?");
 			if(ask) {
 				localStorage.clear();
-				$.mobile.changePage($("#home"), { transition: "pop"});
 				alert("All Firearms Cleared");
+				window.location.reload();
 				return false;
 			}else {
 				alert("Firearms Still Saved.");
@@ -173,7 +171,8 @@ $(document).ready (function() {
 		};
 	};
 //Set Link & Submit Click Events
-    
+    var sortA = $("#sorter");
+	sortA.click(sortAlpha);
 	var disp1 = $("#displayLink1");
 	disp1.click(getData);
 	var disp2 = $("#displayLink2");

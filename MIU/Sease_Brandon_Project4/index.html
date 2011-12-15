@@ -2,11 +2,11 @@
 <!--
     Brandon Sease
     MIU 11/12
-    Project 4
+    Project 3
 -->
 <html>
 <head>
-    <title>WRONG Gun Collector</title>
+    <title>Gun Collector</title>
     <meta charset="utf-8" />
     <meta name="description" content="This application helps keep track of the guns in your collection." />
     <meta name="keywords" content="guns, firearms,  mobile development, Full Sail University" />
@@ -24,61 +24,29 @@
 	<div data-role="page" id="home">
     	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home" class="ui-btn-active">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
         <div data-role="content">
-        	  <a href="../index.html">RIGHT APP</a>	
+        	  <a href="Wrong/index.html">WRONG APP</a>	
         	  <p>This application is to help firearm collectors keep track of the guns they own.</p>
-              <ul data-role="listview">
-              	<li data-role="list-divider"><h2>Most Recent Firearms Added:</h2></li>
-                <li>
-                    <p>Gun Type: Revolver Pistol</p>
-                    <p>Gun Make: Smith &amp; Weston</p>
-                    <p>Gun Model: Body Guard</p>
-                    <p>Caliber: .357 Magnum</p>	
-                    <p class="ui-li-aside">12/08/11</p>
-                </li>
-                <li>
-                    <p>Gun Type: Auto-Loader Shotgun</p>
-                    <p>Gun Make: Benelli</p>
-                    <p>Gun Model: M4</p>
-                    <p>Caliber: 12 Gauge</p>	
-                    <p class="ui-li-aside">12/07/11</p>
-                </li>
-                <li>
-                    <p>Gun Type: Semi-Auto Pistol</p>
-                    <p>Gun Make: SIG Sauer</p>
-                    <p>Gun Model: P220</p>
-                    <p>Caliber: .45 ACP</p>	
-                    <p class="ui-li-aside">12/06/11</p>
-                </li>
-                <li>
-                    <p>Gun Type: Semi-Auto Pistol</p>
-                    <p>Gun Make: Glock</p>
-                    <p>Gun Model: 19</p>
-                    <p>Caliber: 9mm</p>	
-                    <p class="ui-li-aside">12/05/11</p>
-                </li>
-                <li>
-                    <p>Gun Type: Semi-Auto Rifle</p>
-                    <p>Gun Make: Scar</p>
-                    <p>Gun Model: Heavy</p>
-                    <p>Caliber: .308 Winchester</p>	
-                    <p class="ui-li-aside">11/25/11</p>
-                </li>               
-              </ul>
-              </div>
-              <ul data-role="listview" style="margin-bottom:10px; margin-top:10px"><li data-role="list-divider"><h3>Browse Gun Categories:</h3></li></ul>
-              <div class="ui-grid-b">
-                  <div class="ui-block-a"><a href="#rPistols"><img src="img/clear.gif" style="background:url(img/master.gif)0px 0px; height:80px; width:80px"></a></div>
-                  <div class="ui-block-b"><a href="#aRifles"><img src="img/clear.gif" style="background:url(img/master.gif)-240px 0px; height:80px; width:80px"></a></div>
-                  <div class="ui-block-c"><a href="#aShot"><img src="img/clear.gif" style="background:url(img/master.gif)-400px 0px; height:80px; width:80px"></a></div>
-              </div>
-              <div class="ui-grid-b">
-                  <div class="ui-block-a"><a href="#aPistols"><img src="img/clear.gif" style="background:url(img/master.gif)-80px 0px; height:80px; width:80px"></a></div>
-                  <div class="ui-block-c"><a href="#bRifles"><img src="img/clear.gif" style="background:url(img/master.gif)-160px 0px; height:80px; width:80px"></a></div>
-                  <div class="ui-block-b"><a href="#pShot"><img src="img/clear.gif" style="background:url(img/master.gif)-320px 0px; height:80px; width:80px"></a></div>
-              </div>                      	
+        	  <a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e"><h2>Add A New Gun!</h2></a></blockquote>
+            <div data-role="collapsible-set" data-collapsed="true">          
+                <div data-role="collapsible">
+                      <h3>Browse Or Search Your Guns</h3>
+                      <ul data-role="listview" data-filter="true" data-inset="true">
+                        <li><a href="#display" id="displayLink1">All Guns</a></li>                        
+                        <li data-role="list-divider">Pistols</li>
+                        <li><a href="#rPistols">Revolver Pistols</a></li>
+                        <li><a href="#aPistols">Semi-Auto Pistols</a></li>
+                        <li data-role="list-divider">Rifles</li>
+                        <li><a href="#bRifles">Bolt Rifles</a></li>
+                        <li><a href="#aRifles">Semi-Auto Rifles</a></li>
+                        <li data-role="list-divider">Shotguns</li>
+                        <li><a href="#pShot">Pump Shotguns</a></li>
+                        <li><a href="#aShot">Auto-Loader Shotguns</a></li>
+                      </ul>
+                </div>
+            </div>
         </div>
         <div data-role="footer" data-position="fixed" data-id="main">
           <div data-role="navbar">
@@ -93,7 +61,7 @@
 	<div data-role="page" id="addItem" >    	
     	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
             <a href="#addItem" data-role="button" data-theme="e" data-icon="alert" data-iconpos="right"/>Clear</a>
         </div>
 		<div data-role="content">
@@ -102,12 +70,12 @@
                     <label for="gCat">What kind of gun is it? </label>
                     <select name="gCat" id="gCat" class="required" >
                     	<option data-placeholder="true" value>--Select Firearm Category--</option> 
-                            <option value="rPistol">Revolver Pistol</option>
-                            <option value="sPistol">Semi-Auto Pistol</option>
-                            <option value="bRifle">Bolt Rifle</option>
-                            <option value="sRifle">Semi-Auto Rifle</option>
-                            <option value="pShot">Pump Shotgun</option>
-                            <option value="aShot">Auto-Loader Shotgun</option>
+                            <option value="Revolver Pistol">Revolver Pistol</option>
+                            <option value="Semi-Auto Pistol">Semi-Auto Pistol</option>
+                            <option value="Bolt Rifle">Bolt Rifle</option>
+                            <option value="Semi-Auto Rifle">Semi-Auto Rifle</option>
+                            <option value="Pump Shotgun">Pump Shotgun</option>
+                            <option value="Auto-Loader Shotgun">Auto-Loader Shotgun</option>
                     </select> 
                 </div>
                 <div data-role="fieldcontain">
@@ -141,7 +109,7 @@
 <!--Display Items-->
 	<div data-role="page" id="display" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         <!--Dynamic Content-->
@@ -159,7 +127,7 @@
 <!--Revolver Pisols-->
 	<div data-role="page" id="rPistols" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Revolver Pisols</h2>
@@ -176,7 +144,7 @@
 
 	<div data-role="page" id="aPistols" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Semi-Auto Pistols</h2>
@@ -194,7 +162,7 @@
 <!--Bolt Rifles-->
 	<div data-role="page" id="bRifles" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Bolt Rifles</h2>
@@ -212,7 +180,7 @@
 <!--Semi-Auto Rifles-->
 	<div data-role="page" id="aRifles" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Semi-Auto Rifles</h2>
@@ -228,9 +196,9 @@
     </div>
 
 <!--Pump Shotguns-->
-	<div data-role="page" id="pShot" >    	<div data-role="header" data-position="fixed">
+	<div data-role="page" id="pSHot" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Pump Shotguns</h2>
@@ -248,7 +216,7 @@
 <!--Auto-Loader Shotguns-->
 	<div data-role="page" id="aShot" >    	<div data-role="header" data-position="fixed">
             <a href="#home" data-role="button" data-transition="slideup" data-theme="e" data-icon="home">Home</a>
-            <h1>Wrong Gun Collector</h1>
+            <h1>Gun Collector</h1>
         </div>
 		<div data-role="content" id="myList">
         	<h2>Auto-Loader Shotguns</h2>
@@ -267,7 +235,6 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="js/libs/jquery.tinysort.1.1.1/scripts/jquery.tinysort.min.js"></script>
     <script src="js/JSON.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </body>

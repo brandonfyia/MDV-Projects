@@ -1,7 +1,7 @@
 /*
  	Brandon Sease
     MIU 11/12
-    Project 4
+    Project 1&2
 */
 
 var json = {
@@ -23,14 +23,14 @@ var json = {
 				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
 				"gMake"   : ["Gun Make: ","Benneli"],
 				"gModel"  : ["Gun Model: ", "M4"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
+				"gCal"    : ["Caliber: ", "12 guage"],
 				"notes"   : ["Notes: ", "Added Rail"]
 			},
 			"gun4": {
 				"gCat"    : ["Gun Type: ", "Revolver Pistol"],
 				"gMake"   : ["Gun Make: ","Smith and Wesson"],
 				"gModel"  : ["Gun Model: ", "Governor"],
-				"gCal"    : ["Caliber: ", ".410 gauge"],
+				"gCal"    : ["Caliber: ", ".410 guage"],
 				"notes"   : ["Notes: ", "	"]
 			},
 			"gun5": {
@@ -44,7 +44,7 @@ var json = {
 				"gCat"    : ["Gun Type: ", "Pump Shotgun"],
 				"gMake"   : ["Gun Make: ","Mossburg"],
 				"gModel"  : ["Gun Model: ", "500"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
+				"gCal"    : ["Caliber: ", "12 guage"],
 				"notes"   : ["Notes: ", "Chainsaw"]
 			},
 			"gun7": {
@@ -58,7 +58,7 @@ var json = {
 				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
 				"gMake"   : ["Gun Make: ","Remington"],
 				"gModel"  : ["Gun Model: ", "1187"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
+				"gCal"    : ["Caliber: ", "12 guage"],
 				"notes"   : ["Notes: ", "Cammo"]
 			},
 			"gun9": {
@@ -100,14 +100,14 @@ var json = {
 				"gCat"    : ["Gun Type: ", "Revolver Pistol"],
 				"gMake"   : ["Gun Make: ","Taurus"],
 				"gModel"  : ["Gun Model: ", "Judge"],
-				"gCal"    : ["Caliber: ", ".410 gauge"],
+				"gCal"    : ["Caliber: ", ".410 guage"],
 				"notes"   : ["Notes: ", ""]
 			},
 			"gun15": {
 				"gCat"    : ["Gun Type: ", "Pump Shotgun"],
 				"gMake"   : ["Gun Make: ","Remington"],
 				"gModel"  : ["Gun Model: ", "870"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
+				"gCal"    : ["Caliber: ", "12 guage"],
 				"notes"   : ["Notes: ", "Rails"]
 			},
 			"gun16": {

@@ -1,7 +1,7 @@
 /*
  	Brandon Sease
     MIU 11/12
-    Project 4
+    Project 1&2
 */
 
 var json = {
