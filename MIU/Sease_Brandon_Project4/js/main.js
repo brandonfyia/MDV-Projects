@@ -1,3 +1,4 @@
+
 /*
  	Brandon Sease
     MIU 11/12
@@ -93,8 +94,6 @@ $(document).ready (function() {
 		makeSubList.appendChild(imageLi);
 		imageLi.setAttribute("src", "img/clear.gif");
 		imageLi.style.background = "url(img/master.gif) -"+pixels+"px 0px";
-		imageLi.style.height = "80px";
-		imageLi.style.width = "80px";
 	};
 	
 	//AUTO FILL DATA
