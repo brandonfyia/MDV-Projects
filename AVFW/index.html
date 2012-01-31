@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--
+    Brandon Sease
+    MIU 11/12
+    Project 4
+-->
+<html>
+<head>
+    <title>Gun Collector</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This application helps keep track of the guns in your collection." />
+    <meta name="keywords" content="guns, firearms,  mobile development, Full Sail University" />
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="css/themes/guncollector.min.css" />
+    <script src="js/libs/modernizr.custom.min.js" type="text/javascript"></script>
+    <style>
+    	.ui-page {
+			background:url(img/background.jpg) fixed;
+			}
+    </style>
+</head>
+
+<body>
+<!--HOME PAGE-->	
+	<div data-role="page" id="home">
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	  <p>This application is to help firearm collectors keep track of the guns they own.</p>
+        	  <a href="#addItem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Add A New Gun!</h2></a></blockquote>
+              <div data-role="collapsible-set" data-collapsed="true">          
+                <div data-role="collapsible">
+                      <h3>Browse Or Search Your Guns</h3>
+                      <ul data-role="listview" data-filter="true" data-inset="true">
+                        <li><a href="#display" id="displayLink1">All Guns</a></li>                        
+                        <li data-role="list-divider" data-theme="b">Pistols</li>
+                        <li><a href="#rPistols">Revolver Pistols</a></li>
+                        <li><a href="#aPistols">Semi-Auto Pistols</a></li>
+                        <li data-role="list-divider" data-theme="b">Rifles</li>
+                        <li><a href="#bRifles">Bolt Rifles</a></li>
+                        <li><a href="#aRifles">Semi-Auto Rifles</a></li>
+                        <li data-role="list-divider"data-theme="b">Shotguns</li>
+                        <li><a href="#pShot">Pump Shotguns</a></li>
+                        <li><a href="#aShot">Auto-Loader Shotguns</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink2" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+<!--ADD ITEM-->    
+	<div data-role="page" id="addItem" >    	
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+            <form action="" method="post" id="mainForm">
+                <div data-role="fieldcontain">
+                    <label for="gCat">What kind of gun is it? </label>
+                    <select name="gCat" id="gCat" class="required" >
+                    	<option data-placeholder="true" value>--Select Firearm Category--</option> 
+                            <option value="Revolver Pistol">Revolver Pistol</option>
+                            <option value="Semi-Auto Pistol">Semi-Auto Pistol</option>
+                            <option value="Bolt Rifle">Bolt Rifle</option>
+                            <option value="Semi-Auto Rifle">Semi-Auto Rifle</option>
+                            <option value="Pump Shotgun">Pump Shotgun</option>
+                            <option value="Auto-Loader Shotgun">Auto-Loader Shotgun</option>
+                    </select> 
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    <label for="gMake">Gun Make: </label>
+                    <input type="text" data-theme="b" name="gMake" id="gMake" class="required" placeholder=" ex: SIG Sauer"  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    <label for="gModel">Gun Model: </label>
+                    <input type="text" data-theme="b" name="gModel" id="gModel" class="required" placeholder=" ex: P220"  />
+                </div>
+                <div data-role="fieldcontain" data-theme="b">
+                    <label for="gCal">Caliber: </label>
+                    <input type="text" data-theme="b" name="gCal" id="gCal" class="required" placeholder=" ex: .45 ACP"  />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="notes" />Notes: 
+                    <textarea data-theme="b" name="notes" id="notes" placeholder="Any addional special colors or accessories can go here."></textarea>
+                </div>
+                <input type="submit" value="Save Gun" data-icon="plus" data-iconpos="right" data-theme="a" />                                                  
+			</form>
+		</div>
+        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#" id="clear1" data-transition="slide" data-theme="b" data-icon="alert">Delete All Firearms</a></li>
+              <li><a href="#display" id="displayLink3" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+           	</ul>
+          </div>
+        </div>
+    </div>
+<!--Display Items-->
+	<div data-role="page" id="display" >
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+		<div data-role="content" id="myList" data-theme="a">
+        <!--Dynamic Content-->
+        </div>        
+        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#" id="clear2" data-transition="slide" data-theme="b" data-icon="alert">Delete All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Revolver Pisols-->
+	<div data-role="page" id="rPistols" >
+        	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Revolver Pisols</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink4" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+	<div data-role="page" id="aPistols" >    	
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Semi-Auto Pistols</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink4" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Bolt Rifles-->
+	<div data-role="page" id="bRifles" >
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Bolt Rifles</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink6" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Semi-Auto Rifles-->
+	<div data-role="page" id="aRifles" >
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Semi-Auto Rifles</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink7" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Pump Shotguns-->
+	<div data-role="page" id="pShot" >
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Pump Shotguns</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink8" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Auto-Loader Shotguns-->
+	<div data-role="page" id="aShot" > 
+    	<div data-role="header" data-position="fixed">
+            <img src="img/logo.gif">
+            <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <div data-role="content" data-theme="a">
+        	<h2>Auto-Loader Shotguns</h2>
+            <p>Coming Soon.</p>
+        </div>        <div data-role="footer" data-position="fixed" data-id="main">
+          <div data-role="navbar">
+          	<ul>
+              <li><a href="#display" id="displayLink9" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+              <li><a href="#addItem" id="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>                
+           	</ul>
+          </div>
+        </div>
+    </div>
+
+<!--Scripts-->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="js/JSON.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
