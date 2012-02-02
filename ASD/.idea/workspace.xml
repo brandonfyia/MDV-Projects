@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f7aa326-267f-4842-8a9e-f3920dba852d" name="Default" comment="" />
+    <list default="true" id="3f7aa326-267f-4842-8a9e-f3920dba852d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Links.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MIU-project4.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="ASD WK 1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,7 +92,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="33" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.33285713">
+            <state line="40" column="46" selection-start="972" selection-end="972" vertical-scroll-proportion="0.22571428">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -166,7 +170,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -571,7 +575,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="33" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.33285713">
+        <state line="40" column="46" selection-start="972" selection-end="972" vertical-scroll-proportion="0.22571428">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
