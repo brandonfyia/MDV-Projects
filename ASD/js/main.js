@@ -1,14 +1,12 @@
-
 /*
  	Brandon Sease
-    MIU 11/12
-    Project 4
+    ASD 02/12
+    Project 1
 */
-
 
 //Functions
 
-$(document).ready (function() {
+$(document).ready(function(){
 	
 	var mForm = $("#mainForm");
 	mForm.validate({
@@ -47,28 +45,21 @@ $(document).ready (function() {
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
             };
-		var getDiv = document.getElementById("myList");
-		var makeUl = document.createElement("ul");
-		makeUl.setAttribute("data-role", "listview");
-		makeUl.setAttribute("data-filter", "true");
-		makeUl.setAttribute("id", "theList");		
-		getDiv.appendChild(makeUl);
+		$("ul").appendTo("#myList").attr({
+            data-role: 'listview',
+            data-filter: "true",
+            id: "theList"
+        });
         for (var i=0, len=localStorage.length; i<len; i++) {
-			var makeLi = document.createElement("li");
-			makeUl.appendChild(makeLi);
+            $('li').appendTo("#theList");
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
-			var makeH3 = document.createElement("h3");
-			getImg(obj.gCat[1], makeLi)
-			makeLi.appendChild(makeH3);
-			makeH3.innerHTML = obj.gModel[1];
-			for (var n in obj) {	
-				var makeP = document.createElement("p");
-				makeLi.appendChild(makeP);
-                var optSubText = obj[n][0]+" "+obj[n][1];
-                makeP.innerHTML = optSubText;
-            };
+			getImg(obj.gCat[1], makeLi);
+			$("<h3>"+ obj.gModel[1] +"</h3>").appendTo("li");
+            for (var n in obj) {	
+                $("li").append("<p>"+ optSubText +"</p>")
+            }
         };
 		$("#theList").listview("refresh");
 	};
@@ -78,7 +69,7 @@ $(document).ready (function() {
 	function getImg(catName, makeSubList) {
 		var pixels = 0;
 		if (catName === "Revolver Pistol") {
-			var pixels = 0
+			var pixels = 0;
 		} else if (catName === "Semi-Auto Pistol") {
 			var pixels = 80;
 		} else if (catName === "Bolt Rifle") {
