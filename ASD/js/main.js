@@ -45,23 +45,21 @@ $(document).ready(function(){
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
             };
-		$("ul").appendTo("#myList").attr({
-            data-role: 'listview',
-            data-filter: "true",
-            id: "theList"
-        });
+		$("<ul data-role='listview' data-filter='true' id='theList'></ul>").appendTo("#myList");
         for (var i=0, len=localStorage.length; i<len; i++) {
-            $('li').appendTo("#theList");
+            var makeLi = $('<li></li>').appendTo("#theList");
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
+            makeLi;
 			getImg(obj.gCat[1], makeLi);
-			$("<h3>"+ obj.gModel[1] +"</h3>").appendTo("li");
-            for (var n in obj) {	
-                $("li").append("<p>"+ optSubText +"</p>")
-            }
+			$("<h3>"+ obj.gModel[1] +"</h3>").appendTo("#theList li:last");
+            for (var n in obj) {
+                var optSubText = obj[n][0]+" "+obj[n][1];
+                $("#theList li:last").append("<p>"+ optSubText +"</p>");
+            };
+//            makeItemLinks(localStorage.key(i), makeLi);
         };
-		$("#theList").listview("refresh");
 	};
 	
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
@@ -81,10 +79,7 @@ $(document).ready(function(){
 		} else if (catName === "Auto-Loader Shotgun") {
 			var pixels = 400
 		};
-		var imageLi = document.createElement("img");
-		makeSubList.appendChild(imageLi);
-		imageLi.setAttribute("src", "img/clear.gif");
-		imageLi.style.background = "url(img/master.gif) -"+pixels+"px 0px";
+		$("<img src='img/clear.gif'>").appendTo("#theList li:last").css("background", "url(img/master.gif) -"+pixels+"px 0px");
 	};
 	
 	//AUTO FILL DATA
@@ -98,28 +93,17 @@ $(document).ready(function(){
     
 	//Edit and Delete Functions 
 	
-	function makeItemLinks(key, linksLi) {
-		var editLink = document.createElement("a");
-		editLink.href = "#addItem";
-		editLink.key = key;
-		var editText = "Edit Firearm";
+	function makeItemLinks(key, makeLi) {
+		var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
+        editLink;
 		editLink.addEventListener("click", editItem);
-		editLink.innerHTML = editText;
-		linksLi.appendChild(editLink);
-		
-		var breakTag = document.createElement("br");
-		linksLi.appendChild(breakTag);
-		linksLi.style.listStyleType = "none";
-		
-		var deleteLink = document.createElement("a");
-		deleteLink.href = "#";
-		deleteLink.key = key;
-		var deleteText = "Delete Firearm";
-		deleteLink.addEventListener("click", deleteItem);
-		deleteLink.innerHTML = deleteText;
-		linksLi.appendChild(deleteLink);
-	}; 
-	
+        editLink.key = key;
+        var deleteLink = $("<a href='#'>Delete Firearm</a>").appendTo("#theList li:last").css("display", "block");
+        deleteLink;
+        deleteLink.key = key;
+        deleteLink.addEventListener("click", deleteItem);
+	};
+
 	function editItem() {
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
@@ -130,8 +114,8 @@ $(document).ready(function(){
 		$("#notes").value = item.notes[1];
 		save.removeEventListener("click", storeData);
 		$("#submit").value = "Edit Firearm";
-		var editSubmit = $("#submit");
-		editSubmit.addEventListener("click", validate);
+		var editSubmit = $("#submit").click(validate);
+		editSubmit;
 		editSubmit.key = this.key;
 	};
 		
@@ -164,33 +148,20 @@ $(document).ready(function(){
 	};
 //Set Link & Submit Click Events
     
-	var disp1 = $("#displayLink1");
-	disp1.click(getData);
-	var disp2 = $("#displayLink2");
-	disp2.click(getData);
-	var disp3 = $("#displayLink3");
-	disp3.click(getData);
-	var disp4 = $("#displayLink4");
-	disp4.click(getData);
-	var disp5 = $("#displayLink5");
-	disp5.click(getData);
-	var disp6 = $("#displayLink6");
-	disp6.click(getData);
-	var disp7 = $("#displayLink7");
-	disp7.click(getData);
-	var disp8 = $("#displayLink8");
-	disp8.click(getData);
-	var disp9 = $("#displayLink9");
-	disp9.click(getData);
-    var clearLink1 = $("#clear1");
-    clearLink1.click(clearLocal);
-    var clearLink2 = $("#clear2");
-    clearLink2.click(clearLocal);
-//    var save = $("#submit");
-//    save.click(storeData);
+       $("#displayLink1").click(getData);
+	   $("#displayLink2").click(getData);
+	   $("#displayLink3").click(getData);
+	   $("#displayLink4").click(getData);
+	   $("#displayLink5").click(getData);
+	   $("#displayLink6").click(getData);
+	   $("#displayLink7").click(getData);
+	   $("#displayLink8").click(getData);
+	   $("#displayLink9").click(getData);
+       $("#clear1").click(clearLocal);
+       $("#clear2").click(clearLocal);
+
 
     // Variable Defaults
     
 
 });
-
