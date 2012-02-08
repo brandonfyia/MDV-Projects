@@ -45,7 +45,6 @@ $(document).ready(function(){
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
             };
-		$("<ul data-role='listview' data-filter='true' id='theList'></ul>").appendTo("#myList");
         for (var i=0, len=localStorage.length; i<len; i++) {
             var makeLi = $('<li></li>').appendTo("#theList");
             var key = localStorage.key(i);
@@ -60,6 +59,7 @@ $(document).ready(function(){
             };
 //            makeItemLinks(localStorage.key(i), makeLi);
         };
+        $('#theList').listview('refresh');
 	};
 	
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
@@ -96,12 +96,12 @@ $(document).ready(function(){
 	function makeItemLinks(key, makeLi) {
 		var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
         editLink;
-		editLink.addEventListener("click", editItem);
+		editLink.click(editItem());
         editLink.key = key;
         var deleteLink = $("<a href='#'>Delete Firearm</a>").appendTo("#theList li:last").css("display", "block");
         deleteLink;
         deleteLink.key = key;
-        deleteLink.addEventListener("click", deleteItem);
+        deleteLink.click(deleteItem());
 	};
 
 	function editItem() {
@@ -112,7 +112,7 @@ $(document).ready(function(){
 		$("#gModel").value = item.gModel[1];
 		$("#gCal").value = item.gCal[1];
 		$("#notes").value = item.notes[1];
-		save.removeEventListener("click", storeData);
+		save.unbind("click", storeData());
 		$("#submit").value = "Edit Firearm";
 		var editSubmit = $("#submit").click(validate);
 		editSubmit;
@@ -146,22 +146,14 @@ $(document).ready(function(){
 			alert("Firearm Saved.");
 		};
 	};
-//Set Link & Submit Click Events
+
+    //Set Link & Submit Click Events
     
-       $("#displayLink1").click(getData);
-	   $("#displayLink2").click(getData);
-	   $("#displayLink3").click(getData);
-	   $("#displayLink4").click(getData);
-	   $("#displayLink5").click(getData);
-	   $("#displayLink6").click(getData);
-	   $("#displayLink7").click(getData);
-	   $("#displayLink8").click(getData);
-	   $("#displayLink9").click(getData);
-       $("#clear1").click(clearLocal);
-       $("#clear2").click(clearLocal);
+    $(".display").click(getData);
+    $(".clear").click(clearLocal);
 
 
     // Variable Defaults
-    
+
 
 });
