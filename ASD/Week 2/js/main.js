@@ -40,13 +40,34 @@ $(document).ready(function(){
 
     //Get Items
 
+    //JSON
+    var getJSON = function getJSON() {
+        $.ajax({
+            url: "xhr/data.json",
+            type: "GET",
+            dataType: "json",
+            success: function(data){
+                for (var n in data) {
+                    var id = Math.floor(Math.random()*100000000000000);
+                    localStorage.setItem(id, JSON.stringify(data[n]));
+                    console.log(data[n]);
+                };
+                getData(data);
+            },
+            error:function(data){
+                alert("you messed up!")
+                console.log(data);
+            }
+        });
+    };
 
-    var getData = function getData() {
+
+    var getData = function getData(data) {
 //        if (localStorage.length === 0) {
 //            autoFillData();
 //			alert("No Firearms Saved Yet! So default data was added.")
 //            };
-        for (var i=0, len=localStorage.length; i<len; i++) {
+        for (var i=0, len=data.length; i<len; i++) {
             var makeLi = $('<li></li>').appendTo("#theList");
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
@@ -82,27 +103,6 @@ $(document).ready(function(){
 		$("<img src='img/clear.gif'>").appendTo("#theList li:last").css("background", "url(img/master.gif) -"+pixels+"px 0px");
 	};
 
-	//AUTO FILL DATA
-    var getJSON = function getJSON() {
-            $.ajax({
-                url: "xhr/data.js",
-                type: "GET",
-                dataType: "json",
-                async: false,
-                success: function(data){
-                    console.log(data.items);
-                    var items = data
-                    for (var n in items) {
-                        var id = Math.floor(Math.random()*100000000000000);
-                        localStorage.setItem(id, JSON.stringify(items[n]));
-                    };
-                    getData;
-                },
-                error:function(data){
-                    console.log(data);
-                }
-        });
-    };
     //Edit and Delete Functions
 
 	var makeItemLinks = function makeItemLinks(key, makeLi) {
@@ -167,6 +167,7 @@ $(document).ready(function(){
 
     // Variable Defaults
 
+    var items = [];
 
 });
 
