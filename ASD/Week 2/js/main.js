@@ -7,7 +7,7 @@
 //Functions
 
 $(document).ready(function(){
-	
+
 	var mForm = $("#mainForm");
 	mForm.validate({
 		invalidHandler: function(form, validator){},
@@ -17,9 +17,9 @@ $(document).ready(function(){
 			storeData(data);
 			}
 		});
-	
 
-    
+
+
     var storeData = function storeData(data) {
 		if (!data.key) {
 	        var id       = Math.floor(Math.random()*1000000001);
@@ -37,9 +37,9 @@ $(document).ready(function(){
         localStorage.setItem(id, JSON.stringify(item));
         alert(item.gMake[1]+" "+item.gModel[1]+" saved.");
     };
-    
+
     //Get Items
-    
+
     var getData = function getData() {
         if (localStorage.length === 0) {
             autoFillData();
@@ -57,13 +57,12 @@ $(document).ready(function(){
                 var optSubText = obj[n][0]+" "+obj[n][1];
                 $("#theList li:last").append("<p>"+ optSubText +"</p>");
             };
-//            makeItemLinks(localStorage.key(i), makeLi);
         };
         $('#theList').listview('refresh');
 	};
-	
+
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
-	
+
 	var getImg = function getImg(catName, makeSubList) {
 		var pixels = 0;
 		if (catName === "Revolver Pistol") {
@@ -81,7 +80,7 @@ $(document).ready(function(){
 		};
 		$("<img src='img/clear.gif'>").appendTo("#theList li:last").css("background", "url(img/master.gif) -"+pixels+"px 0px");
 	};
-	
+
 	//AUTO FILL DATA
 	var autoFillData = function autoFillData() {
 		for (var n in json) {
@@ -89,10 +88,10 @@ $(document).ready(function(){
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		};
 	};
-		 
-    
-	//Edit and Delete Functions 
-	
+
+
+	//Edit and Delete Functions
+
 	var makeItemLinks = function makeItemLinks(key, makeLi) {
 		var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
         editLink;
@@ -118,9 +117,9 @@ $(document).ready(function(){
 		editSubmit;
 		editSubmit.key = this.key;
 	};
-		
+
     //Clear Items
-    
+
     var clearLocal = function clearLocal() {
 		if(localStorage.length === 0) {
             alert("No Firearms Saved.");
@@ -133,10 +132,10 @@ $(document).ready(function(){
 				return false;
 			}else {
 				alert("Firearms Still Saved.");
-			};
+            }
         };
     };
-    
+
 	var deleteItem = function deleteItem () {
 		var ask = confirm("Are you sure you want to remove this Firearm?");
 		if(ask) {
@@ -144,11 +143,11 @@ $(document).ready(function(){
 			window.location.reload();
 		}else {
 			alert("Firearm Saved.");
-		};
-	};
+        }
+    };
 
     //Set Link & Submit Click Events
-    
+
     $(".display").click(getData);
     $(".clear").click(clearLocal);
 
@@ -157,3 +156,11 @@ $(document).ready(function(){
 
 
 });
+
+//$.ajax({
+//    url:"xhr/data.json",
+//    type:"GET",
+//    dataType:"json",
+//    success:function(result){console.log(result);},
+//    error:function(result){console.log(result);}
+//});
