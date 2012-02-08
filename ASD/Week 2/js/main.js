@@ -20,7 +20,7 @@ $(document).ready(function(){
 	
 
     
-    function storeData(data) {
+    var storeData = function storeData(data) {
 		if (!data.key) {
 	        var id       = Math.floor(Math.random()*1000000001);
 		} else {
@@ -40,7 +40,7 @@ $(document).ready(function(){
     
     //Get Items
     
-    function getData() {
+    var getData = function getData() {
         if (localStorage.length === 0) {
             autoFillData();
 			alert("No Firearms Saved Yet! So default data was added.")
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
 	
-	function getImg(catName, makeSubList) {
+	var getImg = function getImg(catName, makeSubList) {
 		var pixels = 0;
 		if (catName === "Revolver Pistol") {
 			var pixels = 0;
@@ -83,7 +83,7 @@ $(document).ready(function(){
 	};
 	
 	//AUTO FILL DATA
-	function autoFillData() {
+	var autoFillData = function autoFillData() {
 		for (var n in json) {
 			var id = Math.floor(Math.random()*100000000000000);
 			localStorage.setItem(id, JSON.stringify(json[n]));
@@ -93,7 +93,7 @@ $(document).ready(function(){
     
 	//Edit and Delete Functions 
 	
-	function makeItemLinks(key, makeLi) {
+	var makeItemLinks = function makeItemLinks(key, makeLi) {
 		var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
         editLink;
 		editLink.click(editItem());
@@ -104,7 +104,7 @@ $(document).ready(function(){
         deleteLink.click(deleteItem());
 	};
 
-	function editItem() {
+	var editItem = function editItem() {
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
 		$("#gCat").value = item.gCat[1];
@@ -121,7 +121,7 @@ $(document).ready(function(){
 		
     //Clear Items
     
-    function clearLocal() {
+    var clearLocal = function clearLocal() {
 		if(localStorage.length === 0) {
             alert("No Firearms Saved.");
         } else {
@@ -137,7 +137,7 @@ $(document).ready(function(){
         };
     };
     
-	function deleteItem () {
+	var deleteItem = function deleteItem () {
 		var ask = confirm("Are you sure you want to remove this Firearm?");
 		if(ask) {
 			localStorage.removeItem(this.key);
