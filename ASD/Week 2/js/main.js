@@ -26,7 +26,7 @@ $(document).ready(function(){
 		} else {
 			var id       = data.key;
 		};
-		console.log(item)
+		console.log(item);
         var item         = {};
             item.gCat    = ["Gun Type:", data[0].value];
             item.gMake   = ["Gun Make:", data[1].value];
@@ -40,11 +40,12 @@ $(document).ready(function(){
 
     //Get Items
 
+
     var getData = function getData() {
-        if (localStorage.length === 0) {
-            autoFillData();
-			alert("No Firearms Saved Yet! So default data was added.")
-            };
+//        if (localStorage.length === 0) {
+//            autoFillData();
+//			alert("No Firearms Saved Yet! So default data was added.")
+//            };
         for (var i=0, len=localStorage.length; i<len; i++) {
             var makeLi = $('<li></li>').appendTo("#theList");
             var key = localStorage.key(i);
@@ -58,7 +59,7 @@ $(document).ready(function(){
                 $("#theList li:last").append("<p>"+ optSubText +"</p>");
             };
         };
-        $('#theList').listview('refresh');
+        $('.itemList').listview('refresh');
 	};
 
 	//Get Image for correct cat.  !!! Using CSS Sprites !!!
@@ -82,15 +83,25 @@ $(document).ready(function(){
 	};
 
 	//AUTO FILL DATA
-	var autoFillData = function autoFillData() {
-		for (var n in json) {
-			var id = Math.floor(Math.random()*100000000000000);
-			localStorage.setItem(id, JSON.stringify(json[n]));
-		};
-	};
-
-
-	//Edit and Delete Functions
+    var getJSON = function getJSON() {
+            $.ajax({
+                url: "xhr/JSON.js",
+                type: "GET",
+                dataType: "json",
+                success: function(data){
+                    console.log(data);
+                    for (var n in data) {
+                        var id = Math.floor(Math.random()*100000000000000);
+                        localStorage.setItem(id, JSON.stringify(json[n]));
+                    };
+                    getData;
+                },
+                error:function(data){
+                    console.log(data);
+                }
+        });
+    };
+    //Edit and Delete Functions
 
 	var makeItemLinks = function makeItemLinks(key, makeLi) {
 		var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
@@ -133,7 +144,7 @@ $(document).ready(function(){
 			}else {
 				alert("Firearms Still Saved.");
             }
-        };
+        }
     };
 
 	var deleteItem = function deleteItem () {
@@ -148,7 +159,7 @@ $(document).ready(function(){
 
     //Set Link & Submit Click Events
 
-    $(".display").click(getData);
+    $("#json").click(getJSON);
     $(".clear").click(clearLocal);
 
 
