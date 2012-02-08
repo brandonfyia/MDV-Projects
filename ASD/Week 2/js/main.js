@@ -85,14 +85,16 @@ $(document).ready(function(){
 	//AUTO FILL DATA
     var getJSON = function getJSON() {
             $.ajax({
-                url: "xhr/JSON.js",
+                url: "xhr/data.js",
                 type: "GET",
                 dataType: "json",
+                async: false,
                 success: function(data){
-                    console.log(data);
-                    for (var n in data) {
+                    console.log(data.items);
+                    var items = data
+                    for (var n in items) {
                         var id = Math.floor(Math.random()*100000000000000);
-                        localStorage.setItem(id, JSON.stringify(json[n]));
+                        localStorage.setItem(id, JSON.stringify(items[n]));
                     };
                     getData;
                 },
