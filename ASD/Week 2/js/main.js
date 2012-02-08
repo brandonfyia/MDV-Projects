@@ -1,7 +1,7 @@
 /*
  	Brandon Sease
     ASD 02/12
-    Project 2                       Re-Test!!!!!!!!
+    Project 2
 */
 
 //Functions
