@@ -118,14 +118,20 @@
             <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
         </div>
 		<div data-role="content" id="myList" data-theme="a">
-            <p>Which gun cabinet would you like to check?</p>
-            <a href="#" id="json" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Pistol Cabinet (JSON)</h2></a>
-            <a href="#" id="xml" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Rifle Cabinet (XML)</h2></a>
-            <a href="#" id="csv" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Shotgun Cabinet (CSV)</h2></a>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h3>Which gun cabinet would you like to check?</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="list-divider" data-theme="b"><a href="#" id="json" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Pistol Cabinet (JSON)</h2></a></li>
+                        <li data-role="list-divider" data-theme="b"><a href="#" id="xml" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Rifle Cabinet (XML)</h2></a></li>
+                        <li data-role="list-divider" data-theme="b"><a href="#" id="csv" data-icon="arrow-r" data-iconpos="right" data-theme="b"><h2>Shotgun Cabinet (CSV)</h2></a></li>
+                    </ul>
+                </div>
+            </div>
         <!--Dynamic Content-->
             <ul data-role='listview' data-filter='true' class="itemList" id='theList'>
             </ul>
-        </div>        
+        </div>
         <div data-role="footer" data-position="fixed" data-id="main">
           <div data-role="navbar">
           	<ul>

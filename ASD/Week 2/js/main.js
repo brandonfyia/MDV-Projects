@@ -47,7 +47,6 @@ $("#display").live("pageinit", function(){
     //Get Items
 
     //JSON
-    $("#json").click(getJSON);
 
     var getJSON = function getJSON() {
         $.ajax({
@@ -55,8 +54,8 @@ $("#display").live("pageinit", function(){
             type: "GET",
             dataType: "json",
             success:function(data){
+                alert("you did good!");
                 console.log(data);
-                getData(data);
             },
             error:function(data){
                 alert("you messed up!");
@@ -64,9 +63,9 @@ $("#display").live("pageinit", function(){
             }
         });
     };
+    $("#json").click(getJSON);
 
     //XML
-    $("#xml").click(getXML);
 
     var getXML = function getXML() {
         $.ajax({
@@ -74,7 +73,16 @@ $("#display").live("pageinit", function(){
             type: "GET",
             dataType: "xml",
             success:function(data){
-                console.log(data);
+                alert("you did good!");
+
+                $(data).find("item").each(function(){
+                    $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
+                        "<li>"+ $(this).find('gCat').text()+"</li>" +
+                        "<li>"+ $(this).find('gMake').text()+"</li>" +
+                        "<li>"+ $(this).find('gModel').text()+"</li>" +
+                        "<li>"+ $(this).find('gCal').text()+"</li>" +
+                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
+                });
             },
             error:function(data){
                 alert("you messed up again!");
@@ -82,7 +90,7 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-
+    $("#xml").click(getXML);
 
     var getData = function getData(data) {
 //        if (localStorage.length === 0) {
