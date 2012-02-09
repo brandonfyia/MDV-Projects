@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a92e32-9236-4b93-80ce-94955c83c80a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 2/js/main.js" afterPath="$PROJECT_DIR$/ASD/Week 2/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MDV-Projects.iml" afterPath="$PROJECT_DIR$/MDV-Projects.iml" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +72,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ASD/Week 2/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="58" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.08391608">
+            <state line="50" column="31" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.02097902">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#102#107#0" expanded="false" />
@@ -508,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 2/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="58" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.08391608">
+        <state line="50" column="31" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.02097902">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#102#107#0" expanded="false" />
