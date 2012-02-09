@@ -81,7 +81,7 @@ $("#display").live("pageinit", function(){
                         "<li>"+ $(this).find('gMake').text()+"</li>" +
                         "<li>"+ $(this).find('gModel').text()+"</li>" +
                         "<li>"+ $(this).find('gCal').text()+"</li>" +
-                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
+                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml ul");
                 });
             },
             error:function(data){
