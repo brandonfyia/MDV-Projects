@@ -9,6 +9,7 @@
     <orderEntry type="library" name="jquery.mobile-1.0.min" level="application" />
     <orderEntry type="library" name="jquery-1.6.4.min" level="application" />
     <orderEntry type="library" name="jquery.min" level="application" />
+    <orderEntry type="library" name="jquery.validate.min" level="application" />
   </component>
 </module>
 
