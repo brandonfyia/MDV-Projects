@@ -28,7 +28,7 @@ $("#addItem").live("pageinit", function(){
             var id       = Math.floor(Math.random()*1000000001);
         } else {
             var id       = data.key;
-        };
+        }
         console.log(item);
         var item         = {};
         item.gCat    = ["Gun Type:", data[0].value];
@@ -47,16 +47,37 @@ $("#display").live("pageinit", function(){
     //Get Items
 
     //JSON
+    $("#json").click(getJSON);
+
     var getJSON = function getJSON() {
         $.ajax({
             url: "xhr/data.json",
             type: "GET",
             dataType: "json",
-            success: function(data){
+            success:function(data){
+                console.log(data);
                 getData(data);
             },
             error:function(data){
-                alert("you messed up!")
+                alert("you messed up!");
+                console.log(data);
+            }
+        });
+    };
+
+    //XML
+    $("#xml").click(getXML);
+
+    var getXML = function getXML() {
+        $.ajax({
+            url: "xhr/data.xml",
+            type: "GET",
+            dataType: "xml",
+            success:function(data){
+                console.log(data);
+            },
+            error:function(data){
+                alert("you messed up again!");
                 console.log(data);
             }
         });
@@ -79,8 +100,8 @@ $("#display").live("pageinit", function(){
             for (var n in obj) {
                 var optSubText = obj[n][0]+" "+obj[n][1];
                 $("#theList li:last").append("<p>"+ optSubText +"</p>");
-            };
-        };
+            }
+        }
         $('.itemList').listview('refresh');
     };
 
@@ -100,7 +121,7 @@ $("#display").live("pageinit", function(){
             var pixels = 320
         } else if (catName === "Auto-Loader Shotgun") {
             var pixels = 400
-        };
+        }
         $("<img src='img/clear.gif'>").appendTo("#theList li:last").css("background", "url(img/master.gif) -"+pixels+"px 0px");
     };
 
@@ -159,7 +180,6 @@ $("#display").live("pageinit", function(){
             alert("Firearm Saved.");
         }
     };
-    $("#json").click(getJSON);
     $(".clear").click(clearLocal);
 });
 

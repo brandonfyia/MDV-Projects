@@ -6,13 +6,6 @@
 				"gCal"    : ["Caliber: ", ".45 ACP"],
 				"notes"   : ["Notes: ", "Elite"]
 			},
-			"gun2": {
-				"gCat"    : ["Gun Type: ", "Semi-Auto Rifle"],
-				"gMake"   : ["Gun Make: ","Daniel Defence"],
-				"gModel"  : ["Gun Model: ", "EZ Car AR 15"],
-				"gCal"    : ["Caliber: ", "5.56"],
-				"notes"   : ["Notes: ", "Several Upgrades"]
-			},
 			"gun3": {
 				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
 				"gMake"   : ["Gun Make: ","Benneli"],
@@ -26,13 +19,6 @@
 				"gModel"  : ["Gun Model: ", "Governor"],
 				"gCal"    : ["Caliber: ", ".410 gauge"],
 				"notes"   : ["Notes: ", "	"]
-			},
-			"gun5": {
-				"gCat"    : ["Gun Type: ", "Bolt Rifle"],
-				"gMake"   : ["Gun Make: ","Savage"],
-				"gModel"  : ["Gun Model: ", "110 BA"],
-				"gCal"    : ["Caliber: ", ".338 Lapua"],
-				"notes"   : ["Notes: ", "Awesome"]
 			},
 			"gun6": {
 				"gCat"    : ["Gun Type: ", "Pump Shotgun"],
@@ -61,20 +47,6 @@
 				"gModel"  : ["Gun Model: ", "19"],
 				"gCal"    : ["Caliber: ", "9mm"],
 				"notes"   : ["Notes: ", "Fourth Gen."]
-			},
-			"gun10": {
-				"gCat"    : ["Gun Type: ", "Semi-Auto Rifle"],
-				"gMake"   : ["Gun Make: ","Remington"],
-				"gModel"  : ["Gun Model: ", "ACR"],
-				"gCal"    : ["Caliber: ", "5.56"],
-				"notes"   : ["Notes: ", ""]
-			},
-			"gun11": {
-				"gCat"    : ["Gun Type: ", "Bolt Rifle"],
-				"gMake"   : ["Gun Make: ","Remington"],
-				"gModel"  : ["Gun Model: ", "700 TP"],
-				"gCal"    : ["Caliber: ", ".308"],
-				"notes"   : ["Notes: ", "10x Optic"]
 			},
 			"gun12": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
@@ -117,20 +89,6 @@
 				"gModel"  : ["Gun Model: ", "Sherrif's 45"],
 				"gCal"    : ["Caliber: ", ".45 Colt"],
 				"notes"   : ["Notes: ", "2 inch"]
-			},
-			"gun18": {
-				"gCat"    : ["Gun Type: ", "Bolt Rifle"],
-				"gMake"   : ["Gun Make: ","Blaser"],
-				"gModel"  : ["Gun Model: ", "R-93"],
-				"gCal"    : ["Caliber: ", ".300 Win Mag"],
-				"notes"   : ["Notes: ", "First Gen."]
-			},
-			"gun19": {
-				"gCat"    : ["Gun Type: ", "Semi-Auto Rifle"],
-				"gMake"   : ["Gun Make: ","Noveski"],
-				"gModel"  : ["Gun Model: ", "AR 15"],
-				"gCal"    : ["Caliber: ", ".300 BLK"],
-				"notes"   : ["Notes: ", "SBR"]
 			},
 			"gun20": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
