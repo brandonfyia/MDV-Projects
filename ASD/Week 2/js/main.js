@@ -49,24 +49,22 @@ $("#display").live("pageinit", function(){
     //JSON
 
     var getJSON = function getJSON() {
+    //  $("#json").empty();
         $.ajax({
             url: "xhr/data.json",
             type: "GET",
             dataType: "json",
             success:function(data){
-                console.log(data);
-                console.log(data.guns.length);
-                $.each(data, function(){
-                    for (var i=0, len=data.length; i<len; i++) {
-                        console.log(data.length);
-                        $("<li data-role='list-divider' data-theme='b'>"+ obj +"</li>" +
-                            "<li>"+ obj.gCat[1]+"</li>" +
-                            "<li>"+ obj.gMake[1]+"</li>" +
-                            "<li>"+ obj.gModel[1]+"</li>" +
-                            "<li>"+ obj.gCal[1]+"</li>" +
-                            "<li>"+ obj.notes[1]+"</li>").appendTo("#json");
+                    for (var i=0, len=data.guns.length; i<len; i++) {
+                        var obj = data.guns[i];
+                        $("<li data-role='list-divider' data-theme='b'>"+ obj.gMake[1] +"</li>" +
+                            "<p>"+ obj.gCat[1]+"</p>" +
+                            "<p>"+ obj.gMake[1]+"</p>" +
+                            "<p>"+ obj.gModel[1]+"</p>" +
+                            "<p>"+ obj.gCal[1]+"</p>" +
+                            "<p>"+ obj.notes[1]+"</p>").appendTo("#json");
                     };
-                });
+
             },
             error:function(data){
                 alert("you messed up!");
@@ -74,11 +72,12 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#json").click(getJSON);
+    $("#jsonLoader").click(getJSON);
 
     //XML
 
     var getXML = function getXML() {
+    //  $("#xml").empty();
         $.ajax({
             url: "xhr/data.xml",
             type: "GET",
@@ -101,9 +100,9 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#xml").click(getXML);
+    $("#xmlLoader").click(getXML);
 
-    var getYML = function getYML() {
+    var getCSV = function getCSV() {
         $.ajax({
             url: "xhr/data.yaml",
             type: "GET",
@@ -111,14 +110,14 @@ $("#display").live("pageinit", function(){
             success:function(data){
                 alert("you did good!");
                 console.log(data);
-                $(data).find("item").each(function(){
+                $(data).find("guns").each(function(){
                     data[0]
                     $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
                         "<li>"+ $(this).find('gCat').text()+"</li>" +
                         "<li>"+ $(this).find('gMake').text()+"</li>" +
                         "<li>"+ $(this).find('gModel').text()+"</li>" +
                         "<li>"+ $(this).find('gCal').text()+"</li>" +
-                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
+                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#csv");
                 });
             },
             error:function(data){
@@ -127,28 +126,7 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#yml").click(getYML);
-
-    var getData = function getData(data) {
-//        if (localStorage.length === 0) {
-//            autoFillData();
-//			alert("No Firearms Saved Yet! So default data was added.")
-//            };
-        for (var i=0, len=data.length; i<len; i++) {
-            var makeLi = $('<li></li>').appendTo("#theList");
-            var key = localStorage.key(i);
-            var value = localStorage.getItem(key);
-            var obj = data[0];
-            makeLi;
-            getImg(obj.gCat[1], makeLi);
-            $("<h3>"+ obj.gModel[1] +"</h3>").appendTo("#theList li:last");
-            for (var n in obj) {
-                var optSubText = obj[n][0]+" "+obj[n][1];
-                $("#theList li:last").append("<p>"+ optSubText +"</p>");
-            }
-        }
-        $('.itemList').listview('refresh');
-    };
+    $("#csvLoader").click(getCSV);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
 

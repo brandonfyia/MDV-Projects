@@ -21,7 +21,6 @@
 				"gCal"    : ["Caliber: ", ".40 S&amp;W"],
 				"notes"   : ["Notes: ", "Tactical"]
 			},
-			},
 			"gun6": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Glock"],
