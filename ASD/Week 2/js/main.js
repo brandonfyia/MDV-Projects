@@ -49,11 +49,12 @@ $("#display").live("pageinit", function(){
     //JSON
 
     var getJSON = function getJSON() {
-    //  $("#json").empty();
+        $("#json ul").empty();
         $.ajax({
             url: "xhr/data.json",
             type: "GET",
             dataType: "json",
+            async: false,
             success:function(data){
                     for (var i=0, len=data.guns.length; i<len; i++) {
                         var obj = data.guns[i];
@@ -62,7 +63,7 @@ $("#display").live("pageinit", function(){
                             "<p>"+ obj.gMake[1]+"</p>" +
                             "<p>"+ obj.gModel[1]+"</p>" +
                             "<p>"+ obj.gCal[1]+"</p>" +
-                            "<p>"+ obj.notes[1]+"</p>").appendTo("#json");
+                            "<p>"+ obj.notes[1]+"</p>").appendTo("#json ul");
                     };
 
             },
@@ -72,12 +73,12 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#jsonLoader").click(getJSON);
+    $("#json").click(getJSON);
 
     //XML
 
     var getXML = function getXML() {
-    //  $("#xml").empty();
+      $("#xml ul").empty();
         $.ajax({
             url: "xhr/data.xml",
             type: "GET",
@@ -85,14 +86,13 @@ $("#display").live("pageinit", function(){
             success:function(data){
                 alert("you did good!");
                 $(data).find("item").each(function(){
-                    data[0]
-                    $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
-                        "<li>"+ $(this).find('gCat').text()+"</li>" +
-                        "<li>"+ $(this).find('gMake').text()+"</li>" +
-                        "<li>"+ $(this).find('gModel').text()+"</li>" +
-                        "<li>"+ $(this).find('gCal').text()+"</li>" +
-                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
+                    $("<li><h3>"+ $(this).find('gCat').text()+"</h3>" +
+                        "<p>"+ $(this).find('gMake').text()+"</p>" +
+                        "<p>"+ $(this).find('gModel').text()+"</p>" +
+                        "<p>"+ $(this).find('gCal').text()+"</p>" +
+                        "<p>"+ $(this).find('notes').text()+"</p></li>").appendTo("#xml ul");
                 });
+                $("xml ul").listview("refresh");
             },
             error:function(data){
                 alert("you messed up again!");
@@ -100,33 +100,39 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#xmlLoader").click(getXML);
+    $("#xml").click(getXML);
 
     var getCSV = function getCSV() {
+        $("#csv ul").empty();
         $.ajax({
-            url: "xhr/data.yaml",
+            url: "xhr/data.csv",
             type: "GET",
-            dataType: "yml",
+            dataType: "text",
             success:function(data){
                 alert("you did good!");
                 console.log(data);
-                $(data).find("guns").each(function(){
-                    data[0]
-                    $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
-                        "<li>"+ $(this).find('gCat').text()+"</li>" +
-                        "<li>"+ $(this).find('gMake').text()+"</li>" +
-                        "<li>"+ $(this).find('gModel').text()+"</li>" +
-                        "<li>"+ $(this).find('gCal').text()+"</li>" +
-                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#csv");
-                });
+                var lineBrk = data.split("\n");
+                for (var i=1,lb=lineBrk.length; i<lb; i++){
+                    var rows = lineBrk[i];
+                    var guns = rows.split(",");
+                    console.log(guns[0]);
+                    $("<li><h3>"+ guns[0]+"</h3>" +
+                        "<p>"+ guns[1]+"</p>" +
+                        "<p>"+ guns[2]+"</p>" +
+                        "<p>"+ guns[3]+"</p>" +
+                        "<p>"+ guns[4]+"</p></li>").appendTo("#csv ul");
+                };
+                $("csv ul").listview("refresh");
+
             },
+
             error:function(data){
-                alert("you messed up again!");
+                alert("dummy");
                 console.log(data);
             }
         });
     };
-    $("#csvLoader").click(getCSV);
+    $("#csv").click(getCSV);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
 
