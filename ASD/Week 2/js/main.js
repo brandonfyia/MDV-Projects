@@ -54,8 +54,19 @@ $("#display").live("pageinit", function(){
             type: "GET",
             dataType: "json",
             success:function(data){
-                alert("you did good!");
                 console.log(data);
+                console.log(data.guns.length);
+                $.each(data, function(){
+                    for (var i=0, len=data.length; i<len; i++) {
+                        console.log(data.length);
+                        $("<li data-role='list-divider' data-theme='b'>"+ obj +"</li>" +
+                            "<li>"+ obj.gCat[1]+"</li>" +
+                            "<li>"+ obj.gMake[1]+"</li>" +
+                            "<li>"+ obj.gModel[1]+"</li>" +
+                            "<li>"+ obj.gCal[1]+"</li>" +
+                            "<li>"+ obj.notes[1]+"</li>").appendTo("#json");
+                    };
+                });
             },
             error:function(data){
                 alert("you messed up!");
@@ -74,14 +85,14 @@ $("#display").live("pageinit", function(){
             dataType: "xml",
             success:function(data){
                 alert("you did good!");
-
                 $(data).find("item").each(function(){
+                    data[0]
                     $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
                         "<li>"+ $(this).find('gCat').text()+"</li>" +
                         "<li>"+ $(this).find('gMake').text()+"</li>" +
                         "<li>"+ $(this).find('gModel').text()+"</li>" +
                         "<li>"+ $(this).find('gCal').text()+"</li>" +
-                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml ul");
+                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
                 });
             },
             error:function(data){
@@ -91,6 +102,32 @@ $("#display").live("pageinit", function(){
         });
     };
     $("#xml").click(getXML);
+
+    var getYML = function getYML() {
+        $.ajax({
+            url: "xhr/data.yaml",
+            type: "GET",
+            dataType: "yml",
+            success:function(data){
+                alert("you did good!");
+                console.log(data);
+                $(data).find("item").each(function(){
+                    data[0]
+                    $("<li data-role='list-divider' data-theme='b'>"+ $(this).find('gModel').text()+"</li>" +
+                        "<li>"+ $(this).find('gCat').text()+"</li>" +
+                        "<li>"+ $(this).find('gMake').text()+"</li>" +
+                        "<li>"+ $(this).find('gModel').text()+"</li>" +
+                        "<li>"+ $(this).find('gCal').text()+"</li>" +
+                        "<li>"+ $(this).find('notes').text()+"</li>").appendTo("#xml");
+                });
+            },
+            error:function(data){
+                alert("you messed up again!");
+                console.log(data);
+            }
+        });
+    };
+    $("#yml").click(getYML);
 
     var getData = function getData(data) {
 //        if (localStorage.length === 0) {

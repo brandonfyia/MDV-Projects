@@ -1,0 +1,32 @@
+---
+guns:
+        - gCat: Auto-Loader Shotgun
+          gMake: Benneli
+          gModel: M4
+          gCal: 12 gauge
+          notes: Added Quad Rail
+
+        - gCat: Pump Shotgun
+          gMake: Mossburg
+          gModel: 500
+          gCal: 12 gauge
+          notes: Chainsaw
+
+        - gCat: Auto-Loader Shotgun
+          gMake: Remington
+          gModel: 1187
+          gCal: 12 gauge
+          notes: Cammo
+
+        - gCat: Pump Shotgun
+          gMake: Remington
+          gModel: 870
+          gCal: 12 gauge
+          notes: Added Flashlight
+
+        - gCat: Auto-Loader Shotgun
+          gMake: Benneli
+          gModel: M4
+          gCal: 12 gauge
+          notes: Added Quad Rail
+...

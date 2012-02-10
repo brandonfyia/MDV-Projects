@@ -1,101 +1,75 @@
 {
-			"gun1": {
+    "guns": {
+			"gun0": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P220"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
 				"notes"   : ["Notes: ", "Elite"]
 			},
-			"gun3": {
-				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
-				"gMake"   : ["Gun Make: ","Benneli"],
-				"gModel"  : ["Gun Model: ", "M4"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
-				"notes"   : ["Notes: ", "Added Rail"]
-			},
-			"gun4": {
+			"gun2": {
 				"gCat"    : ["Gun Type: ", "Revolver Pistol"],
 				"gMake"   : ["Gun Make: ","Smith and Wesson"],
 				"gModel"  : ["Gun Model: ", "Governor"],
 				"gCal"    : ["Caliber: ", ".410 gauge"],
 				"notes"   : ["Notes: ", "	"]
 			},
-			"gun6": {
-				"gCat"    : ["Gun Type: ", "Pump Shotgun"],
-				"gMake"   : ["Gun Make: ","Mossburg"],
-				"gModel"  : ["Gun Model: ", "500"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
-				"notes"   : ["Notes: ", "Chainsaw"]
-			},
-			"gun7": {
+			"gun4": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Springfield"],
 				"gModel"  : ["Gun Model: ", "XD"],
 				"gCal"    : ["Caliber: ", ".40 S&amp;W"],
 				"notes"   : ["Notes: ", "Tactical"]
 			},
-			"gun8": {
-				"gCat"    : ["Gun Type: ", "Auto-Loader Shotgun"],
-				"gMake"   : ["Gun Make: ","Remington"],
-				"gModel"  : ["Gun Model: ", "1187"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
-				"notes"   : ["Notes: ", "Cammo"]
 			},
-			"gun9": {
+			"gun6": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Glock"],
 				"gModel"  : ["Gun Model: ", "19"],
 				"gCal"    : ["Caliber: ", "9mm"],
 				"notes"   : ["Notes: ", "Fourth Gen."]
 			},
-			"gun12": {
+			"gun7": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P226"],
 				"gCal"    : ["Caliber: ", "9mm"],
 				"notes"   : ["Notes: ", "Tactical Operations"]
 			},
-			"gun13": {
+			"gun8": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","SIG Sauer"],
 				"gModel"  : ["Gun Model: ", "P238"],
 				"gCal"    : ["Caliber: ", ".380"],
 				"notes"   : ["Notes: ", "Equinox"]
 			},
-			"gun14": {
+			"gun9": {
 				"gCat"    : ["Gun Type: ", "Revolver Pistol"],
 				"gMake"   : ["Gun Make: ","Taurus"],
 				"gModel"  : ["Gun Model: ", "Judge"],
 				"gCal"    : ["Caliber: ", ".410 gauge"],
 				"notes"   : ["Notes: ", ""]
 			},
-			"gun15": {
-				"gCat"    : ["Gun Type: ", "Pump Shotgun"],
-				"gMake"   : ["Gun Make: ","Remington"],
-				"gModel"  : ["Gun Model: ", "870"],
-				"gCal"    : ["Caliber: ", "12 gauge"],
-				"notes"   : ["Notes: ", "Rails"]
-			},
-			"gun16": {
+			"gun11": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","FNP"],
 				"gModel"  : ["Gun Model: ", "45 Tactical"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
 				"notes"   : ["Notes: ", "Red Dot Sight"]
 			},
-			"gun17": {
+			"gun12": {
 				"gCat"    : ["Gun Type: ", "Revolver Pistol"],
 				"gMake"   : ["Gun Make: ","Colt"],
 				"gModel"  : ["Gun Model: ", "Sherrif's 45"],
 				"gCal"    : ["Caliber: ", ".45 Colt"],
 				"notes"   : ["Notes: ", "2 inch"]
 			},
-			"gun20": {
+			"gun13": {
 				"gCat"    : ["Gun Type: ", "Semi-Auto Pistol"],
 				"gMake"   : ["Gun Make: ","Kimber"],
 				"gModel"  : ["Gun Model: ", "1911"],
 				"gCal"    : ["Caliber: ", ".45 ACP"],
 				"notes"   : ["Notes: ", "Eclipse II"]
 			}
-	
-		}
+    }
+}
