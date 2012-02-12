@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="starting week 3">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/.couchapprc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/_attachments/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/_attachments/style/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/_id" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/couchapp.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/query.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/evently/profile/profileReady/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/evently/profile/profileReady/selectors/form/submit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/language" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.couch.app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.couch.app.util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.evently.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.mustache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.pathbinder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/_init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/adminParty/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doLogin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doLogout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doSignup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/selectors.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedOut/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedOut/selectors.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/selectors/a[href=#signup].json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/selectors/form/submit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/selectors/a[href=#login].json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/selectors/form/submit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedIn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedOut/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedOut/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/mustache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/atom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/cache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/docform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/linkup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/mustache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/redirect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/app/views/recent-items/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD Couch/couchapp.rc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/week 3 follow along video notes.js" />
+    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MDV-Projects.iws" />
@@ -132,7 +67,7 @@
               <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.08683068">
+                    <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.13544019">
                       <folding />
                     </state>
                   </provider>
@@ -154,7 +89,7 @@
               <file leaf-file-name="week 3 follow along video notes.js" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/ASD/Week 3/week 3 follow along video notes.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="15" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.30906594">
+                    <state line="15" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.46875">
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -548,7 +483,7 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -582,16 +517,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26622516" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17025863" sideWeight="0.73377484" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17025863" sideWeight="0.67152315" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -630,7 +565,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="found an issue with chrome, switching to laptop to try firefox." />
+    <option name="LAST_COMMIT_MESSAGE" value="added couch" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -650,6 +585,7 @@
     <MESSAGE value="All Functions now var's" />
     <MESSAGE value="trying to fix background" />
     <MESSAGE value="found an issue with chrome, switching to laptop to try firefox." />
+    <MESSAGE value="added couch" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -729,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -745,14 +674,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.08683068">
+        <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.13544019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="82" selection-end="82" vertical-scroll-proportion="0.096359745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/week 3 follow along video notes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.30906594">
+        <state line="15" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.46875">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
