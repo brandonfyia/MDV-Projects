@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/ajax-loader.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/icons-18-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/icons-18-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/icons-36-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/icons-36-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/_notes/dwsync.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/_notes/dwsync.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/guncollector.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/guncollector.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASD/Week 3/css/themes/images/_notes/dwsync.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/index.html" afterPath="$PROJECT_DIR$/ASD/Week 3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/js/main.js" afterPath="$PROJECT_DIR$/ASD/Week 3/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/xhr/data.json" afterPath="$PROJECT_DIR$/ASD/Week 3/xhr/data.json" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,10 +64,10 @@
         <splitter split-orientation="horizontal" split-proportion="0.17303103">
           <split-first>
             <leaf>
-              <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="132" column="0" selection-start="7316" selection-end="7382" vertical-scroll-proportion="0.62952244">
+                    <state line="136" column="4" selection-start="7443" selection-end="7443" vertical-scroll-proportion="0.10853835">
                       <folding />
                     </state>
                   </provider>
@@ -91,10 +77,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="60" column="77" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.23076923">
+                    <state line="60" column="77" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.02097902">
                       <folding>
                         <element signature="n#!!doc" expanded="true" />
                       </folding>
@@ -111,7 +97,7 @@
           <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="12" selection-start="2091" selection-end="2091" vertical-scroll-proportion="1.3636364">
+                <state line="65" column="12" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.7062937">
                   <folding />
                 </state>
               </provider>
@@ -191,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -355,6 +340,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,8 +358,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -406,24 +392,6 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="true" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -464,6 +432,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -481,6 +467,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -507,17 +504,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -754,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="12" selection-start="2091" selection-end="2091" vertical-scroll-proportion="1.3636364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/css/_notes/dwsync.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -775,19 +754,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="7316" selection-end="7382" vertical-scroll-proportion="0.62952244">
+        <state line="60" column="77" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.02097902">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="12" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.7062937">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="77" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.23076923">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="136" column="4" selection-start="7443" selection-end="7443" vertical-scroll-proportion="0.10853835">
+          <folding />
         </state>
       </provider>
     </entry>
