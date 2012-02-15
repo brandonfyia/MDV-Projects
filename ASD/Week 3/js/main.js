@@ -23,7 +23,7 @@ $("#addItem").live("pageinit", function(){
         }
     });
 
-    var storeData = function storeData(data) {
+    var storeData = function (data) {
         if (!data.key) {
             var id       = Math.floor(Math.random()*1000000001);
         } else {
@@ -48,7 +48,7 @@ $("#display").live("pageinit", function(){
 
     //JSON
 
-    var getJSON = function getJSON() {
+    var getJSON = function () {
         $("#json ul").empty();
         $.ajax({
             url: "xhr/data.json",
@@ -58,14 +58,14 @@ $("#display").live("pageinit", function(){
             success:function(data){
                     for (var i=0, len=data.guns.length; i<len; i++) {
                         var obj = data.guns[i];
-                        $("<li data-role='list-divider' data-theme='b'>"+ obj.gMake[1] +"</li>" +
+                        $("<li data-theme='b'><h3>"+ obj.gMake[1] + "</h3>" +
                             "<p>"+ obj.gCat[1]+"</p>" +
                             "<p>"+ obj.gMake[1]+"</p>" +
                             "<p>"+ obj.gModel[1]+"</p>" +
                             "<p>"+ obj.gCal[1]+"</p>" +
-                            "<p>"+ obj.notes[1]+"</p>").appendTo("#json ul");
+                            "<p>"+ obj.notes[1]+"</p></li>").appendTo("#json ul");
                     };
-
+            $("#json ul").listview("refresh");
             },
             error:function(data){
                 alert("you messed up!");
@@ -77,22 +77,22 @@ $("#display").live("pageinit", function(){
 
     //XML
 
-    var getXML = function getXML() {
+    var getXML = function () {
       $("#xml ul").empty();
         $.ajax({
             url: "xhr/data.xml",
             type: "GET",
             dataType: "xml",
             success:function(data){
-                alert("you did good!");
                 $(data).find("item").each(function(){
-                    $("<li><h3>"+ $(this).find('gCat').text()+"</h3>" +
+                    $("<li data-theme='b'><h3>"+ $(this).find('gMake').text()+"</h3>" +
+                        "<p>"+ $(this).find('gCat').text()+"</p>" +
                         "<p>"+ $(this).find('gMake').text()+"</p>" +
                         "<p>"+ $(this).find('gModel').text()+"</p>" +
                         "<p>"+ $(this).find('gCal').text()+"</p>" +
                         "<p>"+ $(this).find('notes').text()+"</p></li>").appendTo("#xml ul");
                 });
-                $("xml ul").listview("refresh");
+                $("#xml ul").listview("refresh");
             },
             error:function(data){
                 alert("you messed up again!");
@@ -116,13 +116,14 @@ $("#display").live("pageinit", function(){
                     var rows = lineBrk[i];
                     var guns = rows.split(",");
                     console.log(guns[0]);
-                    $("<li><h3>"+ guns[0]+"</h3>" +
+                    $("<li><h3>"+ guns[1]+"</h3>" +
+                        "<p>"+ guns[0]+"</p>" +
                         "<p>"+ guns[1]+"</p>" +
                         "<p>"+ guns[2]+"</p>" +
                         "<p>"+ guns[3]+"</p>" +
                         "<p>"+ guns[4]+"</p></li>").appendTo("#csv ul");
                 };
-                $("csv ul").listview("refresh");
+                $("#csv ul").listview("refresh");
 
             },
 
