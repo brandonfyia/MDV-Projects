@@ -7,6 +7,7 @@
         <gModel>EX Car AR 15</gModel>
         <gCal>5.56</gCal>
         <notes>Several Upgrades</notes>
+        <img>4</img>
     </item>
     <item>
         <gCat>Bolt Rifle</gCat>
@@ -14,6 +15,7 @@
         <gModel>110 BA</gModel>
         <gCal>.338 Lapua</gCal>
         <notes>Awesome</notes>
+        <img>3</img>
     </item>
     <item>
         <gCat>Bolt Rifle</gCat>
@@ -21,6 +23,7 @@
         <gModel>700 TP</gModel>
         <gCal>.308</gCal>
         <notes>10x Optic</notes>
+        <img>3</img>
     </item>
     <item>
         <gCat>Semi-Auto Rifle</gCat>
@@ -28,6 +31,7 @@
         <gModel>ACR</gModel>
         <gCal>5.56</gCal>
         <notes>Several Upgrades</notes>
+        <img>4</img>
     </item>
     <item>
         <gCat>Bolt Rifle</gCat>
@@ -35,6 +39,7 @@
         <gModel>R-93</gModel>
         <gCal>.300 Win Mag</gCal>
         <notes>First Gen.</notes>
+        <img>3</img>
     </item>
     <item>
         <gCat>Semi-Auto Rifle</gCat>
@@ -42,5 +47,6 @@
         <gModel>AR 15</gModel>
         <gCal>.300 BLK</gCal>
         <notes>SBR</notes>
+        <img>4</img>
     </item>
 </items>

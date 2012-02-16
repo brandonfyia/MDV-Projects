@@ -58,6 +58,7 @@ $("#display").live("pageinit", function(){
             success:function(data){
                     for (var i=0, len=data.guns.length; i<len; i++) {
                         var obj = data.guns[i];
+                        getImg(obj.gCat[2], "#json ul li:last")
                         $("<li data-theme='b'><h3>"+ obj.gMake[1] + "</h3>" +
                             "<p>"+ obj.gCat[1]+"</p>" +
                             "<p>"+ obj.gMake[1]+"</p>" +
@@ -85,6 +86,7 @@ $("#display").live("pageinit", function(){
             dataType: "xml",
             success:function(data){
                 $(data).find("item").each(function(){
+                    getImg($(this).find('img').text(), "#xml ul li:last")
                     $("<li data-theme='b'><h3>"+ $(this).find('gMake').text()+"</h3>" +
                         "<p>"+ $(this).find('gCat').text()+"</p>" +
                         "<p>"+ $(this).find('gMake').text()+"</p>" +
@@ -109,12 +111,11 @@ $("#display").live("pageinit", function(){
             type: "GET",
             dataType: "text",
             success:function(data){
-                console.log(data);
                 var lineBrk = data.split("\n");
                 for (var i=1,lb=lineBrk.length; i<lb; i++){
                     var rows = lineBrk[i];
                     var guns = rows.split(",");
-                    console.log(guns[0]);
+                    getImg(guns[5], "#csv ul li:last")
                     $("<li data-theme='b'><h3>"+ guns[1]+"</h3>" +
                         "<p>"+ guns[0]+"</p>" +
                         "<p>"+ guns[1]+"</p>" +
@@ -135,51 +136,29 @@ $("#display").live("pageinit", function(){
     $("#csv").click(getCSV);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
-
-    var getImg = function (catName, makeSubList) {
+    //TODO ask Ms. Dawson about this.
+    var getImg = function (catName, id) {
         var pixels = 0;
-        if (catName === "Revolver Pistol") {
+        if (catName === 2) {
             var pixels = 0;
-        } else if (catName === "Semi-Auto Pistol") {
+            console.log(catName, pixels);
+        } else if (catName === 1) {
             var pixels = 80;
+            console.log(catName, pixels);
         } else if (catName === "Bolt Rifle") {
             var pixels = 160;
+            console.log(catName, pixels);
         } else if (catName === "Semi-Auto Rifle") {
             var pixels = 240
-        } else if (catName === "Pump Shotgun") {
+            console.log(catName, pixels);
+        } else if (catName === 5) {
             var pixels = 320
-        } else if (catName === "Auto-Loader Shotgun") {
+            console.log(catName, pixels);
+        } else if (catName === 6) {
             var pixels = 400
+            console.log(catName, pixels);
         }
-        $("<img src='img/clear.gif'>").appendTo("#theList li:last").css("background", "url(img/master.gif) -"+pixels+"px 0px");
-    };
-
-    //Edit and Delete Functions
-
-    var makeItemLinks = function (key, makeLi) {
-        var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
-        editLink;
-        editLink.click(editItem());
-        editLink.key = key;
-        var deleteLink = $("<a href='#'>Delete Firearm</a>").appendTo("#theList li:last").css("display", "block");
-        deleteLink;
-        deleteLink.key = key;
-        deleteLink.click(deleteItem());
-    };
-
-    var editItem = function () {
-        var value = localStorage.getItem(this.key);
-        var item = JSON.parse(value);
-        $("#gCat").value = item.gCat[1];
-        $("#gMake").value = item.gMake[1];
-        $("#gModel").value = item.gModel[1];
-        $("#gCal").value = item.gCal[1];
-        $("#notes").value = item.notes[1];
-        save.unbind("click", storeData());
-        $("#submit").value = "Edit Firearm";
-        var editSubmit = $("#submit").click(validate);
-        editSubmit;
-        editSubmit.key = this.key;
+        $("<img src='img/clear.gif'>").appendTo(id).css("background", "url(img/master.gif) -"+pixels+"px 0px");
     };
 
     //Clear Items
@@ -199,16 +178,21 @@ $("#display").live("pageinit", function(){
             }
         }
     };
+//    //Edit and Delete Functions
+//
+//    var editLink = $("<a>");
+//    editLink.attr({
+//        "data-role": "button",
+//        "data-icon": "alert",
+//        "data-iconpos": "right",
+//        "href": "#addItem"
+//    });
+//    //editLink.key = key;
+//    var editText = "Edit Firearm";
+//    editLink.bind("click", {key: key}, function editItem(){
 
-    var deleteItem = function () {
-        var ask = confirm("Are you sure you want to remove this Firearm?");
-        if(ask) {
-            localStorage.removeItem(this.key);
-            window.location.reload();
-        }else {
-            alert("Firearm Saved.");
-        }
-    };
+
+
     $(".clear").click(clearLocal);
 });
 
