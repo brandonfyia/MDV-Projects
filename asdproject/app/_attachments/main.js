@@ -8,6 +8,7 @@
 
 $("#home").live("pageinit", function(){
 
+    $("#itemList").listview("refresh");
 
 });
 
@@ -51,22 +52,27 @@ $("#display").live("pageinit", function(){
     var getJSON = function () {
         $("#json ul").empty();
         $.ajax({
-            url: "xhr/data.json",
+            url: "_view/guns",
             type: "GET",
             dataType: "json",
-//            async: false,
             success:function(data){
-                    for (var i=0, len=data.guns.length; i<len; i++) {
-                        var obj = data.guns[i];
-                        getImg(obj.gCat[2], "#json ul li:last")
-                        $("<li data-theme='b'><h3>"+ obj.gMake[1] + "</h3>" +
-                            "<p>"+ obj.gCat[1]+"</p>" +
-                            "<p>"+ obj.gMake[1]+"</p>" +
-                            "<p>"+ obj.gModel[1]+"</p>" +
-                            "<p>"+ obj.gCal[1]+"</p>" +
-                            "<p>"+ obj.notes[1]+"</p></li>").appendTo("#json ul");
-                    };
-            $("#json ul").listview("refresh");
+                console.log(data);
+                $.each(data.rows, function(index, gun){
+                    console.log(gun);
+                    var gCat= gun.value.gCat;
+                    var gMake= gun.value.gMake;
+                    var gModel= gun.value.gModel;
+                    var gCal= gun.value.gCal;
+                    var notes= gun.value.notes;
+                        getImg(gCat[2], "#json ul li:last")
+                        $("<li data-theme='b'><h3>"+ gMake[1] + "</h3>" +
+                            "<p>"+ gCat[1]+"</p>" +
+                            "<p>"+ gMake[1]+"</p>" +
+                            "<p>"+ gModel[1]+"</p>" +
+                            "<p>"+ gCal[1]+"</p>" +
+                            "<p>"+ notes[1]+"</p></li>").appendTo("#json ul");
+                    });
+                $("#json ul").listview("refresh");
             },
             error:function(data){
                 alert("you messed up!");
@@ -78,62 +84,7 @@ $("#display").live("pageinit", function(){
 
     //XML
 
-    var getXML = function () {
-      $("#xml ul").empty();
-        $.ajax({
-            url: "xhr/data.xml",
-            type: "GET",
-            dataType: "xml",
-            success:function(data){
-                $(data).find("item").each(function(){
-                    getImg($(this).find('img').text(), "#xml ul li:last")
-                    $("<li data-theme='b'><h3>"+ $(this).find('gMake').text()+"</h3>" +
-                        "<p>"+ $(this).find('gCat').text()+"</p>" +
-                        "<p>"+ $(this).find('gMake').text()+"</p>" +
-                        "<p>"+ $(this).find('gModel').text()+"</p>" +
-                        "<p>"+ $(this).find('gCal').text()+"</p>" +
-                        "<p>"+ $(this).find('notes').text()+"</p></li>").appendTo("#xml ul");
-                });
-                $("#xml ul").listview("refresh");
-            },
-            error:function(data){
-                alert("you messed up again!");
-                console.log(data);
-            }
-        });
-    };
-    $("#xml").click(getXML);
 
-    var getCSV = function getCSV() {
-        $("#csv ul").empty();
-        $.ajax({
-            url: "xhr/data.csv",
-            type: "GET",
-            dataType: "text",
-            success:function(data){
-                var lineBrk = data.split("\n");
-                for (var i=1,lb=lineBrk.length; i<lb; i++){
-                    var rows = lineBrk[i];
-                    var guns = rows.split(",");
-                    getImg(guns[5], "#csv ul li:last")
-                    $("<li data-theme='b'><h3>"+ guns[1]+"</h3>" +
-                        "<p>"+ guns[0]+"</p>" +
-                        "<p>"+ guns[1]+"</p>" +
-                        "<p>"+ guns[2]+"</p>" +
-                        "<p>"+ guns[3]+"</p>" +
-                        "<p>"+ guns[4]+"</p></li>").appendTo("#csv ul");
-                };
-                $("#csv ul").listview("refresh");
-
-            },
-
-            error:function(data){
-                alert("dummy");
-                console.log(data);
-            }
-        });
-    };
-    $("#csv").click(getCSV);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
     //TODO ask Ms. Dawson about this.
@@ -158,7 +109,7 @@ $("#display").live("pageinit", function(){
             var pixels = 400
             console.log(catName, pixels);
         }
-        $("<img src='img/clear.gif'>").appendTo(id).css("background", "url(img/master.gif) -"+pixels+"px 0px");
+        $("<img src='clear.gif'>").appendTo(id).css("background", "url(master.gif) -"+pixels+"px 0px");
     };
 
     //Clear Items

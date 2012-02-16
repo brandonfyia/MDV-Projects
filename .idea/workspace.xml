@@ -2,11 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="left off on vid 3.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/background.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/clear.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/master.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/.couchapprc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/guncollector.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/jquery-1.7.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/modernizr.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/_id" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/couchapp.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/language" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/auto_pistols/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/auto_rifles/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/auto_shotguns/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/bolt_rifles/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/guns/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/pistols/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/pump_shotguns/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/revolver_pistols/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/rifles/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/app/views/shotguns/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject/couchapp.rc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/.couchapprc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/_attachments/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/_attachments/style/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/_id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/couchapp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/evently/items/_changes/query.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/evently/profile/profileReady/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/evently/profile/profileReady/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/language" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.couch.app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.couch.app.util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.evently.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.mustache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/jquery.pathbinder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/_attachments/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/adminParty/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doLogin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doLogout.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/doSignup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedIn/selectors.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedOut/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loggedOut/selectors.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/selectors/a[href=#signup].json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/loginForm/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/selectors/a[href=#login].json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/account/signupForm/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedIn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedOut/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/loggedOut/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/after.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/profileReady/mustache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/atom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/docform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/linkup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/md5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/mustache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/redirect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/lib/validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/app/views/recent-items/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASD Couch/couchapp.rc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/js/main.js" afterPath="$PROJECT_DIR$/ASD/Week 3/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/xhr/data.csv" afterPath="$PROJECT_DIR$/ASD/Week 3/xhr/data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/xhr/data.json" afterPath="$PROJECT_DIR$/ASD/Week 3/xhr/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASD/Week 3/xhr/data.xml" afterPath="$PROJECT_DIR$/ASD/Week 3/xhr/data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MIU/Sease_Brandon_Project4/js/JSON.js" afterPath="$PROJECT_DIR$/MIU/Sease_Brandon_Project4/js/JSON.js" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,40 +153,28 @@
     <favorites_list name="MDV-Projects" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.19674796">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="147" column="4" selection-start="7947" selection-end="7947" vertical-scroll-proportion="-0.39073807">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="191" column="61" selection-start="6178" selection-end="6178" vertical-scroll-proportion="0.71153843">
-                  <folding>
-                    <element signature="e#1192#2191#0" expanded="false" />
-                    <element signature="e#2265#3252#0" expanded="false" />
-                    <element signature="e#3319#4296#0" expanded="false" />
-                    <element signature="e#4466#5281#0" expanded="false" />
-                    <element signature="e#5823#5856#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asdproject/app/_attachments/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="12" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/asdproject/app/_attachments/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="37" selection-start="142" selection-end="142" vertical-scroll-proportion="0.20979021">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -116,9 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ASD/Week 2/xhr/xml.xml" />
-        <option value="$PROJECT_DIR$/ASD/Week 2/xhr/JSON.js" />
-        <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.xml" />
         <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.yaml" />
         <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.json" />
         <option value="$PROJECT_DIR$/ASD/Week 2/js/libs/yaml.js" />
@@ -132,13 +207,16 @@
         <option value="$PROJECT_DIR$/ASD/Week 3/xhr/data.csv" />
         <option value="$PROJECT_DIR$/ASD/Week 3/xhr/data.xml" />
         <option value="$PROJECT_DIR$/ASD/Week 3/js/main.js" />
+        <option value="$PROJECT_DIR$/asdproject/app/_attachments/js/main.js" />
+        <option value="$PROJECT_DIR$/asdproject/app/_attachments/index.html" />
+        <option value="$PROJECT_DIR$/asdproject/app/_attachments/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
+    <option name="x" value="569" />
     <option name="y" value="22" />
-    <option name="width" value="1448" />
+    <option name="width" value="871" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -169,6 +247,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ASD Couch" />
+              <option name="myItemId" value="asdproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,33 +291,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
+              <option name="myItemId" value="asdproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Week 3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Week 3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xhr" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,14 +309,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ASD" />
+              <option name="myItemId" value="asdproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_attachments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,8 +552,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="22" width="1448" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="569" y="22" width="871" height="874" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -505,7 +569,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16954023" sideWeight="0.67152315" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25516403" sideWeight="0.67152315" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -644,11 +708,6 @@
         <state line="114" column="67" selection-start="3480" selection-end="3480" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD Couch/app/vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="82" selection-end="82" vertical-scroll-proportion="0.096359745" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/week 3 follow along video notes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="176" selection-end="176" vertical-scroll-proportion="0.18881118" />
@@ -656,55 +715,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/css/_notes/dwsync.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/css/themes/guncollector.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="50" selection-start="489" selection-end="489" vertical-scroll-proportion="0.02097902">
-          <folding />
+        <state line="20" column="50" selection-start="489" selection-end="489" vertical-scroll-proportion="0.02097902" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.86538464" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="48" selection-start="292" selection-end="292" vertical-scroll-proportion="0.10302198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="29" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.02097902">
+          <folding>
+            <element signature="e#2265#3252#0" expanded="false" />
+            <element signature="e#3319#4296#0" expanded="false" />
+            <element signature="e#4332#4387#0" expanded="false" />
+            <element signature="e#5796#5829#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="4" selection-start="7947" selection-end="7947" vertical-scroll-proportion="-0.39073807">
+        <state line="165" column="72" selection-start="0" selection-end="13684" vertical-scroll-proportion="0.02170767">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.xml">
+    <entry file="file://$PROJECT_DIR$/asdproject/app/_attachments/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.86538464">
+        <state line="43" column="12" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.csv">
+    <entry file="file://$PROJECT_DIR$/asdproject/app/_attachments/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="292" selection-end="292" vertical-scroll-proportion="0.10302198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/xhr/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASD/Week 3/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="61" selection-start="6178" selection-end="6178" vertical-scroll-proportion="0.71153843">
+        <state line="10" column="37" selection-start="142" selection-end="142" vertical-scroll-proportion="0.20979021">
           <folding>
-            <element signature="e#1192#2191#0" expanded="false" />
-            <element signature="e#2265#3252#0" expanded="false" />
-            <element signature="e#3319#4296#0" expanded="false" />
-            <element signature="e#4466#5281#0" expanded="false" />
-            <element signature="e#5823#5856#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
