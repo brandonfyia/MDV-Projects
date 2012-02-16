@@ -54,7 +54,7 @@ $("#display").live("pageinit", function(){
             url: "xhr/data.json",
             type: "GET",
             dataType: "json",
-            async: false,
+//            async: false,
             success:function(data){
                     for (var i=0, len=data.guns.length; i<len; i++) {
                         var obj = data.guns[i];
@@ -109,14 +109,13 @@ $("#display").live("pageinit", function(){
             type: "GET",
             dataType: "text",
             success:function(data){
-                alert("you did good!");
                 console.log(data);
                 var lineBrk = data.split("\n");
                 for (var i=1,lb=lineBrk.length; i<lb; i++){
                     var rows = lineBrk[i];
                     var guns = rows.split(",");
                     console.log(guns[0]);
-                    $("<li><h3>"+ guns[1]+"</h3>" +
+                    $("<li data-theme='b'><h3>"+ guns[1]+"</h3>" +
                         "<p>"+ guns[0]+"</p>" +
                         "<p>"+ guns[1]+"</p>" +
                         "<p>"+ guns[2]+"</p>" +
@@ -137,7 +136,7 @@ $("#display").live("pageinit", function(){
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
 
-    var getImg = function getImg(catName, makeSubList) {
+    var getImg = function (catName, makeSubList) {
         var pixels = 0;
         if (catName === "Revolver Pistol") {
             var pixels = 0;
@@ -157,7 +156,7 @@ $("#display").live("pageinit", function(){
 
     //Edit and Delete Functions
 
-    var makeItemLinks = function makeItemLinks(key, makeLi) {
+    var makeItemLinks = function (key, makeLi) {
         var editLink = $("<a href='#addItem'>Edit Firearm</a>").appendTo("#theList li:last").css("display", "block");
         editLink;
         editLink.click(editItem());
@@ -168,7 +167,7 @@ $("#display").live("pageinit", function(){
         deleteLink.click(deleteItem());
     };
 
-    var editItem = function editItem() {
+    var editItem = function () {
         var value = localStorage.getItem(this.key);
         var item = JSON.parse(value);
         $("#gCat").value = item.gCat[1];
@@ -185,7 +184,7 @@ $("#display").live("pageinit", function(){
 
     //Clear Items
 
-    var clearLocal = function clearLocal() {
+    var clearLocal = function () {
         if(localStorage.length === 0) {
             alert("No Firearms Saved.");
         } else {
@@ -201,7 +200,7 @@ $("#display").live("pageinit", function(){
         }
     };
 
-    var deleteItem = function deleteItem () {
+    var deleteItem = function () {
         var ask = confirm("Are you sure you want to remove this Firearm?");
         if(ask) {
             localStorage.removeItem(this.key);
