@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/clear.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/master.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/.couchapprc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/guncollector.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/modernizr.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_id" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/couchapp.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/language" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/auto_pistols/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/auto_rifles/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/auto_shotguns/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/bolt_rifles/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/guns/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/pistols/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/pump_shotguns/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/revolver_pistols/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/rifles/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/views/shotguns/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/couchapp.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject/app/_attachments/main.js" afterPath="$PROJECT_DIR$/asdproject/app/_attachments/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/couchapp.rc" afterPath="$PROJECT_DIR$/asdproject2/couchapp.rc" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,14 +63,25 @@
     <favorites_list name="MDV-Projects" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.19966997">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="38" column="0" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.3826607">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="view.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="35" column="8" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-11.25">
+                  <folding>
+                    <element signature="tag#head#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -107,7 +93,7 @@
           <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="55" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.33566433">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -137,9 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.yaml" />
-        <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.json" />
-        <option value="$PROJECT_DIR$/ASD/Week 2/js/libs/yaml.js" />
         <option value="$PROJECT_DIR$/ASD/Week 2/xhr/data.csv" />
         <option value="$PROJECT_DIR$/ASD/Week 2/index.html" />
         <option value="$PROJECT_DIR$/ASD/Week 2/js/main.js" />
@@ -153,6 +136,9 @@
         <option value="$PROJECT_DIR$/asdproject/app/_attachments/js/main.js" />
         <option value="$PROJECT_DIR$/asdproject/app/_attachments/index.html" />
         <option value="$PROJECT_DIR$/asdproject/app/_attachments/main.js" />
+        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" />
+        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" />
+        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
       </list>
     </option>
   </component>
@@ -276,6 +262,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -508,6 +495,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26622516" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -517,7 +505,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -556,7 +543,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished project 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project 3 hasnt been graded yet, so I duplicated my app as asdproject2 so that I dont break my code before its been graded.  now that ive typed this I suppose I could have just made another branch. oh well." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -579,6 +566,7 @@
     <MESSAGE value="added couch" />
     <MESSAGE value="left off on vid 3." />
     <MESSAGE value="Finished project 3." />
+    <MESSAGE value="Project 3 hasnt been graded yet, so I duplicated my app as asdproject2 so that I dont break my code before its been graded.  now that ive typed this I suppose I could have just made another branch. oh well." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -622,11 +610,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ASD/Week 2/xhr/data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="278" selection-end="278" vertical-scroll-proportion="0.10489511" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="22" selection-start="7426" selection-end="7426" vertical-scroll-proportion="0.030612245" />
@@ -698,16 +681,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="8" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-11.25">
+          <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.3826607">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="55" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.33566433">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

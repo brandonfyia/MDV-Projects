@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+    Brandon Sease
+    ASD 02/12
+    Project 4
+-->
+
+<html>
+<head>
+    <title>View</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This application helps keep track of the guns in your collection." />
+    <meta name="keywords" content="guns, firearms,  mobile development, Full Sail University" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="guncollector.min.css" />
+    <style>
+        .ui-page {
+            background:url(background.jpg) fixed;
+        }
+    </style>
+</head>
+
+<body>
+<!--HOME PAGE-->
+<div data-role="page" id="view">
+    <div data-role="header" data-position="fixed">
+        <img src="logo.gif">
+        <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Extended View</a>
+    </div>
+    <div data-role="content" data-theme="a">
+
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="main">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#display" class="display" data-transition="slide" data-theme="b" data-icon="grid">Display All Firearms</a></li>
+                <li><a href="#addItem" class="addItem" data-transition="slide" data-theme="b" data-icon="plus">Add Firearm</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

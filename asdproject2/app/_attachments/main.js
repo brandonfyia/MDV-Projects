@@ -51,12 +51,8 @@ $("#display").live("pageinit", function(){
 
     var getJSON = function () {
         $("#json ul").empty();
-        $.ajax({
-            url: "_view/guns",
-            type: "GET",
-            dataType: "json",
+        $.couch.db("asdproject2.").view("plugin/guns", {
             success:function(data){
-                console.log(data);
                 $.each(data.rows, function(index, gun){
                     console.log(gun);
                     var gCat= gun.value.gCat;
