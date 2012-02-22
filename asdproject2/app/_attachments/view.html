@@ -9,12 +9,6 @@
 <head>
     <title>View</title>
     <meta charset="utf-8" />
-    <meta name="description" content="This application helps keep track of the guns in your collection." />
-    <meta name="keywords" content="guns, firearms,  mobile development, Full Sail University" />
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <link rel="stylesheet" href="guncollector.min.css" />
@@ -30,10 +24,14 @@
 <div data-role="page" id="view">
     <div data-role="header" data-position="fixed">
         <img src="logo.gif">
-        <a href="#home" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Extended View</a>
+        <a href="index.html" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
     </div>
     <div data-role="content" data-theme="a">
+        <div>
+            <ul id="eView" data-role="listview">
 
+            </ul>
+        </div>
     </div>
     <div data-role="footer" data-position="fixed" data-id="main">
         <div data-role="navbar">

@@ -6,13 +6,12 @@
 
 //Functions
 
-$("#home").live("pageinit", function(){
+$("#home").live("pageshow", function(){
 
-    $("#itemList").listview("refresh");
 
 });
 
-$("#addItem").live("pageinit", function(){
+$("#addItem").live("pageshow", function(){
 
     var mForm = $("#mainForm");
     mForm.validate({
@@ -43,32 +42,27 @@ $("#addItem").live("pageinit", function(){
     };
 });
 
-$("#display").live("pageinit", function(){
+$("#display").live("pageshow", function(){
 
-    //Get Items
+//TODO get .couch.db working
 
-    //JSON
-
-    var getJSON = function () {
-        $("#json ul").empty();
-        $.couch.db("asdproject2").view("plugin/guns", {
+    var getList = function () {
+        $("#list ul").empty();
+        $.ajax({
+            url: "_view/guns",
+            type: "GET",
+            dataType: "json",
             success:function(data){
                 $.each(data.rows, function(index, gun){
-                    console.log(gun);
                     var gCat= gun.value.gCat;
                     var gMake= gun.value.gMake;
                     var gModel= gun.value.gModel;
                     var gCal= gun.value.gCal;
                     var notes= gun.value.notes;
-                        getImg(gCat[2], "#json ul li:last")
-                        $("<li data-theme='b'><h3>"+ gMake[1] + "</h3>" +
-                            "<p>"+ gCat[1]+"</p>" +
-                            "<p>"+ gMake[1]+"</p>" +
-                            "<p>"+ gModel[1]+"</p>" +
-                            "<p>"+ gCal[1]+"</p>" +
-                            "<p>"+ notes[1]+"</p></li>").appendTo("#json ul");
+//                        getImg(gCat[2], "#list ul li:last");
+                        $("<li><a href='view.html?gCat="+gCat[1]+"&gMake="+gMake[1]+"&gModel="+gModel[1]+"&gCal="+gCal[1]+"&notes="+notes[1]+" ' data-icon='arrow-r' data-iconpos='right' data-theme='b'>"+ gModel[1] + "</a></li>").appendTo("#list ul");
                     });
-                $("#json ul").listview("refresh");
+                $("#list ul").listview("refresh");
             },
             error:function(data){
                 alert("you messed up!");
@@ -76,11 +70,7 @@ $("#display").live("pageinit", function(){
             }
         });
     };
-    $("#json").click(getJSON);
-
-    //XML
-
-
+    $("#list").click(getList);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
     //TODO ask Ms. Dawson about this.
@@ -96,15 +86,15 @@ $("#display").live("pageinit", function(){
             var pixels = 160;
             console.log(catName, pixels);
         } else if (catName === 4) {
-            var pixels = 240
+            var pixels = 240;
             console.log(catName, pixels);
         } else if (catName === 5) {
-            var pixels = 320
+            var pixels = 320;
             console.log(catName, pixels);
         } else if (catName === 6) {
-            var pixels = 400
+            var pixels = 400;
             console.log(catName, pixels);
-        }
+        };
         $("<img src='clear.gif'>").appendTo(id).css("background", "url(master.gif) -"+pixels+"px 0px");
     };
 
@@ -143,4 +133,36 @@ $("#display").live("pageinit", function(){
     $(".clear").click(clearLocal);
 });
 
+var urlVars = function(){
+    var urlData = $($.mobile.activePage).data("url");
+    var urlParts = urlData.split("?");
+    var urlPairs = urlParts[1].split("&");
+    var urlValues = {};
+    for (var pair in urlPairs ) {
+        var keyValue = urlPairs[pair].split("=");
+        var key = decodeURIComponent(keyValue[0]);
+        var value = decodeURIComponent(keyValue[1]);
+        urlValues[key] = value;
+    }
+    return(urlValues);
+};
+
+$("#view").live("pageshow", function(){
+
+//TODO create detailed view page !!! style like project 4 video
+
+    var gun = urlVars();
+    $("<li><h3>"+gun["gCat"]+"</h3>" +
+        "<p>"+gun["gMake"]+"</p>" +
+        "<p>"+gun["gModel"]+"</p>" +
+        "<p>"+gun["gCal"]+"</p>" +
+        "<p>"+gun["notes"]+"</p></li>").appendTo("#eView");
+    $("#wView").listview("refresh");
+
+});
+
+
 //Set Link & Submit Click Events
+//TODO create functionality
+//TODO delete functionality
+//TODO update functionality
