@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/BrandonFYIA.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/BrandonFYIA.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +63,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.44349933">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="99" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.2821997">
+                <state line="28" column="68" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.19536904">
                   <folding>
                     <element signature="tag#head#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -94,17 +91,17 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="152" column="0" selection-start="4645" selection-end="4645" vertical-scroll-proportion="0.58635706">
+                <state line="54" column="55" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.46153846">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#102#107#0" expanded="false" />
                     <element signature="e#152#1085#0" expanded="false" />
-                    <element signature="e#2376#3160#0" expanded="false" />
-                    <element signature="e#3215#3700#0" expanded="false" />
-                    <element signature="e#3702#3735#0" expanded="false" />
+                    <element signature="e#2440#3224#0" expanded="false" />
+                    <element signature="e#3279#3764#0" expanded="false" />
+                    <element signature="e#3766#3799#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -552,7 +549,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="cant get plugin working correctly. waiting for input from Ms. Dawson." />
+    <option name="LAST_COMMIT_MESSAGE" value="view page working, needs styled. needs create, edit, and delete. also needs couch.db stuff working." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -578,6 +575,7 @@
     <MESSAGE value="Project 3 hasnt been graded yet, so I duplicated my app as asdproject2 so that I dont break my code before its been graded.  now that ive typed this I suppose I could have just made another branch. oh well." />
     <MESSAGE value="making the plugin work. still need to make my data transfer to the view page, and rework how im displaying my data." />
     <MESSAGE value="cant get plugin working correctly. waiting for input from Ms. Dawson." />
+    <MESSAGE value="view page working, needs styled. needs create, edit, and delete. also needs couch.db stuff working." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -695,29 +693,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="55" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.46153846">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#102#107#0" expanded="false" />
+            <element signature="e#152#1085#0" expanded="false" />
+            <element signature="e#2440#3224#0" expanded="false" />
+            <element signature="e#3279#3764#0" expanded="false" />
+            <element signature="e#3766#3799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="99" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.2821997">
+        <state line="28" column="68" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.19536904">
           <folding>
             <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#2;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="4645" selection-end="4645" vertical-scroll-proportion="0.58635706">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#102#107#0" expanded="false" />
-            <element signature="e#152#1085#0" expanded="false" />
-            <element signature="e#2376#3160#0" expanded="false" />
-            <element signature="e#3215#3700#0" expanded="false" />
-            <element signature="e#3702#3735#0" expanded="false" />
           </folding>
         </state>
       </provider>

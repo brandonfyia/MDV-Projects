@@ -48,10 +48,11 @@ $("#display").live("pageshow", function(){
 
     var getList = function () {
         $("#list ul").empty();
-        $.ajax({
-            url: "_view/guns",
-            type: "GET",
-            dataType: "json",
+//        $.ajax({
+//            url: "_view/guns",
+//            type: "GET",
+//            dataType: "json",
+        $.couch.db("asdproject2").view("plugin/guns", {
             success:function(data){
                 $.each(data.rows, function(index, gun){
                     var gCat= gun.value.gCat;
