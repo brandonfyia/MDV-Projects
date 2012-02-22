@@ -1,10 +1,10 @@
 {
   "env": {
     "local": {
-      "db": "http://127.0.0.1:5984/couchapp2"
+      "db": "http:\/\/127.0.0.1:5984\/asdproject2"
     },
     "cloudant": {
-      "db": "https://sompareerectledifersever:TJcBE2MAxp5riAeXbBwVsIxf@brandonfyia.cloudant.com/asdproject2"
+      "db": "https:\/\/sompareerectledifersever:TJcBE2MAxp5riAeXbBwVsIxf@brandonfyia.cloudant.com\/brandonfyia/asdproject2"
     }
   }
 }

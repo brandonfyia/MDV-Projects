@@ -51,7 +51,7 @@ $("#display").live("pageinit", function(){
 
     var getJSON = function () {
         $("#json ul").empty();
-        $.couch.db("asdproject2.").view("plugin/guns", {
+        $.couch.db("asdproject2").view("plugin/guns", {
             success:function(data){
                 $.each(data.rows, function(index, gun){
                     console.log(gun);
