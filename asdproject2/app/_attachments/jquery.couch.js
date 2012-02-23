@@ -13,16 +13,6 @@
 (function($) {
   $.couch = $.couch || {};
 
-  function getUsername(callback) {
-    var user = $("#userCtx .name:first").text();
-    if (user && (user != '?')) return callback(user);
-    $.couch.session({
-        success : function(r) {
-          callback(r.userCtx.name)
-        }
-   });
-  };
-
   function encodeDocId(docID) {
     var parts = docID.split("/");
     if (parts[0] == "_design") {
@@ -32,7 +22,7 @@
     return encodeURIComponent(docID);
   };
 
-  function prepareUserDoc(user_doc, new_password) {
+  function prepareUserDoc(user_doc, new_password) {    
     if (typeof hex_sha1 == "undefined") {
       alert("creating a user doc requires sha1.js to be loaded in the page");
       return;
@@ -46,7 +36,7 @@
     }
     user_doc.type = "user";
     if (!user_doc.roles) {
-      user_doc.roles = []
+      user_doc.roles = [];
     }
     return user_doc;
   };
@@ -56,42 +46,23 @@
   $.extend($.couch, {
     urlPrefix: '',
     activeTasks: function(options) {
-      var self = this;
-      getUsername(function(username) {
-        ajax(
-          {url: self.urlPrefix + "/"+ username +"/_active_tasks"},
-          options,
-          "Active task status could not be retrieved"
-        );
-      });
+      ajax(
+        {url: this.urlPrefix + "/_active_tasks"},
+        options,
+        "Active task status could not be retrieved"
+      );
     },
 
     allDbs: function(options) {
       ajax(
-        {url: "/api/_all_dbs"},
+        {url: this.urlPrefix + "/_all_dbs"},
         options,
         "An error occurred retrieving the list of all databases"
       );
     },
 
-    myDbs: function(options) {
-      ajax(
-        {url: "/db/_my/_all_dbs"},
-        options,
-        "An error occurred retrieving the list of user’s databases"
-      );
-    },
-
-    sharedDbs: function(options) {
-      ajax(
-        {url: "/api/_shared_dbs"},
-        options,
-        "An error occurred retrieving the list of shared databases"
-      );
-    },
-
     config: function(options, section, option, value) {
-      var req = {url: "/api/_config/"};
+      var req = {url: this.urlPrefix + "/_config/"};
       if (section) {
         req.url += encodeURIComponent(section) + "/";
         if (option) {
@@ -99,25 +70,25 @@
         }
       }
       if (value === null) {
-        req.type = "DELETE";
+        req.type = "DELETE";        
       } else if (value !== undefined) {
         req.type = "PUT";
         req.data = toJSON(value);
         req.contentType = "application/json";
-        req.processData = false
+        req.processData = false;
       }
 
       ajax(req, options,
         "An error occurred retrieving/updating the server configuration"
       );
     },
-
+    
     session: function(options) {
       options = options || {};
-        $.ajax({
-        type: "GET", url: this.urlPrefix + "/cloudant/_session",
+      $.ajax({
+        type: "GET", url: this.urlPrefix + "/_session",
         complete: function(req) {
-          var resp = $.httpData(req, "json");
+          var resp = httpData(req, "json");
           if (req.status == 200) {
             if (options.success) options.success(resp);
           } else if (options.error) {
@@ -138,22 +109,22 @@
       });
     },
 
-    signup: function(user_doc, password, options) {
+    signup: function(user_doc, password, options) {      
       options = options || {};
       // prepare user doc based on name and password
       user_doc = prepareUserDoc(user_doc, password);
       $.couch.userDb(function(db) {
         db.saveDoc(user_doc, options);
-      })
+      });
     },
-
+    
     login: function(options) {
       options = options || {};
       $.ajax({
-        type: "POST", url: this.urlPrefix + "/cloudant/_session", dataType: "json",
-        data: {username: options.name, password: options.password},
+        type: "POST", url: this.urlPrefix + "/_session", dataType: "json",
+        data: {name: options.name, password: options.password},
         complete: function(req) {
-          var resp = $.httpData(req, "json");
+          var resp = httpData(req, "json");
           if (req.status == 200) {
             if (options.success) options.success(resp);
           } else if (options.error) {
@@ -170,7 +141,7 @@
         type: "DELETE", url: this.urlPrefix + "/_session", dataType: "json",
         username : "_", password : "_",
         complete: function(req) {
-          var resp = $.httpData(req, "json");
+          var resp = httpData(req, "json");
           if (req.status == 200) {
             if (options.success) options.success(resp);
           } else if (options.error) {
@@ -196,15 +167,14 @@
             doc._attachments["rev-"+doc._rev.split("-")[0]] = {
               content_type :"application/json",
               data : Base64.encode(rawDocs[doc._id].raw)
-            }
+            };
             return true;
           }
         }
       };
-
       return {
         name: name,
-        uri: this.urlPrefix + "/" + name + "/",
+        uri: this.urlPrefix + "/" + encodeURIComponent(name) + "/",
 
         compact: function(options) {
           $.extend(options, {successStatus: 202});
@@ -255,7 +225,7 @@
         },
         info: function(options) {
           ajax(
-            {url: this.uri },
+            {url: this.uri},
             options,
             "Database information could not be retrieved"
           );
@@ -263,7 +233,9 @@
         changes: function(since, options) {
           options = options || {};
           // set up the promise object within a closure for this handler
-          var db = this, active = true, listeners = [], promise = {
+          var timeout = 100, db = this, active = true,
+            listeners = [],
+            promise = {
             onChange : function(fun) {
               listeners.push(fun);
             },
@@ -279,18 +251,24 @@
           };
           // when there is a change, call any listeners, then check for another change
           options.success = function(resp) {
+            timeout = 100;
             if (active) {
-              var seq = resp.last_seq;
+              since = resp.last_seq;
               triggerListeners(resp);
-              getChangesSince(seq);
+              getChangesSince();
             };
           };
+          options.error = function() {
+            if (active) {
+              setTimeout(getChangesSince, timeout);
+              timeout = timeout * 2;
+            }
+          };
           // actually make the changes request
-          function getChangesSince(seq) {
-            var opts = {};
-            $.extend(opts, options, {
+          function getChangesSince() {
+            var opts = $.extend({heartbeat : 10 * 1000}, options, {
               feed : "longpoll",
-              since : seq
+              since : since
             });
             ajax(
               {url: db.uri + "_changes"+encodeOptions(opts)},
@@ -300,11 +278,12 @@
           }
           // start the first request
           if (since) {
-            getChangesSince(since);
+            getChangesSince();
           } else {
             db.info({
               success : function(info) {
-                getChangesSince(info.update_seq);
+                since = info.update_seq;
+                getChangesSince();
               }
             });
           }
@@ -362,7 +341,7 @@
         openDoc: function(docId, options, ajaxOptions) {
           options = options || {};
           if (db_opts.attachPrevRev || options.attachPrevRev) {
-            $.extend(ajaxOptions, {
+            $.extend(options, {
               beforeSuccess : function(req, doc) {
                 rawDocs[doc._id] = {
                   rev : doc._rev,
@@ -371,7 +350,7 @@
               }
             });
           } else {
-            $.extend(ajaxOptions, {
+            $.extend(options, {
               beforeSuccess : function(req, doc) {
                 if (doc["jquery.couch.attachPrevRev"]) {
                   rawDocs[doc._id] = {
@@ -406,7 +385,7 @@
             dataType: "json", data: toJSON(doc),
             beforeSend : beforeSend,
             complete: function(req) {
-              var resp = $.httpData(req, "json");
+              var resp = httpData(req, "json");
               if (req.status == 200 || req.status == 201 || req.status == 202) {
                 doc._id = resp.id;
                 doc._rev = resp.rev;
@@ -471,7 +450,7 @@
         copyDoc: function(docId, options, ajaxOptions) {
           ajaxOptions = $.extend(ajaxOptions, {
             complete: function(req) {
-              var resp = $.httpData(req, "json");
+              var resp = httpData(req, "json");
               if (req.status == 201) {
                 if (options.success) options.success(resp);
               } else if (options.error) {
@@ -560,7 +539,7 @@
 
         setDbProperty: function(propName, propValue, options, ajaxOptions) {
           ajax({
-            type: "PUT",
+            type: "PUT", 
             url: this.uri + propName + encodeOptions(options),
             data : JSON.stringify(propValue)
           },
@@ -572,36 +551,29 @@
       };
     },
 
-    encodeDocId: encodeDocId,
+    encodeDocId: encodeDocId, 
 
     info: function(options) {
-      var self = this;
-      getUsername(function(username) {
-        if (!username) return;
       ajax(
-        {url: self.urlPrefix + "/"+username+"/"},
+        {url: this.urlPrefix + "/"},
         options,
         "Server information could not be retrieved"
       );
-      });
     },
 
     replicate: function(source, target, ajaxOptions, repOpts) {
-      $.extend(repOpts, {source: source, target: target});
+      repOpts = $.extend({source: source, target: target}, repOpts);
       if (repOpts.continuous) {
         ajaxOptions.successStatus = 202;
       }
-      var self = this;
-      getUsername(function(username) {
       ajax({
-          type: "POST", url: self.urlPrefix + "/"+username+"/_replicate",
+          type: "POST", url: this.urlPrefix + "/_replicate",
           data: JSON.stringify(repOpts),
           contentType: "application/json"
         },
         ajaxOptions,
         "Replication failed"
       );
-      });
     },
 
     newUUID: function(cacheNum) {
@@ -609,9 +581,9 @@
         cacheNum = 1;
       }
       if (!uuidCache.length) {
-        ajax({url: this.urlPrefix + "/cloudant/_uuids", data: {count: cacheNum}, async: false}, {
+        ajax({url: this.urlPrefix + "/_uuids", data: {count: cacheNum}, async: false}, {
             success: function(resp) {
-              uuidCache = resp.uuids
+              uuidCache = resp.uuids;
             }
           },
           "Failed to retrieve UUID batch."
@@ -621,8 +593,30 @@
     }
   });
 
+  var httpData = $.httpData || function( xhr, type, s ) { // lifted from jq1.4.4
+	var ct = xhr.getResponseHeader("content-type") || "",
+		xml = type === "xml" || !type && ct.indexOf("xml") >= 0,
+		data = xml ? xhr.responseXML : xhr.responseText;
+
+	if ( xml && data.documentElement.nodeName === "parsererror" ) {
+		$.error( "parsererror" );
+	}
+	if ( s && s.dataFilter ) {
+		data = s.dataFilter( data, type );
+	}
+	if ( typeof data === "string" ) {
+		if ( type === "json" || !type && ct.indexOf("json") >= 0 ) {
+			data = $.parseJSON( data );
+		} else if ( type === "script" || !type && ct.indexOf("javascript") >= 0 ) {
+			$.globalEval( data );
+		}
+	}
+	return data;
+  };
+
   function ajax(obj, options, errorMessage, ajaxOptions) {
     options = $.extend({successStatus: 200}, options);
+    ajaxOptions = $.extend({contentType: "application/json"}, ajaxOptions);
     errorMessage = errorMessage || "Unknown error";
     $.ajax($.extend($.extend({
       type: "GET", dataType: "json", cache : !$.browser.msie,
@@ -634,7 +628,16 @@
         }
       },
       complete: function(req) {
-        var resp = $.httpData(req, "json");
+        try {
+          var resp = httpData(req, "json");
+        } catch(e) {
+          if (options.error) {
+            options.error(req.status, req, e);
+          } else {
+            alert(errorMessage + ": " + e);
+          }
+          return;
+        }
         if (options.ajaxStart) {
           options.ajaxStart(resp);
         }
@@ -642,7 +645,7 @@
           if (options.beforeSuccess) options.beforeSuccess(req, resp);
           if (options.success) options.success(resp);
         } else if (options.error) {
-          options.error(req.status, resp.error, resp.reason);
+          options.error(req.status, resp && resp.error || errorMessage, resp && resp.reason || "no response");
         } else {
           alert(errorMessage + ": " + resp.reason);
         }
@@ -667,7 +670,7 @@
     var buf = [];
     if (typeof(options) === "object" && options !== null) {
       for (var name in options) {
-        if ($.inArray(name, ["error", "success", "ajaxStart"]) >= 0)
+        if ($.inArray(name, ["error", "success", "beforeSuccess", "ajaxStart"]) >= 0)
           continue;
         var value = options[name];
         if ($.inArray(name, ["key", "startkey", "endkey"]) >= 0) {

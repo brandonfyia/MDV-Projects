@@ -8,6 +8,16 @@
 
 $("#home").live("pageshow", function(){
 
+    $.couch.login({
+        name: "thenesearinholdisidlight",
+        password: "F7MOEpkRTf7SG1cfHtCKAIkd",
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(status) {
+            console.log(status);
+        }
+    });
 
 });
 
@@ -24,35 +34,51 @@ $("#addItem").live("pageshow", function(){
     });
 
     var storeData = function (data) {
-        if (!data.key) {
-            var id       = Math.floor(Math.random()*1000000001);
-        } else {
-            var id       = data.key;
-        }
-        console.log(item);
-        var item         = {};
-        item.gCat    = ["Gun Type:", data[0].value];
-        item.gMake   = ["Gun Make:", data[1].value];
-        item.gModel  = ["Gun Model:", data[2].value];
-        item.gCal    = ["Caliber:", data[3].value];
-        item.notes   = ["Notes:", data[4].value];
-        console.log(item);
-        localStorage.setItem(id, JSON.stringify(item));
-        alert(item.gMake[1]+" "+item.gModel[1]+" saved.");
+        var gCat    = data[0].value;
+        var gMake   = data[1].value;
+        var gModel  = data[2].value;
+        var gCal    = data[3].value;
+        var notes   = data[4].value;
+        var doc = {
+            "_id": "Gun:"+gModel,
+            "gCat": [
+                "Gun Type: ",
+                gCat
+            ],
+            "gMake": [
+                "Gun Make: ",
+                gMake
+            ],
+            "gModel": [
+                "Gun Model: ",
+                gModel
+            ],
+            "gCal": [
+                "Caliber: ",
+                gCal
+            ],
+            "notes": [
+                "Notes: ",
+                notes
+            ]
+        };
+        $.couch.db("asdproject2").saveDoc(doc, {
+            success: function(data) {
+                console.log("you did good!", data);
+                alert(gMake+" "+gModel+" saved.");
+            },
+            error: function(status) {
+                console.log("you messed up!", status);
+            }
+        });
     };
 });
 
 $("#display").live("pageshow", function(){
 
-//TODO get .couch.db working
-
     var getList = function () {
         $("#list ul").empty();
-//        $.ajax({
-//            url: "_view/guns",
-//            type: "GET",
-//            dataType: "json",
-        $.couch.db("asdproject2").view("plugin/guns", {
+        $.couch.db("asdproject2").view("app/guns", {
             success:function(data){
                 $.each(data.rows, function(index, gun){
                     var gCat= gun.value.gCat;
@@ -60,6 +86,7 @@ $("#display").live("pageshow", function(){
                     var gModel= gun.value.gModel;
                     var gCal= gun.value.gCal;
                     var notes= gun.value.notes;
+                    var getI = getImg(gCat[2])
 //                        getImg(gCat[2], "#list ul li:last");
                         $("<li><a href='view.html?gCat="+gCat[1]+"&gMake="+gMake[1]+"&gModel="+gModel[1]+"&gCal="+gCal[1]+"&notes="+notes[1]+" ' data-icon='arrow-r' data-iconpos='right' data-theme='b'>"+ gModel[1] + "</a></li>").appendTo("#list ul");
                     });
@@ -71,7 +98,7 @@ $("#display").live("pageshow", function(){
             }
         });
     };
-    $("#list").click(getList);
+     $("#list").on('click', getList);
 
     //Get Image for correct cat.  !!! Using CSS Sprites !!!
     //TODO ask Ms. Dawson about this.
@@ -96,42 +123,9 @@ $("#display").live("pageshow", function(){
             var pixels = 400;
             console.log(catName, pixels);
         };
-        $("<img src='clear.gif'>").appendTo(id).css("background", "url(master.gif) -"+pixels+"px 0px");
+        return($("<img src='clear.gif'>").appendTo(id).css("background", "url(master.gif) -"+pixels+"px 0px"));
     };
 
-    //Clear Items
-
-    var clearLocal = function () {
-        if(localStorage.length === 0) {
-            alert("No Firearms Saved.");
-        } else {
-            var ask = confirm("Are you sure you want to remove ALL firearms?");
-            if(ask) {
-                localStorage.clear();
-                $.mobile.changePage($("#home"), { transition: "pop"});
-                alert("All Firearms Cleared");
-                return false;
-            }else {
-                alert("Firearms Still Saved.");
-            }
-        }
-    };
-//    //Edit and Delete Functions
-//
-//    var editLink = $("<a>");
-//    editLink.attr({
-//        "data-role": "button",
-//        "data-icon": "alert",
-//        "data-iconpos": "right",
-//        "href": "#addItem"
-//    });
-//    //editLink.key = key;
-//    var editText = "Edit Firearm";
-//    editLink.bind("click", {key: key}, function editItem(){
-
-
-
-    $(".clear").click(clearLocal);
 });
 
 var urlVars = function(){
@@ -150,20 +144,15 @@ var urlVars = function(){
 
 $("#view").live("pageshow", function(){
 
-//TODO create detailed view page !!! style like project 4 video
-
     var gun = urlVars();
-    $("<li><h3>"+gun["gCat"]+"</h3>" +
-        "<p>"+gun["gMake"]+"</p>" +
-        "<p>"+gun["gModel"]+"</p>" +
-        "<p>"+gun["gCal"]+"</p>" +
-        "<p>"+gun["notes"]+"</p></li>").appendTo("#eView");
+    $("<li><h2>Category: "+gun["gCat"]+"</h2></li>" +
+        "<li><h3>Make: "+gun["gMake"]+"</h3></li>" +
+        "<li><h3>Model: "+gun["gModel"]+"</h3></li>" +
+        "<li><h3>Caliber: "+gun["gCal"]+"</h3></li>" +
+        "<li><h3>Notes: "+gun["notes"]+"</h3></li>").appendTo("#eView");
     $("#wView").listview("refresh");
 
 });
 
-
-//Set Link & Submit Click Events
-//TODO create functionality
 //TODO delete functionality
 //TODO update functionality
