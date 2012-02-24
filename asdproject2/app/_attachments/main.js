@@ -88,7 +88,13 @@ $("#display").live("pageshow", function(){
                     var notes= gun.value.notes;
                     var getI = getImg(gCat[2])
 //                        getImg(gCat[2], "#list ul li:last");
-                        $("<li><a href='view.html?gCat="+gCat[1]+"&gMake="+gMake[1]+"&gModel="+gModel[1]+"&gCal="+gCal[1]+"&notes="+notes[1]+" ' data-icon='arrow-r' data-iconpos='right' data-theme='b'>"+ gModel[1] + "</a></li>").appendTo("#list ul");
+                        $("<li><a href='view.html?gCat="+gCat[1]
+                            +"&gMake="+gMake[1]
+                            +"&gModel="+gModel[1]
+                            +"&gCal="+gCal[1]
+                            +"&notes="+notes[1]
+                            +" ' data-icon='arrow-r' data-iconpos='right' data-theme='b'>"
+                            + gModel[1] + "</a></li>").appendTo("#list ul");
                     });
                 $("#list ul").listview("refresh");
             },
@@ -144,7 +150,15 @@ var urlVars = function(){
 
 $("#view").live("pageshow", function(){
 
-    var gun = urlVars();
+    var gun = urlVars()["gModel"];
+    console.log(gun);
+    var doc = {"Gun:": gun};
+    console.log(doc);
+    $.couch.db("asdproject2").openDoc(doc, {
+        success: function(data) {
+            console.log(data);
+        }
+    });
     $("<li><h2>Category: "+gun["gCat"]+"</h2></li>" +
         "<li><h3>Make: "+gun["gMake"]+"</h3></li>" +
         "<li><h3>Model: "+gun["gModel"]+"</h3></li>" +

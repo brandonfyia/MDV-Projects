@@ -4,9 +4,7 @@
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/example" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/jquery.couch.js" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/jquery.couch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" afterPath="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,22 +61,22 @@
     <favorites_list name="MDV-Projects" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44349933">
+    <splitter split-orientation="horizontal" split-proportion="0.46618706">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
+          <file leaf-file-name="example" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/example">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="12.2">
+                <state line="161" column="39" selection-start="6095" selection-end="6095" vertical-scroll-proportion="0.02097902">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="view.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="54" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.82633865">
+                <state line="49" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -88,17 +86,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.03159341">
-                  <folding>
-                    <element signature="e#102#376#0" expanded="false" />
-                    <element signature="e#421#1756#0" expanded="false" />
-                    <element signature="e#933#1422#0" expanded="false" />
-                    <element signature="e#1834#2842#0" expanded="false" />
-                    <element signature="e#3021#3813#0" expanded="false" />
-                  </folding>
+                <state line="153" column="45" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.4755245">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -178,8 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +244,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,11 +261,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -306,6 +298,24 @@
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="true" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -346,24 +356,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -381,17 +373,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -418,6 +399,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -490,7 +482,6 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -498,7 +489,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26622516" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -507,6 +497,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986755" sideWeight="0.98922414" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -545,7 +537,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-ordered scripts." />
+    <option name="LAST_COMMIT_MESSAGE" value="done for the night. still need delete and update." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -574,6 +566,7 @@
     <MESSAGE value="view page working, needs styled. needs create, edit, and delete. also needs couch.db stuff working." />
     <MESSAGE value="changed back to $.couch.db so ms. dawson could see me issue." />
     <MESSAGE value="re-ordered scripts." />
+    <MESSAGE value="done for the night. still need delete and update." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -674,45 +667,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/jquery.couch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="568" selection-end="568" vertical-scroll-proportion="-19.227468">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="12" column="58" selection-start="568" selection-end="568" vertical-scroll-proportion="-19.227468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="54" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="39" selection-start="6095" selection-end="6095" vertical-scroll-proportion="0.02097902">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="12.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="370" selection-end="373" vertical-scroll-proportion="-0.7402032">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="49" column="0" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.03159341">
-          <folding>
-            <element signature="e#102#376#0" expanded="false" />
-            <element signature="e#421#1756#0" expanded="false" />
-            <element signature="e#933#1422#0" expanded="false" />
-            <element signature="e#1834#2842#0" expanded="false" />
-            <element signature="e#3021#3813#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="54" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.82633865">
+        <state line="153" column="45" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.4755245">
           <folding />
         </state>
       </provider>
