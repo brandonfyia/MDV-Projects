@@ -62,13 +62,40 @@ $("#addItem").live("pageshow", function(){
                 notes
             ]
         };
-        $.couch.db("asdproject2").saveDoc(doc, {
-            success: function(data) {
-                console.log("you did good!", data);
-                alert(gMake+" "+gModel+" saved.");
+        var makeID = "Gun:"+gModel;
+        console.log(makeID);
+        $.couch.db("asdproject2").openDoc(makeID, {
+            success: function(gun) {
+                console.log(gun);
+                $.couch.db("asdproject2").removeDoc(gun, {
+                    success: function(data) {
+                        console.log("old save deleted");
+                        $.couch.db("asdproject2").saveDoc(doc, {
+                            success: function(data) {
+                                console.log("gun saved!", data);
+                                alert(gMake+" "+gModel+" saved.");
+                                $.mobile.changePage("#display");
+                            },
+                            error: function(status) {
+                                console.log("you messed up!", status);
+                            }
+                        });
+
+                    },
+                    error: function(data) {
+                        alert("Nooooope!")
+                        console.log(data);
+                    }
+                })
             },
-            error: function(status) {
-                console.log("you messed up!", status);
+            error: function(gun){
+                $.couch.db("asdproject2").saveDoc(doc, {
+                    success: function(data) {
+                        console.log("gun saved!", data);
+                        alert(gMake+" "+gModel+" saved.");
+                        $.mobile.changePage("#display");
+                    }
+                })
             }
         });
     };
@@ -110,22 +137,22 @@ $("#display").live("pageshow", function(){
     //TODO ask Ms. Dawson about this.
     var getImg = function (catName, id) {
         var pixels = 0;
-        if (catName === 2) {
+        if (catName === "Revolver Pistol") {
             var pixels = 0;
             console.log(catName, pixels);
-        } else if (catName === 1) {
+        } else if (catName === "Semi-Auto Pistol") {
             var pixels = 80;
             console.log(catName, pixels);
-        } else if (catName === 3) {
+        } else if (catName === "Bolt Rifle") {
             var pixels = 160;
             console.log(catName, pixels);
-        } else if (catName === 4) {
+        } else if (catName === "Semi-Auto Rifle") {
             var pixels = 240;
             console.log(catName, pixels);
-        } else if (catName === 5) {
+        } else if (catName === "Pump Shotgun") {
             var pixels = 320;
             console.log(catName, pixels);
-        } else if (catName === 6) {
+        } else if (catName === "Auto-Loader Shotgun") {
             var pixels = 400;
             console.log(catName, pixels);
         };
@@ -152,21 +179,53 @@ $("#view").live("pageshow", function(){
 
     var gun = urlVars()["gModel"];
     console.log(gun);
-    var doc = {"Gun:": gun};
-    console.log(doc);
-    $.couch.db("asdproject2").openDoc(doc, {
-        success: function(data) {
+    var makeID = "Gun:"+gun;
+    console.log(makeID);
+    $.couch.db("asdproject2").openDoc(makeID, {
+        success: function(gun) {
+            console.log(gun);
+            $("<li><h2>Category: "+gun["gCat"][1]+"</h2></li>" +
+                "<li><h3>Make: "+gun["gMake"][1]+"</h3></li>" +
+                "<li><h3>Model: "+gun["gModel"][1]+"</h3></li>" +
+                "<li><h3>Caliber: "+gun["gCal"][1]+"</h3></li>" +
+                "<li><h3>Notes: "+gun["notes"][1]+"</h3></li>").appendTo("#eView");
+            $("#eView").listview("refresh");
+            $('#delete').live('click', function(){
+                    var ask=confirm("Are you sure you want to delete this firearm?");
+                    if (ask==true) {
+                        $.couch.db("asdproject2").removeDoc(gun, {
+                            success: function(data) {
+                                console.log(data);
+                                alert("Firearm Deleted!");
+                                $.mobile.changePage("index.html#display");
+                            },
+                            error: function(data) {
+                                alert("Delete Failed.")
+                                console.log(data);
+                            }
+                        });
+                    } else {
+                        alert("Firearm Still Saved!");
+                    };
+            });
+            $("#edit").live("click", function(){
+                $.mobile.changePage("index.html#addItem");
+                console.log(gun);
+                $("#gCat").val(gun["gCat"][1]);
+                $("#gMake").val(gun["gMake"][1]);
+                $("#gModel").val(gun["gModel"][1]);
+                $("#gCal").val(gun["gCal"][1]);
+                $("#notes").val(gun["notes"][1]);
+            })
+
+        },
+        error:function(data){
+            alert("you messed up!");
             console.log(data);
         }
+
     });
-    $("<li><h2>Category: "+gun["gCat"]+"</h2></li>" +
-        "<li><h3>Make: "+gun["gMake"]+"</h3></li>" +
-        "<li><h3>Model: "+gun["gModel"]+"</h3></li>" +
-        "<li><h3>Caliber: "+gun["gCal"]+"</h3></li>" +
-        "<li><h3>Notes: "+gun["notes"]+"</h3></li>").appendTo("#eView");
-    $("#wView").listview("refresh");
+
 
 });
 
-//TODO delete functionality
-//TODO update functionality
