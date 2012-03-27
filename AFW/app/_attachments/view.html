@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    Brandon Sease
+    ASD 02/12
+    Project 4
+-->
+
+<html>
+<head>
+    <title>Gun Collector</title>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="guncollector.min.css" />
+    <style>
+        .ui-page {
+            background:url(background.jpg) fixed;
+        }
+    </style>
+</head>
+
+<body>
+<!--HOME PAGE-->
+<div data-role="page" id="view">
+    <div data-role="header" data-position="fixed">
+        <img src="logo.gif">
+        <a href="index.html" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+    </div>
+    <div data-role="content" data-theme="a">
+        <div style="text-align: center;">
+                <ul id="eView" data-role="listview">
+                </ul>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="main">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#display" id="back" data-transition="slide" data-theme="b" data-icon="arrow-l">Back</a></li>
+                <li><a href="#addItem" id="edit" data-transition="slide" data-theme="b" data-icon="gear">Edit</a></li>
+                <li><a href="#display" id="delete" data-transition="slide" data-theme="b" data-icon="delete">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
