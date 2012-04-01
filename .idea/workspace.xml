@@ -2,52 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/controls_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/controls_bg@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/controls_bg~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/microphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/microphone@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/microphone~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/record_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/record_button@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/record_button~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/recording_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/recording_bg@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/recording_bg~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/stop_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/stop_button@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/Capture.bundle/stop_button~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/icons/icon-72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/icons/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/icons/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/splash/Default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/splash/Default@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/www/img/comingsoon.ai" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/www/img/comingsoon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase.xcodeproj/xcuserdata/BrandonFYIA.xcuserdatad/xcschemes/theguncase.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase.xcodeproj/xcuserdata/BrandonFYIA.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Classes/AppDelegate.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Classes/AppDelegate.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Classes/MainViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Classes/MainViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Classes/MainViewController.xib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Cordova.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Plugins/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/de.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/en.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/es.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/Resources/se.lproj/Localizable.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/main.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/theguncase-Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/theguncase-Prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/theguncase/verify.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/www/cordova-1.5.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/www/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AFW/theguncase/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MDV-Projects.iws" />
@@ -106,19 +60,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AFW/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="560" selection-end="560" vertical-scroll-proportion="0.1509434">
+            <state line="17" column="20" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AFW/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.12396694">
               <folding />
             </state>
           </provider>
@@ -196,6 +150,19 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,19 +196,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -476,11 +430,6 @@
       <created>1328416183819</created>
       <updated>1328416183819</updated>
     </task>
-    <task id="LOCAL-00001" summary="getting things set up for AFW">
-      <created>1333248426344</created>
-      <updated>1333248426344</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -505,7 +454,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="22" width="1438" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -522,7 +471,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25467625" sideWeight="0.67152315" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25467625" sideWeight="0.67152315" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -717,14 +666,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AFW/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="560" selection-end="560" vertical-scroll-proportion="0.1509434">
+        <state line="17" column="20" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AFW/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" />
+        <state line="6" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.12396694">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
