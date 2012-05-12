@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="xcode moved things around">
+    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/index.html" afterPath="$PROJECT_DIR$/AVF/index.html" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +68,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="26" selection-start="745" selection-end="745" vertical-scroll-proportion="-7.4583335">
+            <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -75,7 +77,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.08708273">
               <folding />
             </state>
           </provider>
@@ -105,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ASD/Week 3/xhr/data.csv" />
         <option value="$PROJECT_DIR$/ASD/Week 3/xhr/data.xml" />
         <option value="$PROJECT_DIR$/ASD/Week 3/js/main.js" />
         <option value="$PROJECT_DIR$/asdproject/app/_attachments/js/main.js" />
@@ -120,6 +121,7 @@
         <option value="$PROJECT_DIR$/AFW/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AFV/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
       </list>
     </option>
@@ -158,19 +160,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +308,19 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -561,7 +563,11 @@
       <created>1333251666472</created>
       <updated>1333251666472</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated index.html's">
+      <created>1336272854673</created>
+      <updated>1336272854673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -650,7 +656,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="xcode moved things around" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated index.html's" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -684,6 +690,7 @@
     <MESSAGE value="Everything working!" />
     <MESSAGE value="getting things set up for AFW" />
     <MESSAGE value="xcode moved things around" />
+    <MESSAGE value="updated index.html's" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -789,21 +796,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="745" selection-end="745" vertical-scroll-proportion="0.28156748">
-          <folding />
-        </state>
+        <state line="23" column="39" selection-start="745" selection-end="745" vertical-scroll-proportion="0.28156748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="26" selection-start="745" selection-end="745" vertical-scroll-proportion="-7.4583335">
+        <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.08708273">
           <folding />
         </state>
       </provider>
