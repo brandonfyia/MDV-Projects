@@ -1,6 +1,10 @@
 /*
  	Brandon Sease
-    AFW 04/12
-    Project 1
+    AFW 05/12
+    Project 2
 */
 
+#map_canvas {
+    width: 75%;
+    height: 75%
+}
