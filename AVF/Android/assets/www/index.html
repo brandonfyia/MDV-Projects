@@ -16,37 +16,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="css/guncollector.min.css" />
     <script src="modernizr.custom.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <div>
-	    <h1>The Gun Case</h1>
+<!--Main Page-->
+    <div data-role="page" id="main">
+    <!--Header-->
+        <div data-role="header" data-position="fixed">
+            <h1>The Gun Case</h1>
+            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+    <!--Content-->
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                <li data-role="list-divider"><h2>The Crud:</h2></li>
+                <li><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">Old CRUD</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">New CRUD</a></li>
+            </ul>
+            <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                <li data-role="list-divider"><h2>iOS &amp; Android Native Feature Demos:</h2></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Geolocation</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Notifications</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Accelerometer</a></li>
+            </ul>
+            <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                <li data-role="list-divider"><h2>iOS or Android Native Feature Demos:</h2></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Camera</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Compass</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Contacts</a></li>
+                <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Network</a></li>
+            </ul>
+            <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                <li data-role="list-divider"><h2>Research:</h2></li>
+                <li><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719001&deliveryId=1443739&accountId=95354">Week 1</a></li>
+                <li><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719008&deliveryId=1443746&accountId=95354">Week 2</a></li>
+                <li><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719013&deliveryId=1443751&accountId=95354">Week 3</a></li>
+            </ul>
+        </div>
+    <!--Footer-->
+        <div data-role="footer" data-position="fixed" >
+            <ul data-role="listview">
+                <li>
+                    <h2>Developer Info:</h2>
+                    <p>Brandon Sease</p>
+                    <p>AVF 05/12</p>
+                    <p><a href="https://github.com/brandonfyia/MDV-Projects/tree/master/AVF">Git Repo</a></p>
+                </li>
+            </ul>
+        </div>
     </div>
-<div>
-  <h2>The Crud:</h2>
-       	<p><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html"><img src="img/comingsoon.gif" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"></a></p>
-  </p>
-       	<p><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">OLD</a> NEW</p>
+<!--Coming Soon-->
+    <div data-role="page" id="soon">
+        <h1>This feature is coming soon! Be sure to check back!</h1>
+        <a href="#main" data-rel="back" data-role="button">Ok</a>
     </div>
-    <div>
-        <h2>iOS &amp; Android Native Feature Demos:</h2>
-        	<p><img src="img/comingsoon.gif" alt="" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"></p>
-    </div>
-    <div>
-        <h2>iOS or Android Native Feature Demos:</h2>
-            <p><img src="img/comingsoon.gif" alt="" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"><img src="img/comingsoon.gif" alt="" width="40" height="40"></p>
-    </div>
-    <div>
-        <h2>Research:</h2>
-            <p><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719001&deliveryId=1443739&accountId=95354">Week 1</a></p>
-            <p><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719008&deliveryId=1443746&accountId=95354">Week 2</a></p>
-            <p><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719013&deliveryId=1443751&accountId=95354">Week 3</a></p>
-    </div>
-    <div>
-        <h2>Developer Info:</h2>
-            <p>Brandon Sease</p>
-            <p>AVF 05/12</p>
-            <p><a href="https://github.com/brandonfyia/MDV-Projects/tree/master/AVF">Git Repo</a></p>
-	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<script src="http://jquery-json.googlecode.com/files/jquery.json-2.3.min.js"></script>
+<script src="js/cordova-1.7.0.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
 </body>
 </html>
