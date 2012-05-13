@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB15DD6A155F43CB007A6BDA /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB15DD62155F43CB007A6BDA /* beep.wav */; };
-		FB15DD6B155F43CB007A6BDA /* guncollector.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FB15DD64155F43CB007A6BDA /* guncollector.min.css */; };
-		FB15DD6C155F43CB007A6BDA /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = FB15DD65155F43CB007A6BDA /* styles.css */; };
-		FB15DD6D155F43CB007A6BDA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FB15DD66155F43CB007A6BDA /* index.html */; };
-		FB15DD6E155F43CB007A6BDA /* cordova-1.7.0.js in Sources */ = {isa = PBXBuildFile; fileRef = FB15DD68155F43CB007A6BDA /* cordova-1.7.0.js */; };
-		FB15DD6F155F43CB007A6BDA /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = FB15DD69155F43CB007A6BDA /* main.js */; };
+		FB19D8D2155F65C5002CF671 /* www in Resources */ = {isa = PBXBuildFile; fileRef = FB19D8D1155F65C5002CF671 /* www */; };
 		FBBA5FB31527FE33005842DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB21527FE33005842DA /* Foundation.framework */; };
 		FBBA5FB51527FE33005842DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB41527FE33005842DA /* UIKit.framework */; };
 		FBBA5FB71527FE33005842DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB61527FE33005842DA /* CoreGraphics.framework */; };
@@ -47,12 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB15DD62155F43CB007A6BDA /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
-		FB15DD64155F43CB007A6BDA /* guncollector.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = guncollector.min.css; sourceTree = "<group>"; };
-		FB15DD65155F43CB007A6BDA /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
-		FB15DD66155F43CB007A6BDA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		FB15DD68155F43CB007A6BDA /* cordova-1.7.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cordova-1.7.0.js"; sourceTree = "<group>"; };
-		FB15DD69155F43CB007A6BDA /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		FB19D8D1155F65C5002CF671 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		FBBA5FAE1527FE33005842DA /* theguncase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theguncase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBA5FB21527FE33005842DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBBA5FB41527FE33005842DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -124,39 +114,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB15DD61155F43CB007A6BDA /* www */ = {
-			isa = PBXGroup;
-			children = (
-				FB15DD62155F43CB007A6BDA /* beep.wav */,
-				FB15DD63155F43CB007A6BDA /* css */,
-				FB15DD66155F43CB007A6BDA /* index.html */,
-				FB15DD67155F43CB007A6BDA /* js */,
-			);
-			path = www;
-			sourceTree = "<group>";
-		};
-		FB15DD63155F43CB007A6BDA /* css */ = {
-			isa = PBXGroup;
-			children = (
-				FB15DD64155F43CB007A6BDA /* guncollector.min.css */,
-				FB15DD65155F43CB007A6BDA /* styles.css */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
-		FB15DD67155F43CB007A6BDA /* js */ = {
-			isa = PBXGroup;
-			children = (
-				FB15DD68155F43CB007A6BDA /* cordova-1.7.0.js */,
-				FB15DD69155F43CB007A6BDA /* main.js */,
-			);
-			path = js;
-			sourceTree = "<group>";
-		};
 		FBBA5FA01527FE33005842DA = {
 			isa = PBXGroup;
 			children = (
-				FB15DD61155F43CB007A6BDA /* www */,
+				FB19D8D1155F65C5002CF671 /* www */,
 				FBBA5FCC1527FE33005842DA /* theguncase */,
 				FBBA5FB11527FE33005842DA /* Frameworks */,
 				FBBA5FAF1527FE33005842DA /* Products */,
@@ -372,10 +333,7 @@
 				FBBA5FF71527FE34005842DA /* Cordova.plist in Resources */,
 				FBBA60001527FE34005842DA /* MainViewController.xib in Resources */,
 				FBBA60041527FE34005842DA /* verify.sh in Resources */,
-				FB15DD6A155F43CB007A6BDA /* beep.wav in Resources */,
-				FB15DD6B155F43CB007A6BDA /* guncollector.min.css in Resources */,
-				FB15DD6C155F43CB007A6BDA /* styles.css in Resources */,
-				FB15DD6D155F43CB007A6BDA /* index.html in Resources */,
+				FB19D8D2155F65C5002CF671 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,8 +363,6 @@
 				FBBA5FD31527FE33005842DA /* main.m in Sources */,
 				FBBA5FFB1527FE34005842DA /* AppDelegate.m in Sources */,
 				FBBA5FFE1527FE34005842DA /* MainViewController.m in Sources */,
-				FB15DD6E155F43CB007A6BDA /* cordova-1.7.0.js in Sources */,
-				FB15DD6F155F43CB007A6BDA /* main.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
