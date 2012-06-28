@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'whocares' target in the 'whocares' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
