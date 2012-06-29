@@ -13,13 +13,15 @@ var dismissed = function (){
 $("#geo").live("pageshow", function(){
 
     var didGood = function(position){
+        var lat = position.coords.latitude;
+        var long = position.coords.longitude;
         var myOptions = {
-            center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude ),
+            center: new google.maps.LatLng(lat, long),
             zoom: 8,
             mapTypeId: google.maps.MapTypeId.HYBRID
         };
-        var map = new google.maps.Map($("#map_canvas"), myOptions);
-        navigator.notification.alert("You are at "+position.coords.latitude+" "+position.coords.longitude, dismissed, "It works!", "Awesome");
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        navigator.notification.alert("You are at "+lat+" "+long, dismissed, "It works!", "Awesome");
     };
     var didBad = function(error){
         alert("error code: "+ error.code + "<br />" +
