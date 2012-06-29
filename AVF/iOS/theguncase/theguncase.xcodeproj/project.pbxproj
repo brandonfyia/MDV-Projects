@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB21D79C1565D964005D5A79 /* www in Resources */ = {isa = PBXBuildFile; fileRef = FB21D79B1565D964005D5A79 /* www */; };
 		FBBA5FB31527FE33005842DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB21527FE33005842DA /* Foundation.framework */; };
 		FBBA5FB51527FE33005842DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB41527FE33005842DA /* UIKit.framework */; };
 		FBBA5FB71527FE33005842DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA5FB61527FE33005842DA /* CoreGraphics.framework */; };
@@ -38,10 +39,10 @@
 		FBBA5FFE1527FE34005842DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBA5FFD1527FE34005842DA /* MainViewController.m */; };
 		FBBA60001527FE34005842DA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBBA5FFF1527FE34005842DA /* MainViewController.xib */; };
 		FBBA60041527FE34005842DA /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = FBBA60031527FE34005842DA /* verify.sh */; };
-		FBBA600B1527FE73005842DA /* www in Resources */ = {isa = PBXBuildFile; fileRef = FBBA600A1527FE73005842DA /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB21D79B1565D964005D5A79 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		FBBA5FAE1527FE33005842DA /* theguncase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theguncase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBA5FB21527FE33005842DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBBA5FB41527FE33005842DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,7 +80,6 @@
 		FBBA5FFF1527FE34005842DA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		FBBA60021527FE34005842DA /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		FBBA60031527FE34005842DA /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
-		FBBA600A1527FE73005842DA /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,7 @@
 		FBBA5FA01527FE33005842DA = {
 			isa = PBXGroup;
 			children = (
+				FB21D79B1565D964005D5A79 /* www */,
 				FBBA5FCC1527FE33005842DA /* theguncase */,
 				FBBA5FB11527FE33005842DA /* Frameworks */,
 				FBBA5FAF1527FE33005842DA /* Products */,
@@ -166,7 +167,6 @@
 		FBBA5FCD1527FE33005842DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBBA600A1527FE73005842DA /* www */,
 				FBBA5FCE1527FE33005842DA /* theguncase-Info.plist */,
 				FBBA5FCF1527FE33005842DA /* InfoPlist.strings */,
 				FBBA5FD21527FE33005842DA /* main.m */,
@@ -333,7 +333,7 @@
 				FBBA5FF71527FE34005842DA /* Cordova.plist in Resources */,
 				FBBA60001527FE34005842DA /* MainViewController.xib in Resources */,
 				FBBA60041527FE34005842DA /* verify.sh in Resources */,
-				FBBA600B1527FE73005842DA /* www in Resources */,
+				FB21D79C1565D964005D5A79 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +442,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -463,7 +463,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
