@@ -19,9 +19,9 @@ $("#geo").live("pageshow", function(){
         if (errorFlag) {
             var content = "Error: The Geolocation service failed.";
         } else {
-            var content = "Error: Your browser doesn\'t support geolocation."
+            var content = "Error: Your browser doesn\'t support geolocation.";
         }
-
+        alert("still going");
         var options = {
             map: map,
             position: new google.maps.LatLng(60, 105),
@@ -66,7 +66,7 @@ $("#geo").live("pageshow", function(){
         }
     };
 
-    $("#find").on("click", getGeo());
+    $("#find").on("click", getGeo);
 });
 
 
