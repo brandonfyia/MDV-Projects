@@ -18,6 +18,8 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <link rel="stylesheet" href="css/guncollector.min.css" />
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
 </head>
 <body>
 <!--Main Page-->
@@ -193,7 +195,13 @@
         </div>
     <!--Content-->
         <div data-role="content">
-
+            <section id="vidWrapper">
+                <video id="week2" class="video-js vjs-default-skin" controls width="480" height="320" preload="auto">
+                    <source type="video/mp4" src="https://www.dropbox.com/s/xtydfvj2h7a27vr/AFVweek2.mp4">
+                    <source type="video/webm" src="https://www.dropbox.com/s/ccht23w0y2lwzft/AFVweek2.webm">
+                    <source type="video/ogg" src="https://www.dropbox.com/s/qen7a685jjn4rri/AFVweek2.ogv">
+                </video>
+            </section>
         </div>
     </div>
 <!--Geo-->

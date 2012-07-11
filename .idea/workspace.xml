@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +70,7 @@
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="226" column="34" selection-start="12182" selection-end="12182" vertical-scroll-proportion="0.5428157">
+                <state line="201" column="50" selection-start="11562" selection-end="11616" vertical-scroll-proportion="0.54426706">
                   <folding>
                     <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
@@ -92,7 +95,19 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="29" selection-start="482" selection-end="482" vertical-scroll-proportion="0.29453015">
+                <state line="111" column="46" selection-start="2992" selection-end="2992" vertical-scroll-proportion="0.68443197">
+                  <folding>
+                    <element signature="e#164#1806#0" expanded="false" />
+                    <element signature="e#1867#2324#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -136,10 +151,10 @@
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/map.html" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/map.js" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
       </list>
     </option>
   </component>
@@ -838,11 +853,6 @@
         <state line="230" column="107" selection-start="11599" selection-end="11599" vertical-scroll-proportion="-19.958334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.35123968" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="9" selection-start="9" selection-end="19" vertical-scroll-proportion="0.0" />
@@ -855,16 +865,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="29" selection-start="482" selection-end="482" vertical-scroll-proportion="0.29453015">
-          <folding />
+        <state line="111" column="46" selection-start="2992" selection-end="2992" vertical-scroll-proportion="0.68443197">
+          <folding>
+            <element signature="e#164#1806#0" expanded="false" />
+            <element signature="e#1867#2324#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="34" selection-start="12182" selection-end="12182" vertical-scroll-proportion="0.5428157">
+        <state line="201" column="50" selection-start="11562" selection-end="11616" vertical-scroll-proportion="0.54426706">
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />

@@ -4,13 +4,6 @@
     Project 2
 */
 
-html { height: 100%
-}
-body { height: 100%;
-    margin: 0;
-    padding: 0
-}
-
 #map_canvas {
     margin: 0;
     padding: 0;
@@ -24,4 +17,9 @@ body { height: 100%;
 
 dt {
     font-weight: bold;
+}
+
+#vidWrapper {
+    height: 90%;
+    width: 90%
 }

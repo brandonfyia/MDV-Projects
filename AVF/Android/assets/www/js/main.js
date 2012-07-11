@@ -106,3 +106,16 @@ $("#acc").live("pageshow", function(){
     };
     $("#accel").on("click", accel);
 });
+
+//Video
+$("#vid2").live("pageshow", function(){
+    var video = document.getElementById('week2');
+    video.addEventListener('click',function(){
+        video.play();
+    },false);
+//    var play = function(){
+//      video.play();
+//    };
+//
+//    $("#week2").on("click", play);
+})
