@@ -12,16 +12,6 @@ body { height: 100%;
 }
 
 #map_canvas {
-    margin: 0;
-    padding: 0;
-    height: 100%
-}
-
-.title {
-	text-align:center;
-	font-weight:bold;
-}
-
-dt {
-    font-weight: bold;
+    width: 50%;
+    height: 50%
 }
