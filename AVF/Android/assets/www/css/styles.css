@@ -12,8 +12,9 @@ body { height: 100%;
 }
 
 #map_canvas {
-    width: 50%;
-    height: 50%
+    margin: 0;
+    padding: 0;
+    height: 100%
 }
 
 .title {
