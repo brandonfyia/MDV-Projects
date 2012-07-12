@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,19 +109,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="225" column="25" selection-start="11769" selection-end="11769" vertical-scroll-proportion="0.12917271">
+                <state line="225" column="25" selection-start="11769" selection-end="11769" vertical-scroll-proportion="-3.7083333">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
+                <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="1.4726508">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -899,15 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="18" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0">
@@ -939,8 +925,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="25" selection-start="11769" selection-end="11769" vertical-scroll-proportion="0.12917271">
+        <state line="225" column="25" selection-start="11769" selection-end="11769" vertical-scroll-proportion="-3.7083333">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="1.4726508">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
