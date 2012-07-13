@@ -2,10 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Cordova.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Launch Page-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Launch Page-Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Plugins/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/de.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/en.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/es.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon-72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/se.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/splash/Default@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/splash/Default~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/en.lproj/InfoPlist.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/verify.sh" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
     </list>
     <ignored path="MDV-Projects.iws" />
@@ -66,10 +107,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.46707106">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="193" column="56" selection-start="10993" selection-end="10993" vertical-scroll-proportion="0.30478954">
+                <state line="203" column="74" selection-start="11654" selection-end="11654" vertical-scroll-proportion="0.52249634">
                   <folding />
                 </state>
               </provider>
@@ -97,11 +138,16 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="256" column="13" selection-start="13095" selection-end="13095" vertical-scroll-proportion="0.80406386">
-                  <folding />
+                <state line="203" column="67" selection-start="10973" selection-end="10973" vertical-scroll-proportion="0.47750363">
+                  <folding>
+                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -916,16 +962,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="56" selection-start="10993" selection-end="10993" vertical-scroll-proportion="0.30478954">
-          <folding />
+        <state line="203" column="67" selection-start="10973" selection-end="10973" vertical-scroll-proportion="0.47750363">
+          <folding>
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="13" selection-start="13095" selection-end="13095" vertical-scroll-proportion="0.80406386">
+        <state line="203" column="74" selection-start="11654" selection-end="11654" vertical-scroll-proportion="0.52249634">
           <folding />
         </state>
       </provider>
