@@ -22,6 +22,7 @@
 	<false/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>*.dropbox.com</string>
 		<string>*.zencdn.net/</string>
 		<string>*.gstatic.com</string>
 		<string>*.jquery.com</string>
