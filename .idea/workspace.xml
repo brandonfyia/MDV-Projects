@@ -2,52 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page.xcodeproj/project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/AppDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/AppDelegate.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Classes/MainViewController.xib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Cordova.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Launch Page-Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Launch Page-Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Plugins/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/controls_bg~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/microphone~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/record_button~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/recording_bg~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/Capture.bundle/stop_button~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/de.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/en.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/es.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/icons/icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/se.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/splash/Default@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/Resources/splash/Default~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/en.lproj/InfoPlist.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/main.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AVF/iOS/Launch Page/Launch Page/verify.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" afterPath="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,13 +64,13 @@
     <favorites_list name="MDV-Projects" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46707106">
+    <splitter split-orientation="horizontal" split-proportion="0.5093525">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="203" column="74" selection-start="11654" selection-end="11654" vertical-scroll-proportion="0.52249634">
+                <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="0.5660377">
                   <folding />
                 </state>
               </provider>
@@ -119,7 +79,7 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="18" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0">
+                <state line="113" column="8" selection-start="3051" selection-end="3063" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -141,7 +101,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="203" column="67" selection-start="10973" selection-end="10973" vertical-scroll-proportion="0.47750363">
+                <state line="199" column="29" selection-start="10669" selection-end="10723" vertical-scroll-proportion="0.3904209">
                   <folding>
                     <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
@@ -198,9 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
-        <option value="$PROJECT_DIR$/AFW/css/styles.css" />
-        <option value="$PROJECT_DIR$/AFW/index.html" />
         <option value="$PROJECT_DIR$/AFW/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AFV/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/index.html" />
@@ -210,10 +167,13 @@
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/map.js" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
+        <option value="$PROJECT_DIR$/AVF/Android/src/com/fullsail/theguncase/plugins/video/VideoPlayer.java" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
       </list>
     </option>
   </component>
@@ -314,24 +274,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AVF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iOS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -880,26 +822,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/jquery.couch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="568" selection-end="568" vertical-scroll-proportion="-19.227468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.19536904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MIU/Sease_Brandon_Project1/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/guncollector.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.6603775" />
@@ -932,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="18" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
@@ -962,9 +877,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.54698455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/plugins.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="3" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5890603">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="67" selection-start="10973" selection-end="10973" vertical-scroll-proportion="0.47750363">
+        <state line="199" column="29" selection-start="10669" selection-end="10723" vertical-scroll-proportion="0.3904209">
           <folding>
             <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
@@ -974,9 +912,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="8" selection-start="3051" selection-end="3063" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="74" selection-start="11654" selection-end="11654" vertical-scroll-proportion="0.52249634">
+        <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="0.5660377">
           <folding />
         </state>
       </provider>
