@@ -15,13 +15,11 @@ var map;
 $("#geo").live("pageshow", function(){
 
     var handleNoGeolocation = function (errorFlag){
-        alert("function started");
         if (errorFlag) {
             var content = "Error: The Geolocation service failed.";
         } else {
             var content = "Error: Your browser doesn\'t support geolocation.";
         }
-        alert("still going");
         var options = {
             map: map,
             position: new google.maps.LatLng(60, 105),
@@ -51,9 +49,7 @@ $("#geo").live("pageshow", function(){
         map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
         if(navigator.geolocation) {
-            alert("if ok");
             navigator.geolocation.getCurrentPosition(function(position){
-                alert("nav.geo works!");
                 var pos = new google.maps.LatLng(position.coords.latitude,
                     position.coords.longitude);
 
@@ -66,7 +62,6 @@ $("#geo").live("pageshow", function(){
                 map.setCenter(pos);
 
             }, function(){
-                alert("handleNoGeolocation true");
 
                 handleNoGeolocation(true);
             });
@@ -124,7 +119,7 @@ $("#vid2").live("pageshow", function(){
 //        video.play();
 //    },false);
     var play = function(){
-      video.play();
+      this.play();
     };
 
     $("#week2").on("click", play);
