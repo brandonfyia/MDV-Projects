@@ -17,7 +17,9 @@
     <meta http-equiv="cleartype" content="on">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-    <link rel="stylesheet" href="css/guncollector.min.css" />
+    <link rel="stylesheet" href="guncollector.min.css" />
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
 </head>
 <body>
 <!--Main Page-->
@@ -29,36 +31,48 @@
     </div>
     <!--Content-->
     <div data-role="content">
-        <ul data-role="listview" data-inset="true" data-dividertheme="a">
-            <li data-role="list-divider"><h2>The C.R.U.D.:</h2></li>
-            <li><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">Old CRUD</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">New CRUD</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="true" data-dividertheme="a">
-            <li data-role="list-divider"><h2>iOS &amp; Android Native Feature Demos:</h2></li>
-            <li><a href="#geo">Geolocation</a></li>
-            <li><a href="#notes">Notifications</a></li>
-            <li><a href="#acc">Accelerometer</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="true" data-dividertheme="a">
-            <li data-role="list-divider"><h2>iOS or Android Native Feature Demos:</h2></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Camera</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Compass</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Contacts</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Network</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="true" data-dividertheme="a">
-            <li data-role="list-divider"><h2>Research:</h2></li>
-            <li><a href="#res1">Week 1</a></li>
-            <li><a href="#res2">Week 2</a></li>
-            <li><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719013&deliveryId=1443751&accountId=95354">Week 3</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="true" data-dividertheme="a">
-            <li data-role="list-divider"><h2>Reflection Videos:</h2></li>
-            <li><a href="#vid2">Week 2</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Week 3</a></li>
-            <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Week 4</a></li>
-        </ul>
+        <section id="wrapper">
+            <section>
+                <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                    <li data-role="list-divider"><h2>The C.R.U.D.:</h2></li>
+                    <li><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">Old CRUD</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">New CRUD</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                    <li data-role="list-divider"><h2>iOS &amp; Android Native Feature Demos:</h2></li>
+                    <li><a href="#geo">Geolocation</a></li>
+                    <li><a href="#notes">Notifications</a></li>
+                    <li><a href="#acc">Accelerometer</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                    <li data-role="list-divider"><h2>iOS or Android Native Feature Demos:</h2></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Camera</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Compass</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Contacts</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Network</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                    <li data-role="list-divider"><h2>Research:</h2></li>
+                    <li><a href="#res1">Week 1</a></li>
+                    <li><a href="#res2">Week 2</a></li>
+                    <li><a href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityid=719013&deliveryId=1443751&accountId=95354">Week 3</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul data-role="listview" data-inset="true" data-dividertheme="a">
+                    <li data-role="list-divider"><h2>Reflection Videos:</h2></li>
+                    <li><a href="#vid2">Week 2</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Week 3</a></li>
+                    <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Week 4</a></li>
+                </ul>
+            </section>
+        </section>
     </div>
     <!--Footer-->
     <div data-role="footer" data-position="fixed" >
@@ -181,7 +195,13 @@
     </div>
     <!--Content-->
     <div data-role="content">
-
+        <section id="vidWrapper">
+            <video id="week2" class="video-js vjs-default-skin" controls width="100%" preload="auto">
+                <source src="AFVWeek2.mp4">
+                <source type="video/webm" src="https://www.dropbox.com/s/ccht23w0y2lwzft/AFVweek2.webm">
+                <source type="video/ogg" src="https://www.dropbox.com/s/qen7a685jjn4rri/AFVweek2.ogv">
+            </video>
+        </section>
     </div>
 </div>
 <!--Geo-->
@@ -228,12 +248,13 @@
     <h1>This feature is coming soon! Be sure to check back!</h1>
     <a href="#main" data-rel="back" data-role="button">Ok</a>
 </div>
+<!--Scripts-->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBhgQ6uBxE7EASViA0iPJqDndceWMWm5UU&sensor=true"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 <script src="http://jquery-json.googlecode.com/files/jquery.json-2.3.min.js"></script>
 <script src="cordova-1.8.1.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
 
 </body>
 </html>

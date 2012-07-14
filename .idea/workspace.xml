@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="" />
+    <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+    </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,31 +64,31 @@
     <favorites_list name="MDV-Projects" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.21923743">
+    <splitter split-orientation="horizontal" split-proportion="0.5093525">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="230" column="0" selection-start="11700" selection-end="11823" vertical-scroll-proportion="0.6851574">
+                <state line="201" column="53" selection-start="11505" selection-end="11505" vertical-scroll-proportion="0.47750363">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/map.js">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="9" selection-start="9" selection-end="19" vertical-scroll-proportion="0.0">
+                <state line="119" column="57" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/map.html">
+          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="17" selection-start="623" selection-end="674" vertical-scroll-proportion="0.0">
+                <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -91,13 +98,29 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="42" selection-start="165" selection-end="165" vertical-scroll-proportion="0.020661157">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state line="200" column="41" selection-start="10725" selection-end="10725" vertical-scroll-proportion="0.2597968">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="90" column="62" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -128,22 +151,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/view.html" />
-        <option value="$PROJECT_DIR$/asdproject2/app/_attachments/main.js" />
-        <option value="$PROJECT_DIR$/AFW/css/styles.css" />
-        <option value="$PROJECT_DIR$/AFW/index.html" />
         <option value="$PROJECT_DIR$/AFW/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AFV/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/index.html" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/js/main.js" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/map.html" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/map.js" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
+        <option value="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
+        <option value="$PROJECT_DIR$/AVF/Android/src/com/fullsail/theguncase/plugins/video/VideoPlayer.java" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
       </list>
     </option>
   </component>
@@ -181,20 +204,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MDV-Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,6 +372,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MDV-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MDV-Projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -649,7 +672,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="22" width="1438" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -667,7 +690,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16978417" sideWeight="0.96754056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16978417" sideWeight="0.96754056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -792,31 +815,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asdproject/app/_attachments/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="142" selection-end="142" vertical-scroll-proportion="-0.67132866" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/jquery.couch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="568" selection-end="568" vertical-scroll-proportion="-19.227468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asdproject2/app/_attachments/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.19536904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MIU/Sease_Brandon_Project1/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/guncollector.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASD/Week 1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.6603775" />
@@ -837,47 +835,66 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.230014" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="107" selection-start="11599" selection-end="11599" vertical-scroll-proportion="-19.958334">
-          <folding />
-        </state>
+        <state line="0" column="9" selection-start="9" selection-end="19" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="61" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-4.3333335" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.54698455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/plugins.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="3" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5890603" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.35123968">
+        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="57" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="62" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="41" selection-start="10725" selection-end="10725" vertical-scroll-proportion="0.2597968">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="0" selection-start="11700" selection-end="11823" vertical-scroll-proportion="0.6851574">
+        <state line="201" column="53" selection-start="11505" selection-end="11505" vertical-scroll-proportion="0.47750363">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="623" selection-end="674" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="165" selection-end="165" vertical-scroll-proportion="0.020661157">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

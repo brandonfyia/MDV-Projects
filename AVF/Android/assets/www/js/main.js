@@ -1,6 +1,6 @@
 /*
  Brandon Sease
- AVF 05/12
+ AVF 07/12
  Project 2
  */
 
@@ -15,13 +15,11 @@ var map;
 $("#geo").live("pageshow", function(){
 
     var handleNoGeolocation = function (errorFlag){
-        alert("function started");
         if (errorFlag) {
             var content = "Error: The Geolocation service failed.";
         } else {
-            var content = "Error: Your browser doesn\'t support geolocation."
+            var content = "Error: Your browser doesn\'t support geolocation.";
         }
-
         var options = {
             map: map,
             position: new google.maps.LatLng(60, 105),
@@ -34,6 +32,16 @@ $("#geo").live("pageshow", function(){
 
     var getGeo = function(){
 
+        var didGood = function(position){
+            navigator.notification.alert("I found you! You're at "+position.coords.latitude+" and "+position.coords.longitude+"!", dismissed, "Hurray!", "OK");
+        };
+
+        var didBad = function(){
+            navigator.notification.alert("I have no idea where you are.", dismissed, "Uh Oh...", "Sigh");
+        };
+
+        navigator.geolocation.getCurrentPosition(didGood, didBad);
+
         var myOptions = {
             zoom: 6,
             mapTypeId: google.maps.MapTypeId.HYBRID
@@ -41,9 +49,7 @@ $("#geo").live("pageshow", function(){
         map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
         if(navigator.geolocation) {
-            alert("if ok");
             navigator.geolocation.getCurrentPosition(function(position){
-                alert("nav.geo works!");
                 var pos = new google.maps.LatLng(position.coords.latitude,
                     position.coords.longitude);
 
@@ -56,7 +62,6 @@ $("#geo").live("pageshow", function(){
                 map.setCenter(pos);
 
             }, function(){
-                alert("handleNoGeolocation true");
 
                 handleNoGeolocation(true);
             });
@@ -66,7 +71,7 @@ $("#geo").live("pageshow", function(){
         }
     };
 
-    $("#find").on("click", getGeo());
+    $("#find").on("click", getGeo);
 });
 
 
@@ -106,3 +111,16 @@ $("#acc").live("pageshow", function(){
     };
     $("#accel").on("click", accel);
 });
+
+//Video
+$("#vid2").live("pageshow", function(){
+//    var video = document.getElementById('week2');
+//    video.addEventListener('click',function(){
+//        video.play();
+//    },false);
+    var play = function(){
+      this.play();
+    };
+
+    $("#week2").on("click", play);
+})
