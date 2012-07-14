@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" afterPath="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,19 +66,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5093525">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="0.5660377">
+                <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="-122.458336">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="8" selection-start="3051" selection-end="3063" vertical-scroll-proportion="0.0">
+                <state line="45" column="0" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.8625526">
                   <folding />
                 </state>
               </provider>
@@ -98,16 +97,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="199" column="29" selection-start="10669" selection-end="10723" vertical-scroll-proportion="0.3904209">
-                  <folding>
-                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-                  </folding>
+                <state line="199" column="29" selection-start="10669" selection-end="10669" vertical-scroll-proportion="0.32510886">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -115,10 +109,8 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state line="101" column="23" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -167,13 +159,13 @@
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/map.js" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
         <option value="$PROJECT_DIR$/AVF/Android/src/com/fullsail/theguncase/plugins/video/VideoPlayer.java" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
       </list>
     </option>
   </component>
@@ -412,17 +404,17 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="133" />
-    <property name="project.structure.proportion" value="0.0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="138" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="138" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="938" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="144" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -439,8 +431,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="project.structure.side.proportion" value="0.0" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -498,6 +490,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -531,24 +541,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -566,17 +558,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -603,6 +584,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -849,79 +841,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="61" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-4.3333335">
+        <state line="39" column="61" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-4.3333335" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.54698455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/plugins.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="3" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5890603" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="-122.458336">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="2" column="10" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.8625526">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/cordova.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.54698455">
+        <state line="101" column="23" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/res/xml/plugins.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="3" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5890603">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="29" selection-start="10669" selection-end="10723" vertical-scroll-proportion="0.3904209">
-          <folding>
-            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="8" selection-start="3051" selection-end="3063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="65" selection-start="11556" selection-end="11556" vertical-scroll-proportion="0.5660377">
+        <state line="199" column="29" selection-start="10669" selection-end="10669" vertical-scroll-proportion="0.32510886">
           <folding />
         </state>
       </provider>

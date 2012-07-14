@@ -34,6 +34,16 @@ $("#geo").live("pageshow", function(){
 
     var getGeo = function(){
 
+        var didGood = function(position){
+            navigator.notification.alert("I found you! You're at "+position.coords.latitude+" and "+position.coords.longitude+"!", dismissed, "Hurray!", "OK");
+        };
+
+        var didBad = function(){
+            navigator.notification.alert("I have no idea where you are.", dismissed, "Uh Oh...", "Sigh");
+        };
+
+        navigator.geolocation.getCurrentPosition(didGood, didBad);
+
         var myOptions = {
             zoom: 6,
             mapTypeId: google.maps.MapTypeId.HYBRID
@@ -41,9 +51,7 @@ $("#geo").live("pageshow", function(){
         map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
         if(navigator.geolocation) {
-            alert("if ok");
             navigator.geolocation.getCurrentPosition(function(position){
-                alert("nav.geo works!");
                 var pos = new google.maps.LatLng(position.coords.latitude,
                     position.coords.longitude);
 
@@ -56,12 +64,9 @@ $("#geo").live("pageshow", function(){
                 map.setCenter(pos);
 
             }, function(){
-                alert("handleNoGeolocation true");
-
                 handleNoGeolocation(true);
             });
         } else {
-            alert("handleNoGeolocation false");
             handleNoGeolocation(false);
         }
     };
@@ -90,11 +95,11 @@ $("#notes").live("pageshow", function(){
 //Accelerometer
 $("#acc").live("pageshow", function(){
     var didGood = function(acceleration){
-        navigator.notification.alert("Your position is: "+
-            acceleration.x +" "+
-            acceleration.y +" "+
-            acceleration.z +" "
-            ,  "Woah!", "Awesome");
+        navigator.notification.alert("Your position is: X:"+
+            acceleration.x +", Y:"+
+            acceleration.y +", Z:"+
+            acceleration.z +"!",
+            dismissed, "Woah!", "Awesome");
     };
     var didBad = function (){
         navigator.notification.alert("Error!", dismissed, "uh oh!", "Bummer");

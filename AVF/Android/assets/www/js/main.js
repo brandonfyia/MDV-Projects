@@ -34,6 +34,16 @@ $("#geo").live("pageshow", function(){
 
     var getGeo = function(){
 
+        var didGood = function(position){
+            navigator.notification.alert("I found you! You're at "+position.coords.latitude+" and "+position.coords.longitude+"!", dismissed, "Hurray!", "OK");
+        };
+
+        var didBad = function(){
+            navigator.notification.alert("I have no idea where you are.", dismissed, "Uh Oh...", "Sigh");
+        };
+
+        navigator.geolocation.getCurrentPosition(didGood, didBad);
+
         var myOptions = {
             zoom: 6,
             mapTypeId: google.maps.MapTypeId.HYBRID
@@ -109,13 +119,13 @@ $("#acc").live("pageshow", function(){
 
 //Video
 $("#vid2").live("pageshow", function(){
-    var video = document.getElementById('week2');
-    video.addEventListener('click',function(){
-        video.play();
-    },false);
-//    var play = function(){
-//      video.play();
-//    };
-//
-//    $("#week2").on("click", play);
+//    var video = document.getElementById('week2');
+//    video.addEventListener('click',function(){
+//        video.play();
+//    },false);
+    var play = function(){
+      video.play();
+    };
+
+    $("#week2").on("click", play);
 })
