@@ -11,13 +11,10 @@ var dismissed = function (){
 //Camera
 $("#cam").live("pageshow", function(){
 
-    var pictureSource;
-    var destinationType;
-
     var onPhotoSuccess = function(imageData){
         var image = document.getElementById("image");
-        image.style.display = "block";
         image.src = "data:image/jpeg;base64," + imageData;
+        image.style.display = "block";
     };
 
     var onFail = function(message){
@@ -25,7 +22,7 @@ $("#cam").live("pageshow", function(){
     };
 
     var takePic = function(){
-        navigator.camera.getPicture(onPhotoSuccess, onFail, { quality: 20});
+        navigator.camera.getPicture(onPhotoSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.DATA_URL});
     };
 
     $("#camera").on("click", takePic);
