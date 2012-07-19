@@ -156,13 +156,17 @@ $("#acc").live("pageshow", function(){
 
 //Video
 $("#vid2").live("pageshow", function(){
-//    var video = document.getElementById('week2');
-//    video.addEventListener('click',function(){
-//        video.play();
-//    },false);
     var play = function(){
       this.play();
     };
 
     $("#week2").on("click", play);
-})
+});
+
+$("#vid3").live("pageshow", function(){
+    var play = function(){
+        this.play();
+    };
+
+    $("#week3").on("click", play);
+});
