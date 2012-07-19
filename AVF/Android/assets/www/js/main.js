@@ -27,6 +27,7 @@ $("#cam").live("pageshow", function(){
 
     $("#camera").on("click", takePic);
 });
+
 //Geo
 
 var map;
