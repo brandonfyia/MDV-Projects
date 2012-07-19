@@ -8,6 +8,28 @@ var dismissed = function (){
     //no clue what to put here!
 };
 
+//Camera
+$("#cam").live("pageshow", function(){
+
+    var pictureSource;
+    var destinationType;
+
+    var onPhotoSuccess = function(imageData){
+        var image = document.getElementById("image");
+        image.style.display = "block";
+        image.src = "data:image/jpeg;base64," + imageData;
+    };
+
+    var onFail = function(message){
+        alert('Failed because: ' + message);
+    };
+
+    var takePic = function(){
+        navigator.camera.getPicture(onPhotoSuccess, onFail, { quality: 20});
+    };
+
+    $("#camera").on("click", takePic);
+});
 //Geo
 
 var map;

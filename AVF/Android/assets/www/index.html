@@ -50,7 +50,7 @@
                 <section>
                     <ul data-role="listview" data-inset="true" data-dividertheme="a">
                         <li data-role="list-divider"><h2>iOS or Android Native Feature Demos:</h2></li>
-                        <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Camera</a></li>
+                        <li><a href="#cam">Camera</a></li>
                         <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Compass</a></li>
                         <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Contacts</a></li>
                         <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Network</a></li>
@@ -204,19 +204,32 @@
             </section>
         </div>
     </div>
-<!--Geo-->
-    <div data-role="page" id="geo">
+<!--Cam-->
+<div data-role="page" id="cam">
     <!--Header-->
-        <div data-role="header" data-position="fixed">
-            <h1>The Gun Case</h1>
-            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
-        </div>
-        <!--Content-->
-        <div data-role="content">
-            <a href="#" id="find" data-role="button">Find me!</a>
-            <div id="map_canvas"></div>
-        </div>
+    <div data-role="header" data-position="fixed">
+        <h1>The Gun Case</h1>
+        <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
     </div>
+    <!--Content-->
+    <div data-role="content">
+        <a href="#" id="camera" data-role="button">Take a picture!</a>
+        <img style="display:none;" id="image" src="" />
+    </div>
+</div>
+<!--Geo-->
+<div data-role="page" id="geo">
+    <!--Header-->
+    <div data-role="header" data-position="fixed">
+        <h1>The Gun Case</h1>
+        <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+    </div>
+    <!--Content-->
+    <div data-role="content">
+        <a href="#" id="find" data-role="button">Find me!</a>
+        <div id="map_canvas"></div>
+    </div>
+</div>
 <!--Notifications-->
     <div data-role="page" id="notes">
         <!--Header-->
