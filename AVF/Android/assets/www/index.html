@@ -15,9 +15,9 @@
     <meta name="MobileOptimized" content="320"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <link rel="stylesheet" href="css/guncollector.min.css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/c/video.js"></script>
 </head>
@@ -53,7 +53,7 @@
                         <li><a href="#cam">Camera</a></li>
                         <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Compass</a></li>
                         <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Contacts</a></li>
-                        <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Network</a></li>
+                        <li><a href="#net">Network</a></li>
                     </ul>
                 </section>
                 <section>
@@ -205,35 +205,49 @@
         </div>
     </div>
 <!--Cam-->
-<div data-role="page" id="cam">
-    <!--Header-->
-    <div data-role="header" data-position="fixed">
-        <h1>The Gun Case</h1>
-        <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+    <div data-role="page" id="cam">
+        <!--Header-->
+        <div data-role="header" data-position="fixed">
+            <h1>The Gun Case</h1>
+            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+            <section>
+                <a href="#" id="camera" data-role="button">Take a picture!</a>
+            </section>
+            <section>
+                <img style="display:none; width: 100%;" id="image" src="" />
+            </section>
+        </div>
     </div>
-    <!--Content-->
-    <div data-role="content">
-        <section>
-            <a href="#" id="camera" data-role="button">Take a picture!</a>
-        </section>
-        <section>
-            <img style="display:none; width: 100%;" id="image" src="" />
-        </section>
+<!--Network-->
+    <div data-role="page" id="net">
+        <!--Header-->
+        <div data-role="header" data-position="fixed">
+            <h1>The Gun Case</h1>
+            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+            <section>
+                <a href="#" id="network" data-role="button">What flavor network connection do I have?</a>
+            </section>
+        </div>
     </div>
-</div>
 <!--Geo-->
-<div data-role="page" id="geo">
-    <!--Header-->
-    <div data-role="header" data-position="fixed">
-        <h1>The Gun Case</h1>
-        <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+    <div data-role="page" id="geo">
+        <!--Header-->
+        <div data-role="header" data-position="fixed">
+            <h1>The Gun Case</h1>
+            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+            <a href="#" id="find" data-role="button">Find me!</a>
+            <div id="map_canvas"></div>
+        </div>
     </div>
-    <!--Content-->
-    <div data-role="content">
-        <a href="#" id="find" data-role="button">Find me!</a>
-        <div id="map_canvas"></div>
-    </div>
-</div>
 <!--Notifications-->
     <div data-role="page" id="notes">
         <!--Header-->
@@ -272,6 +286,5 @@
     <script src="http://jquery-json.googlecode.com/files/jquery.json-2.3.min.js"></script>
     <script src="js/cordova-1.8.1.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-
 </body>
 </html>
