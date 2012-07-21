@@ -1,12 +1,54 @@
 /*
  Brandon Sease
  AVF 07/12
- Project 2
+ Project 3
  */
 
 var dismissed = function (){
     //no clue what to put here!
 };
+
+//Network
+$("#net").live("pageshow", function(){
+
+    var checkNetwork = function(){
+
+        var networkState = navigator.network.connection.type;
+
+        var states = {};
+        states[Connection.UNKNOWN]  = ' appear to be connected, but I have no idea how!';
+        states[Connection.ETHERNET] = '\'re plugged into the wall via ethernet connection';
+        states[Connection.WIFI]     = '\'re on a WiFi connection....Most likely your neighbors.';
+        states[Connection.CELL_2G]  = '\'re on a cell 2G connection. Time for an upgrade!';
+        states[Connection.CELL_3G]  = '\'re on a cell 3G connection';
+        states[Connection.CELL_4G]  = '\'re on a cell 4G connection';
+        states[Connection.NONE]     = ' dont have a connection!';
+
+        alert('You' + states[networkState]);
+    };
+
+    $("#network").on("click", checkNetwork);
+});
+
+//Camera
+$("#cam").live("pageshow", function(){
+
+    var onPhotoSuccess = function(imageData){
+        var image = document.getElementById("image");
+        image.src = "data:image/jpeg;base64," + imageData;
+        image.style.display = "block";
+    };
+
+    var onFail = function(message){
+        alert('Failed because: ' + message);
+    };
+
+    var takePic = function(){
+        navigator.camera.getPicture(onPhotoSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.DATA_URL});
+    };
+
+    $("#camera").on("click", takePic);
+});
 
 //Geo
 
@@ -114,13 +156,17 @@ $("#acc").live("pageshow", function(){
 
 //Video
 $("#vid2").live("pageshow", function(){
-//    var video = document.getElementById('week2');
-//    video.addEventListener('click',function(){
-//        video.play();
-//    },false);
     var play = function(){
       this.play();
     };
 
     $("#week2").on("click", play);
-})
+});
+
+$("#vid3").live("pageshow", function(){
+    var play = function(){
+        this.play();
+    };
+
+    $("#week3").on("click", play);
+});

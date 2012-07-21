@@ -1,13 +1,13 @@
 /*
  	Brandon Sease
     AFW 07/12
-    Project 2
+    Project 3
 */
 
 #map_canvas {
     margin: 0;
     padding: 0;
-    height: 100%
+    height: 100%;
 }
 
 .title {
@@ -19,7 +19,18 @@ dt {
     font-weight: bold;
 }
 
-#vidWrapper {
-    height: 90%;
-    width: 90%
+.vidWrapper {
+    width: 90%;
+}
+
+​.ui-page .ui-content .ui-listview .ui-li-desc {
+    white-space : normal;
+}​
+
+ .ui-li .ui-btn-text a.ui-link-inherit {
+     white-space: normal;
+ }
+
+.ui-btn-inner {
+    white-space: normal;
 }
