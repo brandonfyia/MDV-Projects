@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2fab43-2049-4586-aa82-8e5d7cb2d9d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
     </list>
     <ignored path="MDV-Projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,19 +70,8 @@
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="301" column="69" selection-start="16282" selection-end="16282" vertical-scroll-proportion="0.47750363">
-                  <folding>
-                    <element signature="tag#head#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#8;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#9;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#10;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-                  </folding>
+                <state line="313" column="30" selection-start="16913" selection-end="16913" vertical-scroll-proportion="0.43541363">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -114,19 +103,11 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="299" column="4" selection-start="15661" selection-end="15661" vertical-scroll-proportion="0.43541363">
+                <state line="306" column="46" selection-start="15965" selection-end="15965" vertical-scroll-proportion="0.47750363">
                   <folding>
-                    <element signature="tag#head#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#8;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#9;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#10;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -189,9 +170,9 @@
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
       </list>
     </option>
   </component>
@@ -890,26 +871,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="13" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1573#3463#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,40 +887,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="1" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="299" column="4" selection-start="15661" selection-end="15661" vertical-scroll-proportion="0.43541363">
+        <state line="306" column="46" selection-start="15965" selection-end="15965" vertical-scroll-proportion="0.47750363">
           <folding>
-            <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#8;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#9;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#10;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#11;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="69" selection-start="16282" selection-end="16282" vertical-scroll-proportion="0.47750363">
-          <folding>
-            <element signature="tag#head#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#6;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#7;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#8;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#9;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#10;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="313" column="30" selection-start="16913" selection-end="16913" vertical-scroll-proportion="0.43541363">
+          <folding />
         </state>
       </provider>
     </entry>
