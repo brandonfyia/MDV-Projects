@@ -73,7 +73,7 @@
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="-1.1552975">
+                <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="0.45573294">
                   <folding>
                     <element signature="tag#head#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
@@ -110,7 +110,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="-1.4600871">
+                <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="0.43396226">
                   <folding>
                     <element signature="tag#head#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
@@ -906,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="-1.4600871">
+        <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="0.43396226">
           <folding>
             <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
@@ -919,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="-1.1552975">
+        <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="0.45573294">
           <folding>
             <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
