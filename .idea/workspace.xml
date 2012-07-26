@@ -5,10 +5,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" afterPath="$PROJECT_DIR$/AVF/Android/bin/The Gun Case.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" afterPath="$PROJECT_DIR$/AVF/Android/bin/resources.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase.xcodeproj/project.xcworkspace/xcuserdata/BrandonFYIA.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" afterPath="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" afterPath="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
     </list>
     <ignored path="MDV-Projects.iws" />
@@ -69,11 +70,17 @@
     <splitter split-orientation="horizontal" split-proportion="0.5093525">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="42" selection-start="3183" selection-end="3183" vertical-scroll-proportion="-22.75">
-                  <folding />
+                <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="-1.1552975">
+                  <folding>
+                    <element signature="tag#head#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -81,16 +88,16 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="170" column="13" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0">
+                <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.74380165">
+                <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -100,11 +107,17 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="42" selection-start="3187" selection-end="3187" vertical-scroll-proportion="-22.5">
-                  <folding />
+                <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="-1.4600871">
+                  <folding>
+                    <element signature="tag#head#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -112,16 +125,16 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+                <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.74380165">
+                <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -162,13 +175,13 @@
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/video.js" />
         <option value="$PROJECT_DIR$/AVF/Android/src/com/fullsail/theguncase/plugins/video/VideoPlayer.java" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/theguncase/Cordova.plist" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
         <option value="$PROJECT_DIR$/AVF/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/js/main.js" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js" />
+        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
+        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
         <option value="$PROJECT_DIR$/AVF/Android/assets/www/index.html" />
         <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html" />
-        <option value="$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css" />
-        <option value="$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css" />
       </list>
     </option>
   </component>
@@ -863,41 +876,57 @@
         <state line="36" column="95" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.55820477" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="13" selection-start="4806" selection-end="4806" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="42" selection-start="3183" selection-end="3183" vertical-scroll-proportion="-22.75">
+        <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="42" selection-start="3187" selection-end="3187" vertical-scroll-proportion="-22.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.74380165">
+        <state line="3" column="10" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.74380165">
+        <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/iOS/theguncase/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="37" selection-start="19389" selection-end="19389" vertical-scroll-proportion="-1.4600871">
+          <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVF/Android/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="365" column="61" selection-start="20007" selection-end="20007" vertical-scroll-proportion="-1.1552975">
+          <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
