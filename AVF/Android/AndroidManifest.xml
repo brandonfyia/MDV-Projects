@@ -34,7 +34,7 @@
         <activity
         	configChanges="orientation|keyboardHidden" 
             android:name=".TheGunCaseActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,8 +43,8 @@
         </activity>
         <activity 
     android:name="org.apache.cordova.DroidGap" 
-    android:label="@string/app_name" 
-    android:configChanges="orientation|keyboardHidden"> 
+    android:label="@string/app_name"
+    android:configChanges="orientation|keyboardHidden">
     <intent-filter></intent-filter> 
 </activity>
     </application>
