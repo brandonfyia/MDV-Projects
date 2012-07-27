@@ -2,7 +2,7 @@
 <!--
     Brandon Sease
     AFW 07/12
-    Project 3
+    Project 4
 -->
 
 <html>
@@ -36,7 +36,7 @@
                     <ul data-role="listview" data-inset="true" data-dividertheme="a">
                         <li data-role="list-divider"><h2>The C.R.U.D.:</h2></li>
                         <li><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">Old CRUD</a></li>
-                        <li><a href="#soon" data-rel="dialog" data-transition="slidedown">New CRUD</a></li>
+                        <li><a href="https://brandonfyia.cloudant.com/asdproject2/_design%2Fapp/index.html">New CRUD</a></li>
                     </ul>
                 </section>
                 <section>
@@ -62,21 +62,23 @@
                         <li data-role="list-divider"><h2>Reflection Videos:</h2></li>
                         <li><a href="#vid2">Week 2</a></li>
                         <li><a href="#vid3">Week 3</a></li>
-                        <li><a href="#soon" data-rel="dialog" data-transition="slidedown">Week 4</a></li>
+                        <li><a href="#vid4">Week 4</a></li>
                     </ul>
                 </section>
             </section>
         </div>
     <!--Footer-->
         <div data-role="footer" data-position="fixed" >
-            <ul data-role="listview">
-                <li>
-                    <h2>Developer Info:</h2>
-                    <p>Brandon Sease</p>
-                    <p>AVF 07/12</p>
-                    <p><a href="https://github.com/brandonfyia/MDV-Projects/tree/master/AVF">Git Repo</a></p>
-                </li>
-            </ul>
+            <footer>
+                <ul data-role="listview">
+                    <li>
+                        <h2>Developer Info:</h2>
+                        <p>Brandon Sease</p>
+                        <p>AVF 07/12</p>
+                        <p><a href="https://github.com/brandonfyia/MDV-Projects/tree/master/AVF">Git Repo</a></p>
+                    </li>
+                </ul>
+            </footer>
         </div>
     </div>
 <!--Research 1-->
@@ -88,48 +90,59 @@
         </div>
     <!--Content-->
         <div data-role="content">
-            <p class="title">Week 1 Research</p>
-            <div data-role="collapsible-set">
-
-                <div data-role="collapsible" data-collapsed="true">
-                    <h3>
-                        1. What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?
-                    </h3>
-                    <p>
-                        From the looks of it, via PhoneGap modern phones can use all of the features. The only exceptions appear to be a few older generations of hardware.
-                    </p>
+            <article>
+                <p class="title">Week 1 Research</p>
+                <div data-role="collapsible-set">
+                    <section>
+                        <div data-role="collapsible" data-collapsed="true">
+                            <h3>
+                                1. What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?
+                            </h3>
+                            <p>
+                                From the looks of it, via PhoneGap modern phones can use all of the features. The only exceptions appear to be a few older generations of hardware.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                2. For your CRUD app revision and/or Demo App components, which of these do you think you will implement?
+                            </h3>
+                            <p>
+                                I could see the ability to take and attach pictures of the items listed being useful in my app. Storage could be nice if I wanted to take things back off cloudant.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                3. Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.
+                            </h3>
+                            <p>
+                                The only lesson that repeatedly comes up for me is time management and spelling. I’ve addressed these issues in several reflections.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                4. Please describe any design intentions you may have for the AVF Demo app and the revised/new version of your CRUD app.
+                            </h3>
+                            <p>
+                                I am horrible at design. My app looks terrible and I haven’t the foggiest idea of how to make it look any better.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                5. If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.</h3>
+                            <p>
+                                Truth be told, I’m not sure what else I could do for my app. It already does everything it needs to do and anything else I feel would be adding features just for adding features sake.</p>
+                        </div>
+                    </section>
                 </div>
-                <div data-role="collapsible">
-                    <h3>
-                        2. For your CRUD app revision and/or Demo App components, which of these do you think you will implement?
-                    </h3>
-                    <p>
-                        I could see the ability to take and attach pictures of the items listed being useful in my app. Storage could be nice if I wanted to take things back off cloudant.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        3. Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.
-                    </h3>
-                    <p>
-                        The only lesson that repeatedly comes up for me is time management and spelling. I’ve addressed these issues in several reflections.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        4. Please describe any design intentions you may have for the AVF Demo app and the revised/new version of your CRUD app.
-                    </h3>
-                    <p>
-                        I am horrible at design. My app looks terrible and I haven’t the foggiest idea of how to make it look any better.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        5. If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.</h3>
-                    <p>
-                        Truth be told, I’m not sure what else I could do for my app. It already does everything it needs to do and anything else I feel would be adding features just for adding features sake.</p>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
 <!--Research 2-->
@@ -141,42 +154,51 @@
         </div>
     <!--Content-->
         <div data-role="content">
-            <p class="title">Week 1 Research</p>
-            <div data-role="collapsible-set">
-
-                <div data-role="collapsible" data-collapsed="true">
-                    <h3>
-                        1. What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
-                    </h3>
-                    <p>
-                        The only standout thing I could see would be to include a sign language video along with my normal reflection videos.
-                    </p>
+            <article>
+                <p class="title">Week 1 Research</p>
+                <div data-role="collapsible-set">
+                    <section>
+                        <div data-role="collapsible" data-collapsed="true">
+                            <h3>
+                                1. What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
+                            </h3>
+                            <p>
+                                The only standout thing I could see would be to include a sign language video along with my normal reflection videos.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                2. Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
+                            </h3>
+                            <p>
+                                Being sure that you are naming you links accurately seems to be one of the biggest things you can do to help out.  Without accurate names for your links people are just randomly guessing to get to where they want.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                        <h3>
+                                3. Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
+                            </h3>
+                            <p>
+                                The iPhone and iPads’s voice over has received several awards from the blind community. It’s ability to speak almost everything seen on screen has made these devices just as easy to use for blind people as they are for anyone else. The kindle fire has also been picking up steam in the visually impaired community. With many of the same features as Voice Over and the ability to scale fonts to a users taste it has become a blessing to avid book fans who can no longer read smaller printed text.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                4. Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.
+                            </h3>
+                            <p>
+                                Google has a suite of android apps for the visually impaired named Talkback, Kickback, and Soundback. These apps add spoken, audible, and vibration to most android applications and menus allowing for visually impaired people to navigate and get he most out of their phones. Mobile Accessibility is a suite of apps that performs very similarly to the Google apps. It appears to work much better but also cost $100 dollars.
+                            </p>
+                        </div>
+                    </section>
                 </div>
-                <div data-role="collapsible">
-                    <h3>
-                        2. Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
-                    </h3>
-                    <p>
-                        Being sure that you are naming you links accurately seems to be one of the biggest things you can do to help out.  Without accurate names for your links people are just randomly guessing to get to where they want.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        3. Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
-                    </h3>
-                    <p>
-                        The iPhone and iPads’s voice over has received several awards from the blind community. It’s ability to speak almost everything seen on screen has made these devices just as easy to use for blind people as they are for anyone else. The kindle fire has also been picking up steam in the visually impaired community. With many of the same features as Voice Over and the ability to scale fonts to a users taste it has become a blessing to avid book fans who can no longer read smaller printed text.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        4. Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.
-                    </h3>
-                    <p>
-                        Google has a suite of android apps for the visually impaired named Talkback, Kickback, and Soundback. These apps add spoken, audible, and vibration to most android applications and menus allowing for visually impaired people to navigate and get he most out of their phones. Mobile Accessibility is a suite of apps that performs very similarly to the Google apps. It appears to work much better but also cost $100 dollars.
-                    </p>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
 <!--Research 3-->
@@ -188,94 +210,109 @@
         </div>
         <!--Content-->
         <div data-role="content">
-            <p class="title">Week 1 Research</p>
-            <div data-role="collapsible-set">
-
-                <div data-role="collapsible" data-collapsed="true">
-                    <h3>
-                        1.     What are the 'top selling' app categories in the U.S.?
-                    </h3>
-                    <p>
-                        Games and Utilities are at the top in the U.S.
-                    </p>
-                    <p>
-                        Source: http://www.appannie.com/
-                    </p>
+            <article>
+                <p class="title">Week 1 Research</p>
+                <div data-role="collapsible-set">
+                    <section>
+                        <div data-role="collapsible" data-collapsed="true">
+                            <h3>
+                                1.     What are the 'top selling' app categories in the U.S.?
+                            </h3>
+                            <p>
+                                Games and Utilities are at the top in the U.S.
+                            </p>
+                            <p>
+                                Source: http://www.appannie.com/
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                2.     What are the 'top selling' app categories in Japan?
+                            </h3>
+                            <p>
+                                Again, games and utilities are at the top of the Japanese markets.
+                            </p>
+                            <p>
+                            Source: http://www.appannie.com/
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                3.     What are the 'top selling' app categories in Great Britain?
+                            </h3>
+                            <p>
+                                The U.K.’s market looks almost identical to the U.S.’s topped again with games and utilities.
+                            </p>
+                            <p>
+                            Source: http://www.appannie.com/
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                4.     Based on your three answers above, what might you infer about each of the markets listed?
+                            </h3>
+                            <p>
+                                People are bored! The ability to quickly pass a few minuets with a game will always be invaluable for a lot of people.  Utilities are also valuable for allowing people to quickly find what they need, be it an email or a bus stop.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                5.     What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?
+                            </h3>
+                            <p>
+                                In the U.S. 10.9% of people are running android 4.0 or higher. I could not find numbers specific to Japan or Great Britain.
+                                By making sure my apps are always compatible with the majority I can maximize my potential market.
+                             </p>
+                           <p>
+                            Source: http://developer.android.com/about/dashboards/index.html
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                6.     What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?
+                            </h3>
+                            <p>
+                                I’m not sure if I’m doing something wrong but this information is really hard to find. I was hoping to find something specific to mobile data but short of every data plan in the country I really couldn’t find anything.  The only thing I could find was an infograph that I believe refers to normal broadband info.
+                            </p>
+                            <p>
+                            U.S. pays $3.33 for 1 mbps
+                            </p>
+                            <p>
+                            Japan Pays $0.27 for 1 mbps
+                            </p>
+                            <p>
+                            And the U.K. is unlisted.
+                            </p>
+                            <p>
+                            With the cost and limits being placed on data we are in a very counter intuitive market. Technology is pushing for everything being cloud based and being able to do bigger and better things however the cost to do so is quickly becoming unrealistic for the average user. What’s the point of a smartphone with limited data capabilities?
+                            </p>
+                            <p>
+                            Source: http://goo.gl/5VTQs
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div data-role="collapsible">
+                            <h3>
+                                7.     And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.
+                            </h3>
+                            <p>
+                                Games in America sounds like the big ticket. However unless you are brilliant or part of an excellent company I think the better way to make a living is niche markets.  My market of choice will be the US just because I’m familiar with it.
+                            </p>
+                        </div>
+                    </section>
                 </div>
-                <div data-role="collapsible">
-                    <h3>
-                        2.     What are the 'top selling' app categories in Japan?
-                    </h3>
-                    <p>
-                        Again, games and utilities are at the top of the Japanese markets.
-                    </p>
-                    <p>
-                    Source: http://www.appannie.com/
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        3.     What are the 'top selling' app categories in Great Britain?
-                    </h3>
-                    <p>
-                        The U.K.’s market looks almost identical to the U.S.’s topped again with games and utilities.
-                    </p>
-                    <p>
-                    Source: http://www.appannie.com/
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        4.     Based on your three answers above, what might you infer about each of the markets listed?
-                    </h3>
-                    <p>
-                        People are bored! The ability to quickly pass a few minuets with a game will always be invaluable for a lot of people.  Utilities are also valuable for allowing people to quickly find what they need, be it an email or a bus stop.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        5.     What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?
-                    </h3>
-                    <p>
-                        In the U.S. 10.9% of people are running android 4.0 or higher. I could not find numbers specific to Japan or Great Britain.
-                        By making sure my apps are always compatible with the majority I can maximize my potential market.
-                    </p>
-                    <p>
-                    Source: http://developer.android.com/about/dashboards/index.html
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        6.     What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?
-                    </h3>
-                    <p>
-                        I’m not sure if I’m doing something wrong but this information is really hard to find. I was hoping to find something specific to mobile data but short of every data plan in the country I really couldn’t find anything.  The only thing I could find was an infograph that I believe refers to normal broadband info.
-                    </p>
-                    <p>
-                    U.S. pays $3.33 for 1 mbps
-                    </p>
-                    <p>
-                    Japan Pays $0.27 for 1 mbps
-                    </p>
-                    <p>
-                    And the U.K. is unlisted.
-                    </p>
-                    <p>
-                    With the cost and limits being placed on data we are in a very counter intuitive market. Technology is pushing for everything being cloud based and being able to do bigger and better things however the cost to do so is quickly becoming unrealistic for the average user. What’s the point of a smartphone with limited data capabilities?
-                    </p>
-                    <p>
-                    Source: http://goo.gl/5VTQs
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>
-                        7.     And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.
-                    </h3>
-                    <p>
-                        Games in America sounds like the big ticket. However unless you are brilliant or part of an excellent company I think the better way to make a living is niche markets.  My market of choice will be the US just because I’m familiar with it.
-                    </p>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
 <!--Vid 2-->
@@ -310,6 +347,24 @@
                     <source src="videos/AVFWeek3.mp4" type="video/mp4">
                     <source src="videos/AVFWeek3.webm" type='video/webm; codecs="vp8, vorbis"'>
                     <source  src="videos/AVFWeek3.ogv" type="video/ogg">
+                </video>
+            </section>
+        </div>
+    </div>
+<!--Vid 4-->
+    <div data-role="page" id="vid4">
+        <!--Header-->
+        <div data-role="header" data-position="fixed">
+            <h1>The Gun Case</h1>
+            <a href="#main" class="ui-btn-right" data-role="button" data-transition="slideup" data-theme="a" data-icon="home">Home</a>
+        </div>
+        <!--Content-->
+        <div data-role="content">
+            <section class="vidWrapper">
+                <video id="week4" class="video-js vjs-default-skin" controls width="100%" preload="auto">
+                    <source src="videos/AVFWeek4.mp4" type="video/mp4">
+                    <source src="videos/AVFWeek4.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    <source  src="videos/AVFWeek4.ogv" type="video/ogg">
                 </video>
             </section>
         </div>
@@ -354,8 +409,10 @@
         </div>
         <!--Content-->
         <div data-role="content">
-            <a href="#" id="find" data-role="button">Find me!</a>
-            <div id="map_canvas"></div>
+            <section>
+                <a href="#" id="find" data-role="button">Find me!</a>
+                <div id="map_canvas"></div>
+            </section>
         </div>
     </div>
 <!--Notifications-->
@@ -367,9 +424,11 @@
         </div>
         <!--Content-->
         <div data-role="content">
-            <a href="#" id="alert" data-role="button">Alert!</a>
-            <a href="#" id="beep" data-role="button">Beep!</a>
-            <a href="#" id="vibrate" data-role="button">Vibrate!</a>
+            <section>
+                <a href="#" id="alert" data-role="button">Alert!</a>
+                <a href="#" id="beep" data-role="button">Beep!</a>
+                <a href="#" id="vibrate" data-role="button">Vibrate!</a>
+            </section>
         </div>
     </div>
 <!--Accelerometer-->

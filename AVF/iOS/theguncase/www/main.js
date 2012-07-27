@@ -1,7 +1,7 @@
 /*
  Brandon Sease
  AVF 07/12
- Project 3
+ Project 4
  */
 
 var dismissed = function (){
