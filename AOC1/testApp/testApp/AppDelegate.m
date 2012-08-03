@@ -58,11 +58,12 @@
     }
     
     //Perform a nested loop printing out values to the console
-    for (chips; chips>0; chips--) 
+    for (int chips= 20; chips>0; chips--) 
     {
-        for (int pounds=0; pounds<100; pounds++)
+        NSLog(@"%d chips left", chips );
+        for (int bites=0; bites<2; bites++)
         {
-            NSLog(@"%d chips left and %d pounds gained", chips, pounds );
+            NSLog(@"%d bites of this chip left", bites);
         }
         
     }
