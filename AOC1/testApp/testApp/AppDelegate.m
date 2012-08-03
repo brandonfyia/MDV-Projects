@@ -68,8 +68,11 @@
         
     }
     
-    
     //Perform a while loop that increments an int variable and outputs to the console.
+    while (chips<11) {
+        NSLog(@"Replacing eaten chips %d", chips);
+        chips ++;
+    }
     
     int hello = 0;
     
