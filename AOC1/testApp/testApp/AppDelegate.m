@@ -54,11 +54,18 @@
     //Perform a single for loop printing out values to the console
     for (chips; chips>0; chips--) 
     {
-        NSLog(@"chips %d", chips );
+        NSLog(@"%d chips left", chips );
     }
     
     //Perform a nested loop printing out values to the console
-    
+    for (chips; chips>0; chips--) 
+    {
+        for (int pounds=0; pounds<100; pounds++)
+        {
+            NSLog(@"%d chips left and %d pounds gained", chips, pounds );
+        }
+        
+    }
     
     
     //Perform a while loop that increments an int variable and outputs to the console.
