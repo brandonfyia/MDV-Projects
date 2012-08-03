@@ -30,11 +30,23 @@
     NSLog(@"ten=%d, three=%d", ten, three);
 
     //Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
-    int example1 = 42;
-    float example2 = 3.14;
-    BOOL example3 = YES;
+    int chips = 42;
+    float leftOverPizza = .5;
+    BOOL dip = YES;
+    BOOL money = NO;
     
-    if (
+    if ((chips > 20) && (dip = YES)) 
+    {
+        NSLog(@"You have enough chips and dip for a snack!");
+    }
+    else if ((leftOverPizza >= .5)|| (money == YES))
+    {
+        NSLog(@"You can have enough pizza for a snack!");
+    }
+    else
+    {
+        NSLog(@"No snack for you.");
+    }
     
     //Use an if, else if and else check using any of the data types of your choice.
     
