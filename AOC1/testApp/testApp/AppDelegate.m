@@ -19,7 +19,34 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{   
+    //Create a variable using the float data type. Cast the float to an int and using NSLog, output both the initial float value as well as the int value.
+    int ten = 10;
+    int three = 3;
+    
+    float answer = (float)ten / (float)three;
+    
+    NSLog(@"answer=%f", answer);
+    NSLog(@"ten=%d, three=%d", ten, three);
+
+    //Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
+    int example1 = 42;
+    float example2 = 3.14;
+    BOOL example3 = YES;
+    
+    if (
+    
+    //Use an if, else if and else check using any of the data types of your choice.
+    
+    //Perform a single for loop printing out values to the console
+    
+    //Perform a nested loop printing out values to the console
+    
+    //Perform a while loop that increments an int variable and outputs to the console.
+    
+    int hello = 0;
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
