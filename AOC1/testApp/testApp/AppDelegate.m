@@ -49,6 +49,7 @@
     }
     
     //Use an if, else if and else check using any of the data types of your choice.
+    NSLog(@"See above!");
     
     //Perform a single for loop printing out values to the console
     
