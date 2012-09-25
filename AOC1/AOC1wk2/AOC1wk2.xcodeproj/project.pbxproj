@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB6FB7F515D4A421006EB4D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6FB7F415D4A421006EB4D8 /* UIKit.framework */; };
+		FB6FB7F715D4A421006EB4D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6FB7F615D4A421006EB4D8 /* Foundation.framework */; };
+		FB6FB7F915D4A421006EB4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6FB7F815D4A421006EB4D8 /* CoreGraphics.framework */; };
+		FB6FB7FF15D4A421006EB4D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB6FB7FD15D4A421006EB4D8 /* InfoPlist.strings */; };
+		FB6FB80115D4A421006EB4D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6FB80015D4A421006EB4D8 /* main.m */; };
+		FB6FB80515D4A421006EB4D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6FB80415D4A421006EB4D8 /* AppDelegate.m */; };
+		FB6FB80815D4A421006EB4D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6FB80715D4A421006EB4D8 /* ViewController.m */; };
+		FB6FB80B15D4A421006EB4D8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6FB80915D4A421006EB4D8 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB6FB7F015D4A421006EB4D8 /* AOC1wk2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC1wk2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6FB7F415D4A421006EB4D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB6FB7F615D4A421006EB4D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB6FB7F815D4A421006EB4D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB6FB7FC15D4A421006EB4D8 /* AOC1wk2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC1wk2-Info.plist"; sourceTree = "<group>"; };
+		FB6FB7FE15D4A421006EB4D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB6FB80015D4A421006EB4D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB6FB80215D4A421006EB4D8 /* AOC1wk2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC1wk2-Prefix.pch"; sourceTree = "<group>"; };
+		FB6FB80315D4A421006EB4D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB6FB80415D4A421006EB4D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB6FB80615D4A421006EB4D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB6FB80715D4A421006EB4D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB6FB80A15D4A421006EB4D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB6FB7ED15D4A421006EB4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6FB7F515D4A421006EB4D8 /* UIKit.framework in Frameworks */,
+				FB6FB7F715D4A421006EB4D8 /* Foundation.framework in Frameworks */,
+				FB6FB7F915D4A421006EB4D8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB6FB7E515D4A421006EB4D8 = {
+			isa = PBXGroup;
+			children = (
+				FB6FB7FA15D4A421006EB4D8 /* AOC1wk2 */,
+				FB6FB7F315D4A421006EB4D8 /* Frameworks */,
+				FB6FB7F115D4A421006EB4D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB6FB7F115D4A421006EB4D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FB7F015D4A421006EB4D8 /* AOC1wk2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB6FB7F315D4A421006EB4D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FB7F415D4A421006EB4D8 /* UIKit.framework */,
+				FB6FB7F615D4A421006EB4D8 /* Foundation.framework */,
+				FB6FB7F815D4A421006EB4D8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB6FB7FA15D4A421006EB4D8 /* AOC1wk2 */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FB80315D4A421006EB4D8 /* AppDelegate.h */,
+				FB6FB80415D4A421006EB4D8 /* AppDelegate.m */,
+				FB6FB80615D4A421006EB4D8 /* ViewController.h */,
+				FB6FB80715D4A421006EB4D8 /* ViewController.m */,
+				FB6FB80915D4A421006EB4D8 /* ViewController.xib */,
+				FB6FB7FB15D4A421006EB4D8 /* Supporting Files */,
+			);
+			path = AOC1wk2;
+			sourceTree = "<group>";
+		};
+		FB6FB7FB15D4A421006EB4D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FB7FC15D4A421006EB4D8 /* AOC1wk2-Info.plist */,
+				FB6FB7FD15D4A421006EB4D8 /* InfoPlist.strings */,
+				FB6FB80015D4A421006EB4D8 /* main.m */,
+				FB6FB80215D4A421006EB4D8 /* AOC1wk2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB6FB7EF15D4A421006EB4D8 /* AOC1wk2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6FB80E15D4A421006EB4D8 /* Build configuration list for PBXNativeTarget "AOC1wk2" */;
+			buildPhases = (
+				FB6FB7EC15D4A421006EB4D8 /* Sources */,
+				FB6FB7ED15D4A421006EB4D8 /* Frameworks */,
+				FB6FB7EE15D4A421006EB4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOC1wk2;
+			productName = AOC1wk2;
+			productReference = FB6FB7F015D4A421006EB4D8 /* AOC1wk2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB6FB7E715D4A421006EB4D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Brandon Sease";
+			};
+			buildConfigurationList = FB6FB7EA15D4A421006EB4D8 /* Build configuration list for PBXProject "AOC1wk2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB6FB7E515D4A421006EB4D8;
+			productRefGroup = FB6FB7F115D4A421006EB4D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB6FB7EF15D4A421006EB4D8 /* AOC1wk2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB6FB7EE15D4A421006EB4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6FB7FF15D4A421006EB4D8 /* InfoPlist.strings in Resources */,
+				FB6FB80B15D4A421006EB4D8 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB6FB7EC15D4A421006EB4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6FB80115D4A421006EB4D8 /* main.m in Sources */,
+				FB6FB80515D4A421006EB4D8 /* AppDelegate.m in Sources */,
+				FB6FB80815D4A421006EB4D8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB6FB7FD15D4A421006EB4D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6FB7FE15D4A421006EB4D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB6FB80915D4A421006EB4D8 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6FB80A15D4A421006EB4D8 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB6FB80C15D4A421006EB4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB6FB80D15D4A421006EB4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB6FB80F15D4A421006EB4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC1wk2/AOC1wk2-Prefix.pch";
+				INFOPLIST_FILE = "AOC1wk2/AOC1wk2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB6FB81015D4A421006EB4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC1wk2/AOC1wk2-Prefix.pch";
+				INFOPLIST_FILE = "AOC1wk2/AOC1wk2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB6FB7EA15D4A421006EB4D8 /* Build configuration list for PBXProject "AOC1wk2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6FB80C15D4A421006EB4D8 /* Debug */,
+				FB6FB80D15D4A421006EB4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6FB80E15D4A421006EB4D8 /* Build configuration list for PBXNativeTarget "AOC1wk2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB6FB80F15D4A421006EB4D8 /* Debug */,
+				FB6FB81015D4A421006EB4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB6FB7E715D4A421006EB4D8 /* Project object */;
+}
