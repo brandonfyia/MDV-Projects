@@ -17,7 +17,7 @@
     NSString *infoText;
     NSString *fieldText;
     UIButton *dateButt;
-    UIButton *infoButt;
+    
     UILabel *nameLab;
 }
 
