@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB41A24E1613D74100CE84CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB41A24D1613D74100CE84CD /* UIKit.framework */; };
+		FB41A2501613D74100CE84CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB41A24F1613D74100CE84CD /* Foundation.framework */; };
+		FB41A2521613D74100CE84CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB41A2511613D74100CE84CD /* CoreGraphics.framework */; };
+		FB41A2581613D74100CE84CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB41A2561613D74100CE84CD /* InfoPlist.strings */; };
+		FB41A25A1613D74100CE84CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2591613D74100CE84CD /* main.m */; };
+		FB41A25E1613D74100CE84CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A25D1613D74100CE84CD /* AppDelegate.m */; };
+		FB41A2611613D74100CE84CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2601613D74100CE84CD /* ViewController.m */; };
+		FB41A2641613D74100CE84CD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB41A2621613D74100CE84CD /* ViewController.xib */; };
+		FB41A26C1613D78C00CE84CD /* customCarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A26B1613D78C00CE84CD /* customCarFactory.m */; };
+		FB41A26F1613D79C00CE84CD /* baseCustomCar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A26E1613D79C00CE84CD /* baseCustomCar.m */; };
+		FB41A2721613D7DC00CE84CD /* customTint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2711613D7DB00CE84CD /* customTint.m */; };
+		FB41A2751613D7EB00CE84CD /* customRims.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2741613D7EB00CE84CD /* customRims.m */; };
+		FB41A2781613D81C00CE84CD /* customStereo.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A2771613D81C00CE84CD /* customStereo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB41A2491613D74100CE84CD /* AOC2_Wk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Wk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB41A24D1613D74100CE84CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB41A24F1613D74100CE84CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB41A2511613D74100CE84CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB41A2551613D74100CE84CD /* AOC2_Wk1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2_Wk1-Info.plist"; sourceTree = "<group>"; };
+		FB41A2571613D74100CE84CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB41A2591613D74100CE84CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB41A25B1613D74100CE84CD /* AOC2_Wk1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2_Wk1-Prefix.pch"; sourceTree = "<group>"; };
+		FB41A25C1613D74100CE84CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB41A25D1613D74100CE84CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB41A25F1613D74100CE84CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB41A2601613D74100CE84CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB41A2631613D74100CE84CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FB41A26A1613D78C00CE84CD /* customCarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCarFactory.h; sourceTree = "<group>"; };
+		FB41A26B1613D78C00CE84CD /* customCarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCarFactory.m; sourceTree = "<group>"; };
+		FB41A26D1613D79C00CE84CD /* baseCustomCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseCustomCar.h; sourceTree = "<group>"; };
+		FB41A26E1613D79C00CE84CD /* baseCustomCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseCustomCar.m; sourceTree = "<group>"; };
+		FB41A2701613D7DB00CE84CD /* customTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTint.h; sourceTree = "<group>"; };
+		FB41A2711613D7DB00CE84CD /* customTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTint.m; sourceTree = "<group>"; };
+		FB41A2731613D7EB00CE84CD /* customRims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customRims.h; sourceTree = "<group>"; };
+		FB41A2741613D7EB00CE84CD /* customRims.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customRims.m; sourceTree = "<group>"; };
+		FB41A2761613D81C00CE84CD /* customStereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customStereo.h; sourceTree = "<group>"; };
+		FB41A2771613D81C00CE84CD /* customStereo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customStereo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB41A2461613D74100CE84CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB41A24E1613D74100CE84CD /* UIKit.framework in Frameworks */,
+				FB41A2501613D74100CE84CD /* Foundation.framework in Frameworks */,
+				FB41A2521613D74100CE84CD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB41A23E1613D74000CE84CD = {
+			isa = PBXGroup;
+			children = (
+				FB41A2531613D74100CE84CD /* AOC2_Wk1 */,
+				FB41A24C1613D74100CE84CD /* Frameworks */,
+				FB41A24A1613D74100CE84CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB41A24A1613D74100CE84CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB41A2491613D74100CE84CD /* AOC2_Wk1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB41A24C1613D74100CE84CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB41A24D1613D74100CE84CD /* UIKit.framework */,
+				FB41A24F1613D74100CE84CD /* Foundation.framework */,
+				FB41A2511613D74100CE84CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB41A2531613D74100CE84CD /* AOC2_Wk1 */ = {
+			isa = PBXGroup;
+			children = (
+				FB41A25C1613D74100CE84CD /* AppDelegate.h */,
+				FB41A25D1613D74100CE84CD /* AppDelegate.m */,
+				FB41A25F1613D74100CE84CD /* ViewController.h */,
+				FB41A2601613D74100CE84CD /* ViewController.m */,
+				FB41A2621613D74100CE84CD /* ViewController.xib */,
+				FB41A2541613D74100CE84CD /* Supporting Files */,
+				FB41A26A1613D78C00CE84CD /* customCarFactory.h */,
+				FB41A26B1613D78C00CE84CD /* customCarFactory.m */,
+				FB41A26D1613D79C00CE84CD /* baseCustomCar.h */,
+				FB41A26E1613D79C00CE84CD /* baseCustomCar.m */,
+				FB41A2701613D7DB00CE84CD /* customTint.h */,
+				FB41A2711613D7DB00CE84CD /* customTint.m */,
+				FB41A2731613D7EB00CE84CD /* customRims.h */,
+				FB41A2741613D7EB00CE84CD /* customRims.m */,
+				FB41A2761613D81C00CE84CD /* customStereo.h */,
+				FB41A2771613D81C00CE84CD /* customStereo.m */,
+			);
+			path = AOC2_Wk1;
+			sourceTree = "<group>";
+		};
+		FB41A2541613D74100CE84CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB41A2551613D74100CE84CD /* AOC2_Wk1-Info.plist */,
+				FB41A2561613D74100CE84CD /* InfoPlist.strings */,
+				FB41A2591613D74100CE84CD /* main.m */,
+				FB41A25B1613D74100CE84CD /* AOC2_Wk1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB41A2481613D74100CE84CD /* AOC2_Wk1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB41A2671613D74100CE84CD /* Build configuration list for PBXNativeTarget "AOC2_Wk1" */;
+			buildPhases = (
+				FB41A2451613D74100CE84CD /* Sources */,
+				FB41A2461613D74100CE84CD /* Frameworks */,
+				FB41A2471613D74100CE84CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOC2_Wk1;
+			productName = AOC2_Wk1;
+			productReference = FB41A2491613D74100CE84CD /* AOC2_Wk1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB41A2401613D74000CE84CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Brandon Sease";
+			};
+			buildConfigurationList = FB41A2431613D74000CE84CD /* Build configuration list for PBXProject "AOC2_Wk1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB41A23E1613D74000CE84CD;
+			productRefGroup = FB41A24A1613D74100CE84CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB41A2481613D74100CE84CD /* AOC2_Wk1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB41A2471613D74100CE84CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB41A2581613D74100CE84CD /* InfoPlist.strings in Resources */,
+				FB41A2641613D74100CE84CD /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB41A2451613D74100CE84CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB41A25A1613D74100CE84CD /* main.m in Sources */,
+				FB41A25E1613D74100CE84CD /* AppDelegate.m in Sources */,
+				FB41A2611613D74100CE84CD /* ViewController.m in Sources */,
+				FB41A26C1613D78C00CE84CD /* customCarFactory.m in Sources */,
+				FB41A26F1613D79C00CE84CD /* baseCustomCar.m in Sources */,
+				FB41A2721613D7DC00CE84CD /* customTint.m in Sources */,
+				FB41A2751613D7EB00CE84CD /* customRims.m in Sources */,
+				FB41A2781613D81C00CE84CD /* customStereo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB41A2561613D74100CE84CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB41A2571613D74100CE84CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB41A2621613D74100CE84CD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB41A2631613D74100CE84CD /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB41A2651613D74100CE84CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB41A2661613D74100CE84CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB41A2681613D74100CE84CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC2_Wk1/AOC2_Wk1-Prefix.pch";
+				INFOPLIST_FILE = "AOC2_Wk1/AOC2_Wk1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB41A2691613D74100CE84CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC2_Wk1/AOC2_Wk1-Prefix.pch";
+				INFOPLIST_FILE = "AOC2_Wk1/AOC2_Wk1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB41A2431613D74000CE84CD /* Build configuration list for PBXProject "AOC2_Wk1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB41A2651613D74100CE84CD /* Debug */,
+				FB41A2661613D74100CE84CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB41A2671613D74100CE84CD /* Build configuration list for PBXNativeTarget "AOC2_Wk1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB41A2681613D74100CE84CD /* Debug */,
+				FB41A2691613D74100CE84CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB41A2401613D74000CE84CD /* Project object */;
+}
